@@ -1,0 +1,136 @@
+
+memalloc(
+3 mem_mod2div_temp
+2 mem_contw_temp
+
+
+//rfcomm head
+1 mem_rfc_adss
+1 mem_rfc_current_channel
+1 mem_rfc_frame_type
+1 mem_current_fcs
+2 mem_rfc_paylead_length
+2 mem_rfc_paylead_ptr
+
+//rfcomm uih
+1 mem_uih_cmd_type
+2 mem_uih_length
+2 mem_rfc_payload_ptr
+
+
+//rfcomm modem status
+1 mem_ms_param
+
+//rfcomm pn
+1 mem_pn_credit_flow_type_info
+1 mem_pn_priority
+1 mem_pn_acknowledg_timer
+1 mem_pn_max_retrans
+
+1 mem_rfcomm_send_adss
+1 mem_rfcomm_send_frame_type
+1 mem_rfcomm_send_fcs
+)
+
+xmemalloc(
+0 mem_rfc_xmem_start
+1 mem_pn_dlci
+2 mem_pn_max_frame_size
+
+1 memFCStemp1
+1 memFCStemp2
+1 memFCStemp3
+
+1 mem_rfcomm_initiator
+1 mem_remote_spp_channel
+1 mem_HIUfcs_SPP
+1 mem_HIUfcs_SPP_WCredits
+2 mem_remote_credits
+1 mem_credit_given
+1 mem_ms_channel
+2 mem_current_packet_length
+1 mem_profile_channel
+
+
+//1 mem_rfcomm_state
+2 mem_rfc_l2capch_ptr
+2 mem_rfc_server_state
+0 mem_rfc_xmem_end
+)
+
+
+
+/* Command Type */
+  (
+    0x3F RSP_RX_SABM        /*responsor expect SABM from initiator             */
+    0x3F INI_TX_SABM
+	
+    0x73 RSP_TX_UA          /*responsor send out UA command                    */
+    0x73 UA_WFBIT_SET	    /* UA control field with F bit set                 */
+	
+    0xEF RSP_RX_UIH         /*responsor expect UIH from initiator              */
+
+    0xEF RSP_TX_UIH         /*responsor send UIH to initiator                  */
+     
+    0x1F RSP_TX_DM          /*responsor send DM to initiator                   */
+    0x1F DM_WFBIT_SET       /* DM control field with F bit set                 */
+    0x0F DM_WFBIT_CLEAR     /* DM control field with F bit clear               */
+
+    0x53 RSP_RX_DISC        /*responsor expect DISC from initiator             */
+    0x53 INI_TX_DISC	    /*initiator send DISC control type command         */
+     
+    0xFF RSP_RX_UIH_WDATA   /*UIH data with credit flow control info           */
+  )
+
+
+ (
+  	0x00C8 RFCOMM_MAX_FRAME_SIZE
+ )
+
+ 
+/* memRFCOMM_Flag */
+(
+	0 USING_HF_PROFILE
+	1 USING_HS_PROFILE
+	2 USING_SPP_PROFILE
+)
+/*RFCOMM Frame Type*/
+(
+	0x3f RFCOMM_FRAME_TYPE_SABM
+	0x73 RFCOMM_FRAME_TYPE_UA
+	0xEF RFCOMM_FRAME_TYPE_UIH
+	0xFF RFCOMM_FRAME_TYPE_UIH_CREDITS
+	0x53 RFCOMM_FRAME_TYPE_DISCONN
+)
+/*RFCOMM UIH CMD TYPE*/
+(
+	0x41 UIH_PARAM_NEG_CMD
+	0x40 UIH_PARAM_NEG_RES
+	0x71 UIH_MODEM_STATUS_CMD
+	0x70 UIH_MODEM_STATUS_RES
+)
+
+/*bits in rfcomm address*/
+(
+	0 RFCOMM_ADDRESS_EXT_LEN
+	1 RFCOMM_ADDRESS_CR
+	2 RFCOMM_ADDRESS_DERECTION
+)
+
+(                                   
+	0 RFC_SIGNAL_PN_CMD
+	1 RFC_SIGNAL_PN_RES
+	2 RFC_SERVER_SABM
+	3 RFC_SERVER_UA
+	4 RFC_SIGNAL_SEND_MS_CMD
+	5 RFC_SIGNAL_RECV_MS_CMD
+	6 RFC_SIGNAL_SEND_MS_RES
+	7 RFC_SIGNAL_RECV_MS_RES
+	8 RFC_SIGNAL_SABM
+	9 RFC_SIGNAL_UA
+	0xff RFCOMM_CHANNEL_SETUP_COMPLETE
+) 
+
+(
+	127 RFCOMM_MALLOC_SIZE
+)

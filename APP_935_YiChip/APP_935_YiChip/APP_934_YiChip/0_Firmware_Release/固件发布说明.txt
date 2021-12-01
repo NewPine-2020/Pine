@@ -1,0 +1,28 @@
+请注意生成新固件会覆盖原有同名固件，谨慎操作！双击GenerateFirmware.bat即可生成生产固件和升级固件。
+
+集成开发环境: KEIL
+集成开发环境版本：MDK-ARM Professional Version:5.22.0.0
+
+版本迭代记录：
+
+BT986_Feasycombw210_20211028_BL_100_APP_928_Production
+协议栈首个版本:
+支持SPP(主从)+BLE(主从)+HID
+
+BT986_Feasycom_20210422_BL_100_APP_901_Production
+修改生产方式
+默认BLE广播地址及feasycom id
+
+BT986_Feasycom_20210419_BL_100_APP_900_Production
+第一版程序
+支持SPP主从+BLE从+HID等功能
+功耗未连接: 5.5mA
+EDR连接: 5.2mA
+BLE连接: 4.2mA
+
+921600波特率测试
+vivo x9 app->模块 速度：55KB/S
+		模块->app 速度：55KB/S
+iphone 11 app->模块 速度：18KB/S
+		  模块->app  速度: 18KB/S
+

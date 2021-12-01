@@ -1,0 +1,14 @@
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.c
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h
+.\objects\yc11xx_gpio.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\yc11xx_gpio.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc11xx_gpio.o: ..\..\application\btreg.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h
+.\objects\yc11xx_gpio.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc11xx_gpio.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h
+.\objects\yc11xx_gpio.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\yc11xx_gpio.o: ..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h

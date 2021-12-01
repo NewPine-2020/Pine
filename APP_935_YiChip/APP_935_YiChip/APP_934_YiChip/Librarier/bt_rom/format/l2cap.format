@@ -1,0 +1,491 @@
+
+memalloc(
+0 mem_l2cap_mem_start
+// L2CAP RX 
+2 mem_l2cap_rxbuff1_len
+2 mem_l2cap_rxbuff2_len
+1 mem_l2cap_rxbuff_new_temp
+1 mem_l2cap_rxbuff_new
+0 mem_l2cap_rxbuff_fifo
+1 mem_l2cap_rxbuff_fifo1
+1 mem_l2cap_rxbuff_fifo2
+2 mem_l2cap_payload_ptr
+2 mem_l2cap_rx_pkt_length
+2 mem_l2cap_rx_cid
+1 mem_l2cap_rx_done
+1 mem_l2cap_signal_ident
+
+// L2CAP TX SDP channel
+2 mem_sdp_tx_buff_ptr
+2 mem_sdp_tx_payload_ptr
+2 mem_sdp_tx_pkt_length
+
+64 mem_tx_malloc_log
+
+//temp buff only
+0 mem_l2cap_temp_ch_info
+1 mem_l2cap_temp_ch_psm
+1 mem_l2cap_temp_ch_state
+2 mem_l2cap_temp_local_cid
+2  mem_l2cap_temp_remote_cid
+
+
+
+0 mem_l2cap_mem_end
+
+
+
+)
+
+xmemalloc(
+0 mem_l2cap_xmem_start
+//*******************L2CAP TX MULTI-PACKET*********************//
+2 mem_l2cap_tx_multi_offset //0 means single packet
+
+//temp_pending
+0 mem_l2cap_pending_info
+1 mem_l2cap_pending_id0
+4 mem_l2cap_pending_delay_time0
+2 mem_l2cap_pending_ptr0
+1 mem_l2cap_pending_id1
+4 mem_l2cap_pending_delay_time1
+2 mem_l2cap_pending_ptr1
+1 mem_l2cap_pending_id2
+4 mem_l2cap_pending_delay_time2
+2 mem_l2cap_pending_ptr2
+1 mem_l2cap_pending_count
+
+//*******************CHANNEL ID*********************//
+1 mem_l2cap_active_ch_count
+0 mem_l2cap_ch_info
+1 mem_l2cap_ch_psm0
+1 mem_l2cap_ch_state0
+2 mem_l2cap_local_cid0
+2  mem_l2cap_remote_cid0
+1 mem_l2cap_ch_psm1
+1 mem_l2cap_ch_state1
+2 mem_l2cap_local_cid1
+2  mem_l2cap_remote_cid1
+1 mem_l2cap_ch_psm2
+1 mem_l2cap_ch_state2
+2 mem_l2cap_local_cid2
+2  mem_l2cap_remote_cid2
+1 mem_l2cap_ch_psm3
+1 mem_l2cap_ch_state3
+2 mem_l2cap_local_cid3
+2  mem_l2cap_remote_cid3
+1 mem_l2cap_ch_psm4
+1 mem_l2cap_ch_state4
+2 mem_l2cap_local_cid4
+2  mem_l2cap_remote_cid4
+1 mem_l2cap_ch_psm5
+1 mem_l2cap_ch_state5
+2 mem_l2cap_local_cid5
+2  mem_l2cap_remote_cid5
+1 mem_l2cap_ch_psm6
+1 mem_l2cap_ch_state6
+2 mem_l2cap_local_cid6
+2  mem_l2cap_remote_cid6
+1 mem_l2cap_ch_psm7
+1 mem_l2cap_ch_state7
+2 mem_l2cap_local_cid7
+2  mem_l2cap_remote_cid7
+
+1 mem_l2cap_prepare_confreq_count
+1 mem_l2cap_channel_disconnect_timer
+
+//*******************CHANNEL STATE*********************//
+1 mem_sdp_state
+1 mem_ML2CAP_comm_id
+
+
+//*******************L2CAP tx malloc********************//
+1 mem_used_map
+0 mem_tx_fifo0
+1 mem_tx_fifo0_map
+2 mem_tx_fifo0_ptr
+0 mem_tx_fifo1
+1 mem_tx_fifo1_map
+2 mem_tx_fifo1_ptr
+0 mem_tx_fifo2
+1 mem_tx_fifo2_map
+2 mem_tx_fifo2_ptr
+0 mem_tx_fifo3
+1 mem_tx_fifo3_map
+2 mem_tx_fifo3_ptr
+0 mem_tx_fifo_end
+
+//*******************L2CAP rx malloc********************//
+
+
+0 mem_alloc_block
+2 mem_alloc_header
+2 mem_alloc_rptr
+2 mem_alloc_wptr
+2 mem_alloc_end
+1 mem_alloc_cur_len
+15 mem_alloc_block_start
+
+1 mem_media_release
+0 mem_media_block
+2 mem_media_header
+2 mem_media_rptr
+2 mem_media_wptr
+2 mem_media_end
+1 mem_media_cur_len
+15 mem_media_block_start
+
+0 mem_lcp_block
+2 mem_lcp_header
+2 mem_lcp_rptr
+2 mem_lcp_wptr
+2 mem_lcp_end
+1 mem_lcp_cur_len
+15 mem_lcp_block_start
+
+//*******************MISC*********************//
+1 mem_l2cap_flow_ctrl_flag
+1 mem_l2cap_pending_item
+
+1 mem_l2cap_rxbuff_len_error
+0 mem_l2cap_xmem_end
+
+2 mem_l2cap_rx_max_lenth
+1 mem_l2cap_rx_malloc_num
+)
+
+(
+0 offset_lc_psm
+1 offset_lc_state
+2 offset_lc_local_cid
+4 offset_lc_remote_cid
+)
+
+(
+
+15 BLOCK_MAX_LEN
+4 BLOCK_MAX_NUM
+
+30 BLOCK_MAX_LEN_NEW
+10 BLOCK_MAX_NUM_NEW
+
+0 BLOCK_HEADER_OFFSET
+2 BLOCK_RPTR_OFFSET
+4 BLOCK_WPTR_OFFSET
+6 BLOCK_END_OFFSET
+8 BLOCK_CUR_LEN_OFFSET
+9 BLOCK_DATA_OFFSET
+)
+
+//mem_l2cap_lpm_txbuf
+(
+256 l2cap_lpm_txbuf_len
+)
+
+(
+4 L2CAP_TX_FIFO_SIZE
+8 L2CAP_TX_BUFF_CNT
+
+)
+
+(
+0 HS_IDLE
+1 AG_INIT_CALL
+2 HS_INIT_CALL
+)
+(
+0 M_ACL_LINK_ABSENT
+1 M_ACL_LINK_EXIST
+)
+
+/* upper layer interface w/ lower layer */
+(
+1 MAX_NUM_LINKS_ALLOWED
+1 MAX_NUM_SCO_ALLOWED
+1 ACL_LINK_PRESENT
+0 ACL_LINK_ABSENT
+)
+(
+1 L2CAP_RX_DONE 
+0 L2CAP_RX_CLEAR
+)
+/* Scheduler */
+(
+0 L2CAP_DISCONNECT_INTERRUPT
+1 RFCOMM_wants_service
+2 L2CAP_sig_Tx_buff_full
+3 RFCOMM_Tx_buff_full
+4 SDP_Tx_buff_full
+5 got_complete_L2CAP_pkt	
+6 L2CAP_init_Config_Req
+7 L2CAP_DISCONNECT_CONTROL
+)
+
+/* mem_CONTROL_tasks2 */
+(
+0 UI_NEED_SERVICE
+)
+/* L2CAP logic channel identifiers (2 bytes) p.261 */
+(
+0x0001 L2CAP_signal_channel
+0x1001 L2CAP_AAP_CHANNEL
+)
+/* L2CAP signalling command codes (1 byte) p.284 */
+(
+0x00 reserved
+0x01 signal_cmd_reject
+0x02 signal_connect_req
+0x03 signal_connect_rsp
+0x04 signal_config_req
+0x05 signal_config_rsp
+0x06 signal_disconnect_req
+0x07 signal_disconnect_rsp
+0x08 signal_echo_req
+0x09 signal_echo_rsp
+0x0a signal_info_req
+0x0b signal_info_rsp
+)
+/* L2CAP signal_command_reject reason code (2 bytes), p.285 */
+(
+0x0000 cmd_not_understood
+0x0001 signalling_MTU_exceeded
+0x0002 invalid_CID_in_req
+)
+/* L2CAP PSM values used in signal_connect_req (2 bytes), p.286 */
+(
+0x0001 PSM_SDP
+0x0003 PSM_RFCOMM
+0x0005 PSM_TCS
+0x0011 PSM_HID_control
+0x0013 PSM_HID_interrupt
+0x0017 PSM_AVCTP
+0x0019 PSM_AVDTP
+0x001f PSM_ATT
+0x1001 PSM_AAP
+)
+
+/* L2CAP connection response result code (2 bytes), p.288 */
+(
+0x0000 L2CAP_CONNECTION_SUCCESSFUL
+0x0001 L2CAP_CONNECTION_PENDING
+0x0002 L2CAP_CONNECTION_REFUSED_PSM_NOT_SUPPOUTED
+0x0003 L2CAP_CONNECTION_REFUSED_SECURITY_BLOCK
+0x0004 L2CAP_CONNECTION_REFUSED_NO_RESOURCES
+0x0005 L2CAP_CONNECTION_RESERVED
+0X0006 L2CAP_CONNECTION_REFUSED_INVALID_CID
+0X0007 L2CAP_CONNECTION_REFUSED_CID_ALLOCATED
+)
+
+/* L2CAP connection status values (2 bytes), p.288 */
+(
+0x0000 L2CAP_no_info_available
+0x0001 L2CAP_authentication_pending
+0x0002 L2CAP_authorization_pending
+)
+/* L2CAP configuration response result code (2 bytes), p.292 */
+(
+0x0000 L2CAP_config_success
+0x0001 L2CAP_config_failure_bad_parameters
+0x0002 L2CAP_config_failure_no_reason
+0x0003 L2CAP_config_failure_unknown_options
+)
+/* L2CAP constant definitions */
+(
+128 L2CAP_Rx_buff_size
+48  L2CAP_signal_Tx_buff_size
+128 SDP_Tx_buff_size
+128 RFCOMM_Tx_buff_size
+1 AM_ADDRESS
+3 DM1TYPE
+4 DH1TYPE
+11 DH3TYPE
+8 DVTYPE
+0 channel_state_closed
+1 channel_state_config
+2 channel_state_open
+0x03e3 L2CAP_config_MTU_SDP
+0xffff L2CAP_config_ftimeout_SDP
+0x0100 L2CAP_config_MTU_RFCOMM
+0x02a0 L2CAP_config_MTU_MEDIA
+0x0080 L2CP_config_MTU_OTHER
+0xffff L2CAP_config_ftimeout_RFCOMM
+260 l2cap_max_pkt_len
+679 l2cap_max_pkt_len_new
+)
+
+(
+0 FAILURE
+1 SUCCESS
+2 IN_PROGRESS
+)
+(
+0x00	IDLE
+0x01	WAIT_4_BB_PAGE
+0x02	WAIT_4_LMP_CONN
+0x03	WAIT_4_SCO_CONN
+0x04	WAIT_4_SCO_KILLED
+)
+
+/*mem_master_mss*/
+(
+0 STOP_ENC
+1 SEND_SWITCH_REQ
+)
+(
+0 HF_HS_READY
+1 HF_AG_READY
+)
+
+(
+0 HF_CMD_IDLE
+1 HF_WAIT_ACCEPT_CALL_OK
+2 HF_WAIT_HANGUP_OK
+3 HF_WAIT_VGS_OK
+4 HF_WAIT_VGM_OK
+)
+
+/* mem_pairing_state bit definition */
+(
+0 PAIR_INQUIRY_START
+1 PAIR_INQUIRY_TIME_OUT
+2 PAIR_INQUIRY_FAILED
+3 PAIR_INQUIRY_SUCCESS
+4 PAIR_READY_CONN
+5 PAIR_WAIT_CANCEL_RESPONSE
+6 PAIR_CONN_SUCCESS
+7 PAIR_WAIT_DETACH
+)  
+
+/* mem_pairing_mode bit definition */
+(
+0 FORCE_AUTHENTICATION
+)
+/* mem_hid_protecol_type */
+(
+0 PROTECOL_BOOT /*default*/
+1 PROTECOL_REPORT
+)
+
+/* mem_upper_sm_reconn */
+(
+1 UPPERSM_SEND_SDP_CONN_REQ
+2 UPPERSM_SEND_SDP_CFG_REQ
+3 UPPERSM_SEND_SDP_HF_SS
+4 UPPERSM_SEND_SDP_DISC_REQ
+5 UPPERSM_SEND_RFCOMM_CONN_REQ
+6 UPPERSM_SEND_RFCOMM_CFG_REQ
+7 UPPERSM_SEND_SABM_CMD
+8 UPPERSM_SEND_DISC
+9 UPPERSM_SEND_WAIT
+10 UPPERSM_SEND_HID_CONTROL_CONN_REQ
+11 UPPERSM_SEND_HID_CONTROL_CFG_REQ
+12 UPPERSM_SEND_HID_INTERRUPT_CONN_REQ
+13 UPPERSM_SEND_HID_INTERRUPT_CFG_REQ
+14 UPPERSM_SEND_SDP_HS_SS
+15 UPPERSM_SEND_SDP_PBAP_SS
+16 UPPERSM_SEND_SDP_AVTARG_SS
+)
+/* mem_upper_sm_remote_page */
+(
+1 UPPERSM_RP_SEND_SDP_CONN_REQ
+2 UPPERSM_RP_SEND_SDP_CFG_REQ
+3 UPPERSM_RP_SEND_SDP_HF_SS
+4 UPPERSM_RP_SEND_SDP_HS_SS
+5 UPPERSM_RP_SEND_SDP_PBAP_SS
+6 UPPERSM_RP_SEND_SDP_AVTARG_SS
+7 UPPERSM_RP_SEND_SDP_DISC_REQ
+8 UPPERSM_RP_SEND_AVCTP_CONN_REQ
+9 UPPERSM_RP_SEND_AVCTP_CFG_REQ
+)
+
+/* mem_ML2CAP_flag */
+(
+0 MSCHEDULER_HID_CONTROL_CONN_DONE
+1 MSCHEDULER_HID_INTERRUPT_CONN_DONE
+2 MSCHEDULER_HID_CONTROL_CFG_REQ_DONE
+3 MSCHEDULER_HID_CONTROL_CFG_RSP_DONE
+4 MSCHEDULER_HID_INTERRUPT_CFG_REQ_DONE
+5 MSCHEDULER_HID_INTERRUPT_CFG_RSP_DONE
+6 MSCHEDULER_HID_CONTROL_DISC_DONE
+7 MSCHEDULER_HID_INTERRUPT_DISC_DONE
+)
+/*    ui event    --add by lj*/
+(
+0x00 UI_DATA_EVNET_NONE
+0x01 UI_DATA_EVNET_HID
+0x02 UI_DATA_EVNET_AVDTP_S
+0x03 UI_DATA_EVNET_AVDTP_M
+0x04 UI_DATA_EVNET_AVCTP
+0x05 UI_DATA_EVNET_HS
+0x06 UI_DATA_EVNET_HF
+0x07 UI_DATA_EVNET_SPP
+0x08 UI_DATA_EVNET_OBEX
+)
+/*    ui ack --add by lj*/
+(
+0x00 UI_DATA_TX_NONE
+0x01 UI_DATA_TX_HID
+0x02 UI_DATA_TX_AVDTP_S
+0x03 UI_DATA_TX_AVDTP_M
+0x04 UI_DATA_TX_AVCTP
+0x05 UI_DATA_TX_HS
+0x06 UI_DATA_TX_HF
+0x07 UI_DATA_TX_SPP
+0x08 UI_DATA_TX_OBEX
+0x10 ACL_TX_L2CAP_SIGNAL
+0x11 ACL_TX_SDP
+0x12 ACL_TX_RFCOMM
+
+)
+
+(
+0 L2CAP_SDP_interface_conn
+1 L2CAP_SDP_interface_cfg
+)
+
+(                                   
+0 L2CAP_CHANNEL_STATE_CONN_REQ      
+1 L2CAP_CHANNEL_STATE_CONN_RES      
+2 L2CAP_CHANNEL_STATE_SND_CFG_REQ   
+3 L2CAP_CHANNEL_STATE_SND_CFG_RES   
+4 L2CAP_CHANNEL_STATE_RCV_CFG_REQ   
+5 L2CAP_CHANNEL_STATE_RCV_CFG_RES
+6 L2CAP_CHANNEL_STATE_RECV_SEARCH_RES
+7 L2CAP_CHANNEL_STATE_RECV_ATTRIB_RES
+)                                     
+
+/*  AVDTP---lj*/
+(
+0 L2CAP_AVDTP_SIGNAL_CONNECT
+1 L2CAP_AVDTP_SIGNAL_CONFIG
+2 L2CAP_AVDTP_MEDIA_CONNECT
+3 L2CAP_AVDTP_MEDIA_CONFIG
+4 L2CAP_AVDTP_REPORT_CONNECT
+5 L2CAP_AVDTP_REPORT_CONFIG
+6 L2CAP_AVDTP_RECOVERY_CONNECT
+7 L2CAP_AVDTP_RECOVERY_CONFIG
+)
+/*  AVCTP---lj*/
+(
+0 L2CAP_AVCTP_SIGNAL_CONNECT
+1 L2CAP_AVCTP_SIGNAL_CONFIG
+)
+
+127 L2CAP_SIGNAL_MALLOC_SIZE
+
+
+//mem_l2cap_flow_ctrl_flag
+(
+0 L2CAP_FLOW_CTRL_DISABLE
+1 L2CAP_FLOW_CTRL_ENABLE
+)
+
+(
+0x0002 L2CAP_SIG_EXT_FEATRUE
+0x0003 L2CAP_SIG_FIX_FEATRUE
+)
+
+(
+8 L2CAP_CHANNEL_COUNT
+6 L2CAP_CHANNEL_SIZE
+)

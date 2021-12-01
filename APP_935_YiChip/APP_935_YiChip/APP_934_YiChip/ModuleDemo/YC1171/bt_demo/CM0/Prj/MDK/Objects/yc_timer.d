@@ -1,0 +1,10 @@
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.c
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h
+.\objects\yc_timer.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\yc_timer.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc_timer.o: ..\..\application\btreg.h
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc_timer.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\yc_timer.o: ..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h

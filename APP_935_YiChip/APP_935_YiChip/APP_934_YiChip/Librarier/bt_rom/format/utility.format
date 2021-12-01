@@ -1,0 +1,76 @@
+
+memalloc(
+2 mem_hold_contr
+2 mem_hold_contw
+1 mem_fifo_temp
+/*
+    temp parameter
+*/
+4 mem_max_bitsneed
+
+0 mem_bits_need00
+4 mem_temp
+0 mem_bits_need01
+4 mem_temp1
+0 mem_bits_need02
+4 mem_timeup
+0 mem_bits_need03
+4 mem_rega
+0 mem_bits_need04
+4 mem_regb
+0 mem_bits_need05
+4 mem_regc
+0 mem_bits_need06
+2 mem_contr
+2 mem_contw
+4 mem_bits_need07
+4 mem_bits_need10
+4 mem_bits_need11
+4 mem_bits_need12
+4 mem_bits_need13
+4 mem_bits_need14
+4 mem_bits_need15
+4 mem_bits_need16
+4 mem_bits_need17
+
+1 mem_wakup_from_power_flag
+4 mem_saved_gpio_in
+
+
+0 mem_flash_data_address_t
+0 mem_le_data_len_temp	//1byte
+0 mem_tx_fifo_map_temp
+0 mem_rpn_dlci		//1byte
+0 mem_event_cmd_response_content	//2byte
+0 mem_le_prand		//16byte
+0 mem_AES_CMAC_k	 //16 bytes
+0 mem_regext_index 	//1 bytes
+1 mem_temp_block0
+0 mem_le_data_temp	//15bytes
+15 mem_temp_block1
+0 mem_le_aes_128	//16byte
+0 mem_regext   //64 bytes
+0 mem_AES_CMAC_k1  //16 bytes
+0 mem_sum_temp
+16 mem_temp_block2
+0 mem_AES_CMAC_k2  //16 bytes
+16 mem_temp_block3
+0 mem_AES_CMAC_temp  // 16 bytes
+16 mem_temp_block4
+0 mem_AES_CMAC_M_last // 16 bytes
+16 mem_temp_block5
+0 mem_le_mackey //16 bytes
+16 mem_temp_block6
+)
+
+//util fifo param
+(
+
+5 UTIL_FIFO_LEN
+-1 UTIL_FIFO_OFFSET
+)
+
+(
+0 ef_nvram_offset
+)
+

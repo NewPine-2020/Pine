@@ -1,0 +1,52 @@
+
+memalloc(
+2 mem_msbc_miss
+2 mem_msbc_error
+)
+
+xmemalloc(
+1 mem_sequence_number_rx
+1 mem_sequence_number_tx
+2 mem_msbc_pcm_in_wptr
+2 mem_msbc_pcm_in_rptr
+2 mem_msbc_out_wptr
+2 mem_msbc_out_rptr
+2 mem_msbc_in_wptr
+2 mem_msbc_in_rptr
+2 mem_msbc_pcm_out_saddr
+2 mem_msbc_pcm_out_wptr
+2 mem_msbc_pcm_out_rptr
+2 mem_msbc_packet_len
+2 mem_msbc_pcm_packet_len
+
+1 mem_msbc_enc_dec_bt_lock
+1 mem_msbc_enc_dec_m0_lock
+1 mem_msbc_adc_start_send
+
+)
+
+
+//mem_msbc_sm
+(
+0 	MSBC_SM_NULL
+1	MSBC_SM_ENCODE_START
+2	MSBC_SM_ENCODE_LOAD_CACHE
+3	MSBC_SM_ENCODE_WAIT
+4	MSBC_SM_ENCODE_UPDATE_CACHE
+5	MSBC_SM_DECODE_START
+6	MSBC_SM_DECODE_LOAD_CACHE
+7	MSBC_SM_DECODE_WAIT
+8	MSBC_SM_DECODE_UPDATE_CACHE
+)
+
+(
+0x801 MSBC_H2_SYNCWORD
+
+0x00 MSBC_SEQUENCE_NUMBER_0
+0x30 MSBC_SEQUENCE_NUMBER_1
+0xC0 MSBC_SEQUENCE_NUMBER_2
+0xF0 MSBC_SEQUENCE_NUMBER_3
+)
+
+
+

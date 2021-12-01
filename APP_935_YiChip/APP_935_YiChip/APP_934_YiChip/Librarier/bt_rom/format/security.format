@@ -1,0 +1,101 @@
+
+memalloc(
+/* moved from bt.format for 3dh5 1021bytes packet buffer */
+17 mem_rxbuf
+
+16 mem_random_number
+16 mem_round_key
+16 mem_kinit
+
+16 mem_input_store
+16 mem_x
+15 mem_y
+1 mem_y15
+17 mem_key_store
+1 mem_key_store_end
+2 memp_ar_key
+2 memp_ar_input
+10 mem_ar_hround
+
+
+1 mem_ec_infinite
+2 mem_ec_loopc
+1 mem_aes_cmac_data_length
+
+0 memdat
+/* ecc calculation */
+
+
+24 mem_ax
+24 mem_ay
+24 mem_az
+24 mem_bx
+0 mem_ax_256 //32 bytes
+24 mem_by
+8 mem_bz
+16 mem_ay_256 // 32 bytes
+16 mem_cx
+8 mem_az_256 // 32 bytes
+23 mem_cy
+1 mem_cy5
+0 mem_bx_256 // 32 bytes
+24 mem_cz
+8  mem_k
+16 mem_by_256 // 31 bytes
+16 mem_align
+
+0 mem_bz_256  //32 bytes
+0 mem_tmp1
+24 memahbak
+8 mem_tmp5
+0 mem_cx_256  //32 bytes
+16 memahsave
+16  mem_tmp2
+0 mem_cy_256  // 32 bytes
+0  memahsave_end 
+1  mem_addr_padding 
+7   mem_addr_value         /* 12 bytes     */ 
+0 mem_tmp3
+5 mem_t1
+3  mem_addr_value_end   
+15 mem_addr_iocap_end
+1 mem_cy5_256 // 1 byte
+0 mem_cz_256 // 32 bytes
+0 mem_tmp0
+8 mem_t0
+16 mem_tmp0a
+8  mem_t2
+16 mem_k_256 //32 bytes
+16 mem_t3
+8  mem_tmp1_256 //32 bytes
+24 mem_t7
+
+
+32 mem_tmp5_256
+32  mem_tmp2_256
+0 mem_tmp3_256
+32 mem_t1_256
+0 mem_tmp0_256
+32 mem_t0_256
+32 mem_t2_256
+32 mem_t3_256
+32 mem_t7_256
+
+24 mem_p		
+24 mem_a
+24 mem_b
+24 mem_gx
+24 mem_gy
+32 memh0
+
+32 mem_p_256		
+32 mem_a_256
+32 mem_gx_256
+32 mem_gy_256
+//4 mem_le_keyid
+16 mem_le_slat
+
+
+)
+
+

@@ -1,0 +1,92 @@
+#!/bin/bash
+
+gensched () {
+if [ -f output/sched.rom ]; then rm output/sched.rom;fi
+while [ 1 ];do
+	if [ -n "$1" ];then cat sched/$1.dat >> output/sched.rom; else return; fi
+	shift
+done
+}
+
+
+
+cd ${0%/*}
+progss="bt a2dp app avctp c51 hci_main audio hid hsphfp ipc l2cap le_att le le_smp lmp peripherals rfcomm scheduler sdp security simple_pairing ui upper_sm usb utility tws_m tws_s headset debug ota"
+for f in $progss; do progs="$progs program/$f.prog"; done
+cat $progs  > output/bt_program23.meta
+
+case $1 in
+ot)
+	enckey="-n"
+	echo -e '4011:02\n4fff:ff\nmem_rf_init_ptr:ff 4f\n' > output/sched.rom
+	sed '1 a define OTP' -i output/bt_program23.meta;;
+s)
+	sed '1 a define SIM' -i output/bt_program23.meta
+#	gensched usb sim ;;
+	gensched sim ;;
+p)
+#	echo 'mem_patch00:0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000' > output/sched.rom
+#	echo 'mem_lap:00 00 00 00 00 00' >> output/sched.rom
+
+	gensched patch;;
+f)
+	gensched patch rf user
+	sed '1 a define FPGA' -i output/bt_program23.meta;;
+x)
+	make -C ../fw
+	gensched xip;;
+d)
+	gensched patch usb rf;;
+t)
+	gensched test;;
+esac
+
+
+fmtss="bt a2dp app avctp cvsd hci headset Hid hsphfp ipc l2cap le lmp memblocks patch prcp regs rfcomm sdp security simple_pairing ui upper_sm usb utility var xip tws remote mSBC debug tishi ota audio_dac_adc command"
+for f in $fmtss; do fmts="$fmts format/$f.format"; done
+cat $fmts  > output/bt_format.meta
+perl $UTIL/mergepatch.pl 
+perl $UTIL/memalloc.pl
+cd output
+osiuasm bt_program23 -O-W
+sed 's/\(.*\)\r/\1/' -i bt_program23.meta 
+
+
+defs=( FPGA SIM ROMCODE BLE REVA REVB )
+for i in $(seq 0 $((${#defs[@]} - 1))) ; do
+	grep  "^define ${defs[$i]}$" bt_program23.meta -q
+	tsts[$i]=$?
+done
+
+if [ -f flash.dat ] ; then rm flash.dat ; fi
+if [ -f eeprom.dat ] ; then rm eeprom.dat ; fi
+geneep -f -n
+
+if [[ $1 =~ [[:digit:]] ]] ; then
+	cnt=$1
+fi
+
+if [ ${tsts[1]} -eq 0 ] ; then
+        cp romcode.rom ../../sim
+	if [ -f eeprom.dat ] ; then cp eeprom.dat ../../sim/;  fi
+	if [ -f flash.dat ] ; then cp flash.dat ../../sim/ ; fi
+else
+	if [ ${tsts[0]} -eq 0 ] ; then
+		perl $UTIL/rom2mif.pl < romcode.rom > ../../fpga/romcode.mif
+		if [ -f otp.rom ] ; then perl $UTIL/rom2mif.pl otp.rom; mv otp.mif ../../fpga/ ; fi
+	fi
+	if [ ! -s ramcode.rom ] ; then exit; fi
+	if [[ $2 == "o" ]] ; then exit; fi
+	if [[ $2 == "f" ]] ; then e ku;e pu;e hu romcode.rom 2000;fi
+	if [[ $1 == "f" ]] ; then e fp flash.dat;e ku;exit; fi
+	if [[ $1 == "p" ]] ; then e ku;sleep 0.1;e hu;exit; fi
+	e ku; e hu ramcode.rom 0
+	if [[ $1 =~ op ]];then exit;fi
+	if [ -f ../sched/$1.dat ];then 
+		e su ../sched/$1.dat
+	else
+		e su sched.rom
+	fi
+fi
+
+cd ..

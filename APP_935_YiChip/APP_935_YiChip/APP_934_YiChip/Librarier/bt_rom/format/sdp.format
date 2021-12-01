@@ -1,0 +1,71 @@
+
+memalloc(
+0 mem_sdp_mem_start
+8 mem_sdp_uuid_search_ptr
+2 mem_sdp_continue_byte
+1 mem_sdp_pduid
+2 mem_sdp_transactionid
+2 mem_sdp_transactionid_local
+2 mem_sdp_attribute_maxbyte
+2 mem_sdp_record_maxcnt
+4 mem_sdp_record_handle
+1 mem_sdp_LACAP_found
+1 mem_sdp_RFCOMM_found
+0 mem_sdp_handle_list
+32 mem_sdp_attrib_list
+2 mem_sdp_error_code
+2 mem_sdp_all_length
+1 mem_handle_humber
+2 mem_search_uuid
+0 mem_sdp_mem_end
+)
+xmemalloc(
+2 mem_ui_uuid_table
+22 mem_all_uuid_16bits
+34 mem_all_uuid_128bits
+2 mem_sdp_l2capch_ptr
+
+)
+(
+0 AGORHS_SERVICE
+1 GENAUDIO_SERVICE
+2 HANDSFREE_SERVICE
+)
+(
+0 ATTRIBUTEID_0000
+1 ATTRIBUTEID_0001
+2 ATTRIBUTEID_0004
+3 ATTRIBUTEID_0009
+4 ATTRIBUTEID_0100
+5 ATTRIBUTEID_0302
+6 ATTRIBUTEID_0006
+7 ATTRIBUTEID_0311
+)
+
+(
+0x01 SDP_ERROR_RES
+0x02 SDP_SEARCH_REQ
+0x03 SDP_SEARCH_RES
+0x04 SDP_ATTRIBUTE_REQ
+0x05 SDP_ATTRIBUTE_RES
+0x06 SDP_SEARCHATTRIB_REQ
+0x07 SDP_SEARCHATTRIB_RES
+)
+0x2600 sdp_max_amount
+250 SDP_MALLOC_SIZE
+0x6e sdp_tid_spp //any number
+
+(
+0x1f11 SDP_UUID_HS_AUDIO_GATEWAY
+)
+
+(
+0X09 SDP_ATTRIBUTE_ID
+0x0a SDP_ATTRIBUTE_RANGE
+)
+
+(//mem_sdp_handle_list
+7 SDP_MAX_HANDLE_NUMBER
+)
+
+ 

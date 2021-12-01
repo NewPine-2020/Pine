@@ -1,0 +1,208 @@
+memalloc(
+	1 mem_avdtp_signal_cmd
+	1 mem_transaction_label
+	
+	2 mem_temp_sbc_decode_buffer_size
+	
+	2 mem_temp_dac_soft_dma_work_wptr
+	
+	2 mem_temp_sbc_soft_dma_start_addr
+	2 mem_temp_dac_soft_dma_start_addr
+	2 mem_temp_soft_dma_work_length
+	1 mem_temp_soft_dma_work_table_index_value
+)
+
+xmemalloc(
+	0 mem_avdtp_xmem_start
+	2 mem_avdtpsignal_l2capch_ptr
+	2 mem_avdtpmedia_l2capch_ptr
+	1 mem_audio_allow
+	1 mem_audio_state
+	1 mem_audio_src_endpoint
+	1 mem_audio_src_endpoint_state
+	1 mem_a2dp_reconnct_delay_timer
+	0 mem_avdtp_xmem_end
+	
+	1 mem_get_media_type
+	1 mem_get_codec_type
+	1 mem_get_samplefreq_channelmode
+	1 mem_get_blocklen_subb_allocation
+	1 mem_get_min_bitpool
+	1 mem_get_max_bitpool
+
+	1 mem_get_r_media_type
+	1 mem_get_r_codec_type
+	1 mem_get_r_samplefreq_channelmode
+	1 mem_get_r_blocklen_subb_allocation
+	1 mem_get_r_min_bitpool
+	1 mem_get_r_max_bitpool
+
+	1 mem_conf_media_type
+	1 mem_conf_codec_type
+	1 mem_conf_samplefreq_channelmode
+	1 mem_conf_blocklen_subb_allocation
+	1 mem_conf_min_bitpool
+	1 mem_conf_max_bitpool
+
+	1 mem_avc_local_transaction_label
+
+	2 mem_avdtp_signal
+	2 mem_avdtp_media
+	1 mem_a2dp_state
+	
+	2 mem_a2dp_seq_num
+	
+	1 mem_audio_output_setting
+	1 mem_param_sco_use_cm0
+
+	1 mem_media_in_fast_mode
+	
+	1 mem_a2dp_buffer_judge_add
+	1 mem_param_a2dp_buffer_judge_add_limit
+	1 mem_a2dp_buffer_judge_drop
+	1 mem_param_a2dp_buffer_judge_drop_limit
+	
+	1 mem_drop_or_add_process_state
+	2 mem_drop_or_add_min_receive_packet_size
+
+	1 mem_first_buffer_cache
+	
+	1 mem_farrow_filter_delta_uk_sign_bit
+	4 mem_farrow_filter_delta_uk
+	
+	1 mem_a2dp_adjust_delta_uk_sign_bit
+	4 mem_a2dp_adjust_delta_uk
+	4 mem_a2dp_adjust_total_work_sample
+	
+	1 mem_a2dp_adjust_delta_bytes_sign_bit
+	2 mem_a2dp_adjust_delta_bytes
+	
+	1 mem_slave_force_mute_a2dp_voice
+	1 mem_slave_force_mute_a2dp_voice_cnt
+	
+	1 mem_tws_wait_sync_ok
+	
+	2 mem_last_a2dp_seq_num
+
+	
+	1 mem_param_a2dp_dac_sbc_same_buffer_flag
+	
+	1 mem_param_a2dp_dac_buffer_addr_mram_flag
+	2 mem_param_a2dp_dac_buffer_start_addr
+	2 mem_param_a2dp_dac_buffer_size
+	
+	1 mem_param_a2dp_sbc_buffer_addr_mram_flag
+	2 mem_param_a2dp_sbc_buffer_start_addr
+	2 mem_param_a2dp_sbc_buffer_size
+)
+
+//mem_audio_state
+(
+0x00 AUDIO_STATE_IDLE
+0x01 AUDIO_STATE_WAIT_SBC
+0x02 AUDIO_STATE_WAIT_SOFT_DMA
+0x03 AUDIO_STATE_WAIT_UPSTACK_PROCESS
+)
+
+//mem_drop_or_add_process_state
+(
+0x00 TWS_DROP_OR_ADD_PROCESS_STATE_NONE
+0x17 TWS_DROP_OR_ADD_PROCESS_STATE_INPROCESS
+0x53 TWS_DROP_OR_ADD_PROCESS_STATE_WAIT_ADD
+0x54 TWS_DROP_OR_ADD_PROCESS_STATE_WAIT_DROP
+)
+
+//mem_first_buffer_cache
+(
+0x53 FIRST_BUFFER_CACHE_ENABLE
+)
+
+//mem_audio_output_setting
+(
+0x00 AUDIO_OUTPUT_FULLMODE
+0x01 AUDIO_OUTPUT_TWS_SINGLE_EAR_LEFT
+0x02 AUDIO_OUTPUT_TWS_SINGLE_EAR_RIGHT
+)
+
+(
+0x00 AVDTP_PACKET_TYPE_SINGLE
+0x01 AVDTP_PACKET_TYPE_START
+0x02 AVDTP_PACKET_TYPE_CONTINUE
+0x03 AVDTP_PACKET_TYPE_END
+)
+
+(
+0x00 AVDTP_MESSAGE_TYPE_CMD
+0x01 AVDTP_MESSGAE_TYPE_GENERAL_REJECT
+0x02 AVDTP_MESSGAE_TYPE_RSP_ACCEPT
+0x03 AVDTP_MESSGAE_TYPE_RSP_REJECT
+)
+
+(
+0x01 AVDTP_IDENTIFIER_DISCOVER
+0x02 AVDTP_IDENTIFIER_GET_CAPABILITIES
+0x03 AVDTP_IDENTIFIER_SET_CONFIGURATION
+0x04 AVDTP_IDENTIFIER_GET_CONFIGURATION
+0x05 AVDTP_IDENTIFIER_RECONFIGURE
+0x06 AVDTP_IDENTIFIER_OPEN
+0x07 AVDTP_IDENTIFIER_START
+0x08 AVDTP_IDENTIFIER_CLOSE
+0x09 AVDTP_IDENTIFIER_SUSPEND
+0x0a AVDTP_IDENTIFIER_ABORT
+0x0b AVDTP_IDENTIFIER_SECURITY_CONTROL
+0x0c AVDTP_IDENTIFIER_GET_ALL_CAPABILITIES
+0x0d AVDTP_IDENTIFIER_DELAYREPORT
+)
+
+(
+0x01 AVDTP_SEP1
+0x08 AVDTP_SEP1_CONFIG
+)
+
+(
+0x01 AVDTP_CATEGORY_MEDIA_TRANS
+0x02 AVDTP_CATEGORY_REPORTING
+0x03 AVDTP_CATEGORY_RECOVERY
+0x04 AVDTP_CATEGORY_CONTECT_PROTECT
+0x05 AVDTP_CATEGORY_HEADER_COMPRESSION
+0x06 AVDTP_CATEGORY_MULTIPLEXING
+0x07 AVDTP_CATEGORY_MEDIA_CODEC
+0x08 AVDTP_CATEGORY_DELAY_REPORT
+)
+
+(
+0x0002 AVD_CPTYPE_SCMS_T
+)
+
+(
+0 AVD_AUDIO_FORBID
+1 AVD_AUDIO_ALLOW
+)
+
+(
+0 AVD_SRC_ENDPOINT_GETCAP
+1 AVD_SRC_ENDPOINT_SETCONF
+2 AVD_SRC_ENDPOINT_OPEN
+)
+
+(
+4	AVDTP_48K_BIT
+5	AVDTP_44K_BIT
+)
+
+(
+0x01 A2DP_STATE_OPEN
+0x02 A2DP_STATE_START
+0x03 A2DP_STATE_CLOSE
+0x04 A2DP_STATE_SUSPEND
+0x05 A2DP_STATE_PALY_PRESS
+0x06 A2DP_STATE_PALY_RELEASE 
+0x07 A2DP_STATE_PAUSE_PRESS
+0x08 A2DP_STATE_PAUSE_RELEASE
+)
+
+(
+0x20 AVDTP_SAMPLE_FREQ_44K1
+0x10 AVDTP_SAMPLE_FREQ_48K
+)
+

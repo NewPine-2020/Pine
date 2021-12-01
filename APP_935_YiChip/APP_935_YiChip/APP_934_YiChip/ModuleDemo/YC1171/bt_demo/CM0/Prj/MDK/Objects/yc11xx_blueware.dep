@@ -1,0 +1,442 @@
+Dependencies for Project 'yc11xx', Target 'blueware': (DO NOT MODIFY !)
+F (..\..\application\main.c)(0x61A43DA0)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x61A1EF89)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_main.h)(0x61A1FEC7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.h)(0x618CC16C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.h)(0x61A449A7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_usr.h)(0x60D5827E)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+F (..\..\..\..\..\..\Librarier\startup\startup.s)(0x619B17E2)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1--pd "__UVISION_VERSION SETA 523" --pd "ARMCM0 SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (..\..\..\..\..\..\Librarier\device\yc11xx.c)(0x619B2EF6)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx.o --omf_browse .\objects\yc11xx.crf --depend .\objects\yc11xx.d)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+F (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.c)(0x6177BAD2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_uart.o --omf_browse .\objects\yc11xx_uart.crf --depend .\objects\yc11xx_uart.d)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+F (..\..\..\..\..\..\Librarier\drivers\bt\yc11xx_bt.c)(0x61924823)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_bt.o --omf_browse .\objects\yc11xx_bt.crf --depend .\objects\yc11xx_bt.d)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x61A1EF89)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+F (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.c)(0x61A1EFB1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc_debug.o --omf_browse .\objects\yc_debug.crf --depend .\objects\yc_debug.d)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x61A1EF89)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc_drv_common.o --omf_browse .\objects\yc_drv_common.crf --depend .\objects\yc_drv_common.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.c)(0x6067122B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_gpio.o --omf_browse .\objects\yc11xx_gpio.crf --depend .\objects\yc11xx_gpio.d)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\queue\yc_queue.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc_queue.o --omf_browse .\objects\yc_queue.crf --depend .\objects\yc_queue.d)
+I (..\..\..\..\..\..\Librarier\drivers\queue\yc_queue.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+F (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_systick.o --omf_browse .\objects\yc11xx_systick.crf --depend .\objects\yc11xx_systick.d)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_timer.o --omf_browse .\objects\yc11xx_timer.crf --depend .\objects\yc11xx_timer.d)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+F (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.c)(0x619B2D05)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc_timer.o --omf_browse .\objects\yc_timer.crf --depend .\objects\yc_timer.d)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\yc11xx_wdt.o --omf_browse .\objects\yc11xx_wdt.crf --depend .\objects\yc11xx_wdt.d)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+F (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.c)(0x617A405A)()
+F (..\..\..\..\..\..\Librarier\device\nvic.c)(0x606687E1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (..\..\..\..\..\..\Librarier\device\nvic.h)(0x606687D8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_main.c)(0x61A1F78D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usb_main.o --omf_browse .\objects\usb_main.crf --depend .\objects\usb_main.d)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_main.h)(0x61A1FEC7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.h)(0x618CC16C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.h)(0x61A449A7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_usr.h)(0x60D5827E)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.c)(0x619792FF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_desc.o --omf_browse .\objects\usbd_desc.crf --depend .\objects\usbd_desc.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_usr.c)(0x61075500)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_usr.o --omf_browse .\objects\usbd_usr.crf --depend .\objects\usbd_usr.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_usr.h)(0x60D5827E)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.c)(0x619B3CB7)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_bsp.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_usr.h)(0x60D5827E)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\Usb_dcd.c)(0x6198A7A9)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usb_dcd.o --omf_browse .\objects\usb_dcd.crf --depend .\objects\usb_dcd.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_bsp.h)(0x60D5827E)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\Usb_dcd_init.c)(0x61A43D95)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usb_dcd_init.o --omf_browse .\objects\usb_dcd_init.crf --depend .\objects\usb_dcd_init.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_usr.h)(0x60D5827E)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_main.h)(0x61A1FEC7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.h)(0x618CC16C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.h)(0x61A449A7)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x61A1EF89)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.c)(0x6198BB40)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_core.o --omf_browse .\objects\usbd_core.crf --depend .\objects\usbd_core.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_bsp.h)(0x60D5827E)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.c)(0x60D58275)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_ioreq.o --omf_browse .\objects\usbd_ioreq.crf --depend .\objects\usbd_ioreq.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.c)(0x619B386E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_req.o --omf_browse .\objects\usbd_req.crf --depend .\objects\usbd_req.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.c)(0x6198C3E5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_cdc_core.o --omf_browse .\objects\usbd_cdc_core.crf --depend .\objects\usbd_cdc_core.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.h)(0x618CC16C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.h)(0x61A449A7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.c)(0x61A46C50)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update -I ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID -I ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC --c99 --gnu -DARM_MATH_CM0 -DFIXED_POINT-I.\RTE\_blueware-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM0\Include-ID:\Keil\ARM\CMSIS\Include-ID:\Keil\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM0-o .\objects\usbd_hid_keyboard_core.o --omf_browse .\objects\usbd_hid_keyboard_core.crf --depend .\objects\usbd_hid_keyboard_core.d)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.h)(0x61079A16)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h)(0x618CD975)
+I (..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h)(0x60D6E1D4)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h)(0x60DADE94)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x61513963)
+I (..\..\application\btreg.h)(0x617BA195)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h)(0x60D58280)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.h)(0x61A449A7)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h)(0x60D5827E)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.h)(0x60D58275)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h)(0x60D58283)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h)(0x60D58275)
+I (..\..\application\private.h)(0x619B3C66)
+I (D:\Keil\ARM\ARMCC\include\stdbool.h)(0x57F606B8)
+I (D:\Keil\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (D:\Keil\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (D:\Keil\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd_int.h)(0x6107BFC1)

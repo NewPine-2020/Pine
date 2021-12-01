@@ -1,0 +1,17 @@
+
+xmemalloc(
+2 mem_adc_start_addr
+2 mem_adc_buf_size
+2 mem_dac_start_addr
+2 mem_dac_buf_size
+1 mem_dac_clk
+
+1 mem_dac_mram_flag
+1 mem_adc_mram_flag
+1 mem_mono_flag
+1 mem_l_din_sel
+1 mem_r_din_sel
+1 mem_eq_flag
+
+)
+

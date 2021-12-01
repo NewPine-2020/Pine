@@ -1,0 +1,192 @@
+
+memalloc(
+
+//4 mem_hci_ssp_mode
+0 mem_sp_state_start
+1 mem_sp_state
+1 mem_master_sp_state
+1 mem_sp_flag
+1 mem_master_sp_flag
+1 mem_sp_calc
+1 mem_sp_dh_ready
+1 mem_sp_localsm
+1 mem_pairing_auth
+
+0 mem_sp_flag_start
+1 mem_sp_local_key_send_count
+1 mem_sp_remote_key_recv_count
+1 mem_sp_remote_key_invalid
+1 mem_sp_dhkey_invalid
+
+
+4 mem_gkey
+
+
+8 mem_le_pubkey_remote_x_256
+0 mem_sp_pubkey_remote
+24 mem_sp_pubkey_remote_x
+0 mem_sp_pubkey_remote_x_end
+0 mem_sp_pubkey_remote_y
+32 mem_le_pubkey_remote_y_256
+
+8 mem_le_dhkey_256
+24 mem_sp_dhkey
+0 mem_sp_dhkey_end
+
+16 mem_sp_random_local
+0 mem_sp_random_local_end
+16 mem_sp_random_remote
+0 mem_sp_random_remote_end
+0 memresult
+0 mem_sp_calc_result
+4 memh
+4 memg
+4 memf
+4 meme
+0 mem_sp_calc_result_high
+4 memd
+4 memc
+4 memb
+4 mema
+16 mem_sp_check_result
+16 mem_sp_confirm_remote
+16 mem_sp_prarm_stack
+)
+
+xmemalloc(
+1 mem_sp_local_key_invalid
+
+
+32 mem_le_private_key_256
+32 mem_le_pubkey_local_x_256
+32 mem_le_pubkey_local_y_256
+
+24 mem_sp_private_key
+0 mem_sp_pubkey_local
+24 mem_sp_pubkey_local_x
+0 mem_sp_pubkey_local_x_end
+24 mem_sp_pubkey_local_y
+
+1 mem_ssp_enable
+3 mem_sp_iocap_local
+1 mem_ssp_mode_flag
+1 mem_spp_reject_justwork_flag
+3 mem_sp_iocap_remote
+
+1 mem_flag_mode_ssp_pin
+1 mem_authentication_passkey_times
+1 mem_passkey_1bit
+1 mem_flag_pairing_state
+
+)
+/* simple pairing status flag */
+(
+  0x00   SP_FLAG_STANDBY
+  0x01   SP_FLAG_COMMIT
+  0x02   LE_SP_FLAG_COMMIT_256
+
+)
+
+/* simple pairing calc flag */
+(
+  0x00   SP_CALC_STANDBY
+  0x01   SP_CALC_PUBKEY
+  0x02   SP_CALC_DHKEY
+  0x03   SP_CALC_PUBKEY_256
+  0x04   SP_CALC_DHKEY_256
+)
+
+/* simple pairing state */
+(
+  0x00   SP_STAT_NULL
+  0x01   SP_STAT_KEY_RECV
+  0x02   SP_STAT_KEY_GENERATE
+  0x03   SP_STAT_KEY_SEND
+  0x04   SP_STAT_COMMIT_CALC
+  0x05   SP_STAT_COMMIT_SEND
+  0x06   SP_STAT_RANDOM_RECV
+  0x07   SP_STAT_RANDOM_SEND
+  0x08   SP_STAT_CONFIRM_RECV
+  0x09   SP_STAT_CONFIRM_CHECK
+  0x0A   SP_STAT_CONFIRM_CALC
+  0x0B   SP_STAT_CONFIRM_SEND
+  0x0C   SP_STAT_LINK_KEY_CALC
+  0x0F   SP_STAT_DONE
+  0x10   SP_STAT_FEATURE_EXT_SEND
+  0x11   SP_STAT_GKEY_CALC
+  /*simple pairing master only*/
+  0x12   SP_MASTER_STAT_START_SKIP
+  0x13   SP_MASTER_STAT_START_DONE
+  0x14   SP_STAT_COMMITMENT_COMPARE
+  0x15   SP_STATE_END
+)
+
+
+/* simple paring invalid flag */
+(
+  0x00   SP_KEY_INVALID
+  0x01   SP_KEY_VALID
+  0x03   SP_KEY_VALID_256
+
+)
+
+/* encapsulated defination for P-192 key */
+(
+  0x01  ENCAPSULATED_MAJOR_TYPE_P192
+  0x01  ENCAPSULATED_MINOR_TYPE_P192
+  0x30  ENCAPSULATED_LEN_P192
+)
+
+/* bluetooth 2.1 support flag */
+(
+  0x00  SIMPLE_PAIRING_ENABLE
+  0x01  ENCRYPTION_PAUSE_ENABLE
+  0x02  EXTENDED_INQUIRY_RESPOSE_ENABLE
+  0x03  SNIFF_SUBRATING_ENABLE
+)
+
+/*mem_sp_localsm*/
+(
+  0x00 DEFAULT_STATEMACHINE
+  0x01 LOCAL_STATEMACHINE
+)
+
+(
+ 0x00 DEFALT_PAIRING_AUTH
+ 0x01 PAIRING_AUTH
+)
+
+(
+1 SSP_MODE_SSP_PIN_FLAG
+2 SSP_MODE_PASSKEY_ENTRY_FLAG
+3 SSP_MODE_JUST_WORK_FLAG
+)
+
+(//ssp mode
+0x040003 SSP_MODE_JUST_WORK_IO_CAP_DATA
+0X040001 SSP_MODE_SSP_PIN_IO_CAP_DATA
+0X040002 SSP_MODE_PASSKEY_IO_CAP_DATA
+)
+
+(
+0x00 DISPLAY_ONLY
+0x01 DISPLAY_YESNO
+0x02 KEYBOARD_ONLY
+0x03 NO_INPUT_NO_OUTPUT
+)
+
+(
+7 FLAG_MODE_SSP_PIN_REVICEVE_COMPARISON_BIT
+6 FLAG_MODE_SSP_PIN_RECIEVE_DHKEY_BIT
+0 FLAG_MODE_SSP_PIN_COMPARISON_RESULT_BIT
+)
+(
+1 FLAG_PAIRING_STATE_PAIRING
+0 FLAG_PAIRING_STATE_NOT_PAIRING
+)
+
+
+(
+1 REJECT_JUSTWORK
+)
+ 

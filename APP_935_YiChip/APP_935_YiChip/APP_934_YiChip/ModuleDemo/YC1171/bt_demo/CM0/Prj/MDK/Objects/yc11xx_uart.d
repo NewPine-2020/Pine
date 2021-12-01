@@ -1,0 +1,12 @@
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.c
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h
+.\objects\yc11xx_uart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\yc11xx_uart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\yc11xx_uart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h
+.\objects\yc11xx_uart.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc11xx_uart.o: ..\..\application\btreg.h
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc11xx_uart.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc11xx_uart.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h

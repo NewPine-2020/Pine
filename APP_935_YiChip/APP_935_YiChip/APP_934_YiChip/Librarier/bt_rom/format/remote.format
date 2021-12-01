@@ -1,0 +1,24 @@
+xmemalloc(
+1 mem_save_state
+48 mem_white_list
+2 mem_remote_rx_max_octets
+2 mem_remote_rx_max_time
+2 mem_remote_tx_max_octets
+2 mem_remote_tx_max_time
+2 mem_local_rx_max_octets
+2 mem_local_rx_max_time
+2 mem_local_tx_max_octets
+2 mem_local_tx_max_time
+144 mem_remote_reserve
+)
+
+
+
+
+
+
+
+
+
+
+

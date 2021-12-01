@@ -1,0 +1,45 @@
+
+//prcp opcode
+(
+
+0x00 COMMON_RES
+0x01 READ_REGISTERS_REQ
+0x02 READ_REGISTERS_RES
+0x03 WRITE_REGISTERS_REQ
+0x04 I2C_CONFIG_REQ
+0x05 I2C_READ_REQ
+0x06 I2C_READ_RES
+0x07 I2C_WRITE_REQ
+0x08 SPI_CONFIG_REQ
+0x09 SPI_READ_REQ
+0x0a SPI_READ_RES
+0x0b SPI_WRITE_REQ
+0x0c PWM_CONFIG_REQ
+0x0d PWM_WRITE_REQ
+0x0e GPIO_CONFIG_REQ
+0x0f GPIO_READ_REQ
+0x10 GPIO_READ_RES
+0x11 GPIO_WRITE_REQ
+0x12 OTA_WRITE_REQ
+0X13 OTA_END_CMD
+
+)
+(
+1 PRCP_LE
+2 PRCP_SSP
+0x14 PRCP_TX_LE 
+0x17 PRCP_RX_LE
+20 PRCP_TX_DATA_LEN
+)
+memalloc(
+20 mem_prcp_data
+1 mem_prcp
+1 mem_prcp_tx_len
+//ota
+2 rx_buf_data_ptr
+)
+xmemalloc(
+//ota
+2 mem_eeprom_ota_base_addr  /*the start- writing addr in eeprom  */
+)
+

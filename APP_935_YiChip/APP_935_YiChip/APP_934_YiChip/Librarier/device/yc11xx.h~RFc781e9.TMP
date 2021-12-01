@@ -1,0 +1,818 @@
+#ifndef _YC11XX_H_
+#define _YC11XX_H_
+#include "btreg.h" 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#ifndef  OS_ENTER_CRITICAL
+#define OS_ENTER_CRITICAL __disable_irq
+#define OS_EXIT_CRITICAL __enable_irq
+#endif
+
+/* -------------------------  Interrupt Number Definition  ------------------------ */
+
+
+/** @addtogroup Configuration_of_CMSIS
+  * @{
+  */
+
+
+/* ================================================================================ */
+/* ================      Processor and Core Peripheral Section     ================ */
+/* ================================================================================ */
+
+
+/** @} */ /* End of group Configuration_of_CMSIS */
+typedef enum 
+{
+/* -------------------  Cortex-M0 Processor Exceptions Numbers  -------------------                                                                 */
+			Reset_IRQn                    = -15,              /*!<   1  Reset Vector, invoked on Power up and warm reset                  */
+			NonMaskableInt_IRQn           = -14,              /*!<   2  Non maskable Interrupt, cannot be stopped or preempted         */
+			HardFault_IRQn                = -13,              /*!<   3  Hard Fault, all classes of Fault                                                 */
+			SVCall_IRQn                   =  -5,              /*!<  11  System Service Call via SVC instruction                                  */
+			DebugMonitor_IRQn             =  -4,              /*!<  12  Debug Monitor    	*/
+			PendSV_IRQn                   =  -2,              /*!<  14  Pendable request for system service                                       */
+			SysTick_IRQn                  =  -1,              /*!<  15  System Tick Timer                                                                */
+/* ---------------------  xx Specific Interrupt Numbers  --------------------                                                                     */
+			usb_handler_IRQn              =   0,
+			iicd_handler_IRQn             =   1,
+			qspi_handler_IRQn             =   2,
+			spid_handler_IRQn             =   3,
+			uart_handler_IRQn             =   4,
+			uartb_handler_IRQn            =   5,
+			adcd_handler_IRQn             =   6,
+			i2s_handler_IRQn              =   7,
+			bt_handler_IRQn               =   8,
+			gpio0_handler_IRQn            =   9,
+			otp_handler_IRQn              =   10,
+			sbc0_handler_IRQn             =   11,
+			sbc1_handler_IRQn             =   12,
+			fft_handler_IRQn              =   13,
+			dma_handler_IRQn              =   14,
+			sdio_handler_IRQn             =   15,
+			timer0_handler_IRQn           =   16,
+			timer1_handler_IRQn           =   17,
+			timer2_handler_IRQn           =   18,
+			timer3_handler_IRQn           =   19,
+			timer4_handler_IRQn           =   20,
+			timer5_handler_IRQn           =   21,
+			timer6_handler_IRQn           =   22,
+			timer7_handler_IRQn           =   23,
+
+			wdt2_handler_IRQn             =   24,
+			wdt_handler_IRQn             =   25,
+} IRQn_Type;
+
+
+
+//******************************************************************************************
+//start define reg address
+//******************************************************************************************
+
+#define CORE_CHIPID                          0x8000
+#define CORE_REVID                           0x8001
+#define CORE_KICK                            0x8003
+#define CORE_WDT							 0x8004		
+#define CORE_LPM_WR                          0x8005
+#define CORE_MISC_CTRL                       0x8006
+#define CORE_OTP_RDATA                       0x8007
+#define CORE_DMA_START                       0x800A
+#define CORE_SBC_CLR                         0x800B
+#define CORE_WDT2							 0x800C
+#define CORE_SD_REG_W						 0x800D
+#define CORE_RESET                           0x8010
+#define CORE_ENCRYPT                         0x8011
+#define CORE_SYSCTRL						 0x8015
+#define CORE_MSBC_CTRL0						 0x8012
+#define CORE_MSBC_CTRL1                      0x8013
+#define CORE_MSBC_CTRL2                      0x8014
+#define CORE_QSPI_CTRL1	                     0x8015
+#define CORE_LPM_WR2	                     0x8019
+#define CORE_UCODE_HI                        0x8022
+#define CORE_UCODE_CTRL                      0x8023
+#define CORE_UCODE_LOW                       0x8024
+#define CORE_UCODE_DATA                      0x8025
+                                        
+#define CORE_SCS_WDATA                       0x8026
+#define CORE_SCS_ADDR                        0x802A
+#define CORE_FLASH_OFFSET                    0x802C
+#define CORE_FLASH_READ_CMD                  0x802F
+#define CORE_I2S_CTRL                        0x8030
+#define CORE_I2S_CLKDIV                      0x8031
+#define CORE_I2S_RX_SADDR                    0x8032
+#define CORE_I2S_TX_SADDR                    0x8034
+#define CORE_I2S_LEN                         0x8036
+#define CORE_ADCD_DCOFF                      0x8038
+#define CORE_ADCD_DELAY                      0x803A
+#define CORE_ADCD_CTRL                       0x803B
+#define CORE_ADCD_SADDR                      0x803C
+#define CORE_ADCD_EADDR                      0x803E
+#define CORE_RTHALFSLOT                      0x8040
+#define CORE_CLKSEL                          0x8042
+#define CORE_CONFIG                          0x8043
+#define CORE_UART_CLKSEL                     0x8043
+#define CORE_EFUSE_ADDR                        0x8044
+#define CORE_EFUSE_CTRL                         0x8046
+#define CORE_EFUSE_RXLEN                        0x8047
+#define CORE_LEFT_DOWN_DEST                     0x8048
+#define CORE_RIGHT_DOWN_DEST                      0x804A
+#define CORE_LPM_REG                         0x804C
+#define CORE_LPM_ISOGATE                     0x804F
+#define CORE_CLKOFF                          0x8050
+#define CORE_UART_BAUD                       0x8052
+#define CORE_UART_RX_SADDR                   0x8054
+#define CORE_UART_RX_EADDR                   0x8056
+#define CORE_UART_RX_RPTR                    0x8058
+#define CORE_UART_TX_SADDR                   0x805A
+#define CORE_UART_TX_EADDR                   0x805C
+#define CORE_UART_TX_WPTR                    0x805E
+#define CORE_UART_CTRL                       0x8060
+#define CORE_GPIO_KEY0                       0x8061
+#define CORE_GPIO_KEY1                       0x8062
+
+#define CORE_SBC_CTRL 						0x8063
+#define CORE_SBC_CTRL2 						0x8064
+
+  
+#define CORE_TONE_CTRL                     0X8065
+#define CORE_TISHI_SADDR                           0X8066
+#define CORE_TISHI_LEN                           0X8068
+#define CORE_TISHI_WPTR                           0X806A
+#define CORE_TISHI_CTRL                           0X806C
+#define CORE_LEFT_UP_DEST                           0X806D
+#define CORE_RIGHT_UP_DEST                           0X806E
+#define CORE_LEFT_STEP                           0X806F
+#define CORE_RIGHT_STEP                           0X8070
+
+                                          
+#define CORE_UARTB_CTRL                      0x8071
+#define CORE_UARTB_BAUD                      0x8072
+#define CORE_UARTB_RX_SADDR                  0x8074
+#define CORE_UARTB_RX_EADDR                  0x8076
+#define CORE_UARTB_RX_RPTR                   0x8078
+#define CORE_UARTB_TX_SADDR                  0x807A
+#define CORE_UARTB_TX_EADDR                  0x807C
+#define CORE_UARTB_TX_WPTR                   0x807E
+#define CORE_GPIO_CONF                       0x8080
+#define CORE_QSPI_CTRL                       0x80A0
+#define CORE_QSPI_DELAY                      0x80A1
+#define CORE_QSPI_TXLEN                      0x80A2
+#define CORE_QSPI_TXADDR			         0x80A4
+#define CORE_QSPI_RXADDR                     0x80A6
+#define CORE_QSPI_RXLEN			      		 0x80A8
+#define CORE_IICD_CTRL			      		 0x80AA
+#define CORE_IICD_SCL_LOW                    0x80AB
+#define CORE_IICD_SCL_HIGH                   0x80AC
+#define CORE_IICD_START_SETUP                0x80AD
+#define CORE_IICD_START_HOLD                 0x80AE
+#define CORE_IICD_STOP_SETUP                 0x80AF
+#define CORE_IICD_DATA_SETUP                 0x80B0
+#define CORE_IICD_DATA_HOLD                  0x80B1
+#define CORE_IICD_TXLEN						 0x80B2
+#define CORE_IICD_TXADDR					 0x80B4
+#define CORE_IICD_RXADDR			         0x80B6
+#define CORE_IICD_RXLEN			             0x80B8
+#define CORE_SPID_CTRL				         0x80BA
+#define CORE_SPID_DELAY                      0x80BB
+#define CORE_SPID_TXLEN			             0x80BC
+#define CORE_SPID_TXADDR			         0x80BE
+#define CORE_SPID_RXADDR			         0x80C0
+#define CORE_SPID_RXLEN			             0x80C2
+#define CORE_CORDIC_A				         0x80C4
+#define CORE_CORDIC_B				         0x80C8
+#define CORE_CVSD_CTRL1				         0x80CA
+#define CORE_BIST_CTRL                       0x80CC
+#define CORE_CCNT_BIT				         0x80CC
+                                           
+
+#define CORE_PWM_PCNT(x)                	 (0x80CD+x*0x5)
+#define CORE_PWM_NCNT(x)                	 (0x80CF+x*0x5)
+#define CORE_PWM_CTRL(x)				     (0x80D1+x*0x5)
+                                        
+#define CORE_CVSD_CTRL				         0x80F5
+#define CORE_CVSDIN_SADDR		             0x80F6
+#define CORE_CVSDOUT_SADDR		             0x80F8
+#define CORE_CVSD_BUF_LEN				         0x80FA
+#define CORE_PCMIN_SADDR			         0x80FC
+#define CORE_PCMOUT_SADDR		             0x80FE
+#define CORE_DAC_SADDR                       0x8100
+#define CORE_DAC_LEN                         0x8102
+#define CORE_DAC_WPTR                        0x8104
+#define CORE_DAC_CTRL                        0x8106
+#define CORE_DAC_SEL                         0x8107
+#define CORE_DAC_LVOL                        0x8108
+#define CORE_DAC_RVOL                        0x8109
+#define CORE_SBC_SADDR                       0x810A
+#define CORE_SBC_DADDR                       0x810C
+#define CORE_SBC_SLEN                        0x810E
+#define CORE_SBC_DLEN                        0x8110
+#define CORE_SBC_SWP                         0x8112
+
+#define CORE_SBC_CACHE_CFG0                  0x8114
+#define CORE_SBC_CACHE_CFG1                  0x8115
+#define CORE_SBC_CACHE_CFG2 				 0x8116
+
+#define CORE_FF_DITHER0					 0x8117
+#define CORE_PWM_CLKEN						 0x8118
+#define CORE_COEF_WDATA						 0X8119
+#define CORE_ADC_FILTER_CTRL						 0X811C
+#define CORE_COEF_CTRL						 0X811D
+#define CORE_DAC_SEL2						 0X811E
+#define CORE_DAC_DC_CALI_R						 0X8120
+#define CORE_DAC_DC_CALI_L						 0X8122
+#define CORE_PCMOUT_48K_SADDR						 0X8124
+#define CORE_CVSD_GRP_LEN						 0X8126
+#define CORE_FF_DITHER1						 0X8128
+#define CORE_FF_DITHER2						 0X8129
+#define CORE_GPIO_CONF1						 0x812a
+#define CORE_RAMP_CTRL						 0X8138
+
+#define CORE_UART_RXINTER					 0x8132
+#define CORE_UART_TIMEOUT					 0x8133
+#define CORE_UARTB_RXINTER					 0x8135
+#define CORE_UARTB_TIMEOUT				     0x8136
+                                        
+#define CORE_CLKN                            0x8300
+#define CORE_EXTMCLK                         0x8304
+#define CORE_MISC_STATUS                     0x8308
+#define CORE_EXE_RD                          0x8309
+#define CORE_AVG_PWR                         0x830A
+#define CORE_UART_STATUS                     0x830C
+#define CORE_UART_RBAUD                      0x830C
+#define CORE_UART_TX_ITEMS                   0x830E
+#define CORE_UART_TX_RPTR                    0x8310
+#define CORE_UART_RX_ITEMS                   0x8312
+#define CORE_UART_RX_WPTR                    0x8314
+#define CORE_ADCD_ADDR                       0x8316
+#define CORE_XTAL_CNT                        0x8318
+#define CORE_SBC_STATUS                      0x8319
+#define CORE_DEBUG_BAUD                      0x831B
+#define CORE_GPIO_IN                         0x831C
+#define CORE_GPIO_IN1                        0x831D
+#define CORE_I2S_WRPTR                       0x8320
+#define CORE_I2S_RDPTR                       0x8322
+#define CORE_SPID_REMAIN                     0x8324
+#define CORE_OTPD_REMAIN                     0x8326
+#define CORE_QSPI_REMAIN                     0x8328
+#define CORE_IICD_REMAIN                     0x832A
+#define CORE_ADC_IN                          0x832C
+#define CORE_CURRENT_OTP_ADDR                0x832E
+#define CORE_DMA_STATUS                      0x8330
+#define CORE_PERF_STATUS                     0x8331
+#define CORE_DAC_STATUS                           0x8332
+#define CORE_CORDIC_OUT                           0x8333
+#define CORE_TISHI_RPTR                           0x8334
+#define CORE_LPM_CTRL                        0x8336
+#define CORE_LPM_XTALCNT                     0x833A
+#define CORE_LPM_BUCKCNT                     0x833B
+#define CORE_LPM_LDOCNT                      0x833C
+#define CORE_LPM_LATCH                       0x833D
+#define CORE_GPIO_WAKEUP_LOW                 0x8342
+#define CORE_GPIO_WAKEUP_HIGH                0x8346
+                                          
+#define CORE_CCNT_COUNTER                    0x834B
+#define CORE_BIST_DONE                       0x834A
+#define CORE_BIST_FAIL                       0x834E
+#define CORE_SUMDATA                         0x8352
+#define CORE_UARTB_STATUS                    0x8354
+#define CORE_UARTB_RBAUD                     0x8354
+#define CORE_UARTB_TX_ITEMS                  0x8356
+#define CORE_UARTB_TX_RPTR                   0x8358
+#define CORE_UARTB_RX_ITEMS                  0x835A
+#define CORE_UARTB_RX_WPTR                   0x835C
+#define CORE_SCS_RDATA                       0x835E
+#define CORE_PCMIN_PTR                       0x8362
+#define CORE_PCMOUT_PTR                      0x8364
+#define CORE_CVSDIN_PTR                      0x8366
+#define CORE_CVSDOUT_PTR                     0x8368
+#define CORE_DAC_RPTR                        0x836A
+                                         
+#define CORE_SBC_SRP                         0x836C
+#define CORE_SBC_DWP                         0x836E
+#define CORE_EXE_ADDR                        0x8370
+#define CORE_48K_PCMOUT_PTR                        0x8376
+#define CORE_SD_REG_RDATA                        0x8378
+#define CORE_CHGR_EVENT                        0x8379
+
+#define CORE_ICE_CTRL                        0x8203
+#define CORE_ICE_STATUS                      0x8204
+#define CORE_ICE_BREAK0                      0x8205
+#define CORE_ICE_BREAK1                      0x8207
+                                         
+#define MEM_B_BOX          					 0x8400
+#define MEM_E_BOX          					 0x8500
+#define MEM_L_BOX          					 0x8600
+                                       
+#define MEMK                                 0x8700
+                                          
+#define RFEN_RX                              0x8900
+#define RFEN_TX                              0x8901
+#define RFEN_MDM                             0x8902
+#define RFEN_SN                              0x8903
+#define RFEN_MSC                             0x8904
+#define RFEN_CK                              0x8905
+#define RFEN_ADC                             0x8906
+#define RF_AGC_CTRL                          0x8912
+#define RFEN_ULP                             0x8914
+#define RF_ADC_MODE                          0x8971
+#define RF_ADC_GC                            0x8972
+#define RF_ADC_CH                            0x8973
+                                       
+#define RF_RX_VCTRL_REG1                     0x894B
+#define RF_RX_VCTRL_REG2                     0x894C
+#define RF_RX_IB_LNA                         0x894D
+#define RF_RX_LNA_CTRIM                      0x894E
+                                         
+#define RF_BPF_CTRIM                         0x8950
+#define RF_BPF_IB                            0x8951
+#define RF_ADC_RCCAL                         0x8952
+#define RF_RCCAL_CTRL                        0x8952
+#define RF_RCCAL_SEL                         0x8953
+#define RF_TX_PA                             0x8955
+#define RF_TX_MIX                            0x8956
+#define RF_PLL_RSTN                          0x895F
+#define RF_SDM_EN                            0x8964
+#define RF_PLL_INTG                          0x8960
+#define RF_PLL_FRAC                          0x8961
+#define RF_PLL_FRACHI                        0x8963
+#define RF_CLKPLL_BIAS                       0x8967
+#define RF_CLKPLL_EN                         0x896F
+#define RF_CLKPLL_INT                        0x8968
+#define RF_CLKPLL_FRAC                       0x8969
+#define RF_AFC_CAP                       0x896C
+#define RF_BALUN_CTRIM                       0x896D
+#define RG_MISC                       0x896E
+
+
+
+#define RF_SARADC_CTRL                       0x8972
+#define RFEN_CHGPUMP                         0x8973
+#define RF_ADC_BIAS_GAIN                     0x8978
+#define RF_ADC_REFBUF                        0x8979
+#define RF_AUDIO_VOLL                        0x897A
+#define RF_AUDIO_VOLR                        0x897B
+#define RF_AUDIO_LDO                         0x897C
+#define RF_ADAC_REF_CTL                      0x897D
+#define RFEN_AADC                            0x897E
+#define RF_AUDIO_PDDAC0                      0x897F
+#define RF_AUDIO_PDDAC1                      0x8980
+#define RF_AUDIO_DAC_LDO                     0x8981
+                                         
+#define RF_RCCAL_RESULT                      0x8990
+#define RF_AFC_D2A                           0x8991
+#define RF_RSSI                              0x8992
+
+#define CORE_AADC_0                              0x8A00
+#define CORE_AADC_1                              0x8A01
+#define CORE_AADC_2                              0x8A02
+#define CORE_AADC_3                              0x8A03
+#define CORE_AADC_4                              0x8A04
+#define CORE_AADC_5                              0x8A05
+#define CORE_AADC_6                              0x8A06
+#define CORE_AADC_7                              0x8A07
+#define CORE_AADC_8                              0x8A08
+#define CORE_AADC_9                              0x8A09
+#define CORE_AADC_A                              0x8A0A
+                                        
+#define CORE_USB_CONFIG		                 0x8C00
+#define CORE_USB_INT_MASK	                 0x8C01
+#define CORE_USB_ADDR                        0x8C04
+#define CORE_USB_TRIG	                     0x8C10
+#define CORE_USB_STALL		                 0x8C11
+#define CORE_USB_CLEAR		                 0x8C12
+#define CORE_USB_EP                          0x8C18
+#define CORE_USB_DFIFO0                      0x8C18
+#define CORE_USB_DFIFO1                      0x8C19
+#define CORE_USB_DFIFO2                      0x8C1A
+#define CORE_USB_EP_LEN                      0x8C20
+#define CORE_USB_STATUS		                 0x8C26
+#define CORE_USB_FIFO_EMPTY                  0x8C27
+#define CORE_USB_FIFO_FULL                   0x8C28
+
+#define M0_SYS_CTRL							 0x0
+#define M0_WAKEUP_INIT_EN					 0x4
+#define DMA_CTRL							 0x20
+#define DMA_TASK_TABLE_ADDR_H				 0x24
+#define DMA_TASK_TABLE_ADDR_L				 0x28
+#define DMA_TASK_VAL						 0x2c
+#define DMA_TASK_STATUS						 0x30
+#define DMA_TASK_INT_STATUS					 0x34
+#define DMA_TASK_INT_CLEAR					 0x38
+
+
+//************************************************************************************************
+//end define reg address
+//************************************************************************************************
+
+//*****************************************************************************
+//config gpio selected function
+//*****************************************************************************
+#define  GPCFG_INPUT			0  
+#define  GPCFG_QSPI_NCS        	2  
+#define  GPCFG_QSPI_SCK        	3  
+#define  GPCFG_QSPI_IO0        	4  
+#define  GPCFG_QSPI_IO1        	5  
+#define  GPCFG_QSPI_IO2        	6  
+#define  GPCFG_QSPI_IO3        	7  
+#define  GPCFG_UART_TXD        	8  
+#define  GPCFG_UART_RXD        	9  
+#define  GPCFG_UART_RTS        	10 
+#define  GPCFG_UART_CTS        	11 
+#define  GPCFG_UARTB_TXD       	12 
+#define  GPCFG_UARTB_RXD       	13 
+#define  GPCFG_UARTB_RTS       	14 
+#define  GPCFG_UARTB_CTS       	15 
+#define  GPCFG_PWM_OUT        	16
+#define  GPCFG_I2S_DOUT        	24 
+#define  GPCFG_I2S_LRCKOUT     	25 
+#define  GPCFG_I2S_CLKOUT      	26 
+#define  GPCFG_I2S_DIN         	28 
+#define  GPCFG_I2S_LRCKIN      	29 
+#define  GPCFG_I2S_CLKIN       	30 
+#define  GPCFG_SPID_MISO       	31 
+#define  GPCFG_SPID_NCS        	32 
+#define  GPCFG_SPID_SCK        	33 
+#define  GPCFG_SPID_MOSI       	34 
+#define  GPCFG_SPID_SDIO       	35  
+#define  GPCFG_QDEC_X0         	38 
+#define  GPCFG_QDEC_X1         	39 
+#define  GPCFG_QDEC_Y0         	40 
+#define  GPCFG_QDEC_Y1         	41 
+#define  GPCFG_QDEC_Z0         	42 
+#define  GPCFG_QDEC_Z1         	43 
+#define  GPCFG_IIC_SCL         	44 
+#define  GPCFG_IIC_SDA        	45 
+#define  GPCFG_JTAG_SWCLK      	60 
+#define  GPCFG_JTAG_SWDAT      	61
+#define  GPCFG_OUTPUT_LOW      	62 
+#define  GPCFG_OUTPUT_HIGH     	63
+#define  GPCFG_PULLUP			0x40 
+#define  GPCFG_PULLDOWN        	0x80 
+#define  GPCFG_NO_IE           	0xc0
+//*****************************************************************************
+//end config gpio selected function
+//*****************************************************************************
+
+/**
+  *@brief GPIO number.
+  */
+typedef enum
+{
+	GPIO_0 = 0,
+	GPIO_1,
+	GPIO_2,
+	GPIO_3,
+	GPIO_4,
+	GPIO_5,
+	GPIO_6,
+	GPIO_7,
+	GPIO_8,
+	GPIO_9,
+	GPIO_10,
+	GPIO_11,
+	GPIO_12,
+	GPIO_13,
+	GPIO_14,
+	GPIO_15,
+	GPIO_16,
+	GPIO_17,
+	GPIO_18,
+	GPIO_19,
+	GPIO_20,
+	GPIO_21,
+	GPIO_22,
+	GPIO_23,
+	GPIO_24,
+	GPIO_25,
+	GPIO_26,
+	GPIO_27,
+	GPIO_28,
+	GPIO_29,
+	GPIO_30,
+	GPIO_31,
+	GPIO_MAX_NUM,
+	GPIO_ACTIVE_BIT=0x80,
+}GPIO_NUM;
+
+//*************************************************************************************
+//interrupt id
+//*************************************************************************************
+#define	USB_INTID		0
+#define	IICD_INTID		1
+#define	QSPI_INTID		2
+#define	SPID_INTID		3
+#define	UART_INTID		4
+#define	UARTB_INTID		5
+#define	ADCD_INTID		6
+#define	I2S_INTID		7
+#define	BT_INTID		8
+#define GPIO_INTID		9
+#define OTP_INTID		10
+#define SBC0_INTID		11
+#define SBC1_INTID		12
+#define FFT_INTID		13
+#define DMA_INTID		14
+#define SDIO_INTID		15
+#define TIMER0_INTID	16
+#define TIMER1_INTID	17
+#define TIMER2_INTID	18
+#define TIMER3_INTID	19
+#define TIMER4_INTID	20
+#define TIMER5_INTID	21
+#define TIMER6_INTID	22
+#define TIMER7_INTID	23
+
+#define WDT2_INTID		24
+#define WDT_INTID		25
+
+//*************************************************************************************
+//end interrupt id
+//*************************************************************************************
+
+
+#define reg_map(reg)						((int)(reg) | 0x10000000)
+#define reg_map_m0(reg)						((int)(reg) | 0x10010000)
+//#define reg_map2(reg)						((int)(reg) | 0x1001c000)
+#define reg_map2(reg)						((int)(reg) | 0x1001f000)
+#define PREFETCH_LINE(addr)					*(volatile int*)addr = 0
+#define des_ctrl							*(volatile uint8_t*)0x30000002
+#define des_key(x)							*(volatile uint8_t*)(0x30000003 + x)
+#define des_in(x)							*(volatile uint8_t*)(0x30000018 + x)
+#define crypt_status						*(volatile uint8_t*)0x30010000
+#define des_out(x)							*(volatile uint8_t*)(0x30010004 + x)
+#define des_start							*(volatile uint8_t*)0x30008000
+#define rsa_exp(x)							*(volatile int32_t*)(0x30020000 + x*4)
+#define rsa_out(x)							*(volatile int32_t*)(0x30020000 + x*4)
+#define rsa_in(x)							*(volatile int32_t*)(0x30020080 + x*4)
+#define rsa_mod(x)							*(volatile int32_t*)(0x30020100 + x*4)
+#define rsa_ctrl							*(volatile int32_t*)0x30020180
+
+#define TRACE_FIFO				            *(volatile int*)0xe0002020
+#define NVIC_ISER				            *(volatile int*)0xe000e100
+#define NVIC_ICER				            *(volatile int*)0xe000e180
+
+static inline void enable_intr(int intid)   { NVIC_ISER |= 1 << intid;}
+static inline void disable_intr(int intid)  { NVIC_ICER  = 1 << intid;}
+#define CPU_MHZ        (48*1000000)
+/* SysTick registers */  
+/* SysTick control & status */ 
+#define INITCPU_SYST_CSR     ((volatile unsigned int *)0xE000E010)
+/* SysTick Reload value */ 
+#define INITCPU_SYST_RVR     ((volatile unsigned int *)0xE000E014)
+/* SysTick Current value */ 
+#define INITCPU_SYST_CVR     ((volatile unsigned int *)0xE000E018)
+/* SysTick CSR register bits */ 
+#define INITCPU_SYST_CSR_COUNTFLAG (1 << 16)
+#define INITCPU_SYST_CSR_CLKSOURCE (1 << 2)
+#define INITCPU_SYST_CSR_TICKINT   (1 << 1)
+#define INITCPU_SYST_CSR_ENABLE    (1 << 0)
+
+
+
+typedef unsigned char byte;
+typedef unsigned short word;
+
+byte HREAD(int reg);
+void HWRITE(int reg, int val);
+
+//void _nop(void) __attribute__((optimize("O0")));
+
+#define TO_16BIT_ADDR(A) (((int)A)&0xFFFF)
+
+// To avoid cm0 read xram error, need read 3 times.
+// To avoid cm0 write xram error, need read a invalid addr. and write twice.
+#define HREADDEF(reg)  (*(volatile byte*)(reg_map(reg)))
+
+
+#define HREAD_INLINE(reg)			((HREADDEF(0x4fff) & 0x00) |(HREADDEF(reg) & 0x00) | (HREADDEF(reg)))
+#define HREADW_INLINE(reg)			((int)HREAD_INLINE(reg) | HREAD_INLINE(reg + 1) << 8)
+
+#define HWRITE_INLINE(reg,val)			do {(HREADDEF(reg) = (byte)(val));(HREADDEF(reg) = (byte)(val));}while(0)
+#define HWRITEW_INLINE(reg,val)			do { HWRITE_INLINE(reg, (int)(val));HWRITE_INLINE(reg + 1, (int)(val) >> 8); }while(0)
+
+
+
+#define HREAD2(reg)			*(volatile byte*)(reg_map2(reg))
+#define HREAD3(reg)			*(volatile byte*)(reg_map_m0(reg))
+#define HREADM(addr)		*(volatile byte*)(addr)
+#define HREADW(reg)			((int)HREAD(reg) | HREAD(reg + 1) << 8)
+#define HREAD24BIT(reg)			((int)(HREAD(reg)) | (HREAD(reg + 1) << 8)| (HREAD(reg + 2) << 16))
+#define HREADADDR3(reg)			((int)(HREAD(reg)) | (HREAD(reg + 1) << 8)| (HREAD(reg + 2) << 16))
+
+#define HWRITEW(reg, val)	do { HWRITE(reg, (int)(val));HWRITE(reg + 1, (int)(val) >> 8); }while(0)
+
+#define HWRITESINGLE(reg, val)	do {(HREADDEF(reg) = (byte)(val));}while(0)
+
+#define HREADL(reg)		(int)(HREAD(reg)) | (HREAD(reg + 1) << 8)| (HREAD(reg + 2) << 16)| (HREAD(reg + 3) << 24)
+#define HWRITEL(reg, val)	do { HWRITE(reg, (int)(val));HWRITE(reg + 1, (int)(val) >> 8);HWRITE(reg + 2, (int)(val) >> 16);HWRITE(reg + 3, (int)(val) >> 24); }while(0)
+
+
+#define HWRITE2(reg,val) 	do {HREAD2(reg)=(byte)(val); volatile int n = 1; while(n--);}while(0)
+#define HWRITE3(reg,val) 	do {HREAD3(reg)=(byte)(val); volatile int n = 1; while(n--);}while(0)
+#define HWRITEM(addr,val) do {HREADM(addr)=(byte)val;  volatile int n = 1; while(n--);} while(0)
+#define HWRITE24BIT(reg,val) do { HWRITE(reg, (int)(val));HWRITE(reg + 1, (int)(val) >> 8); HWRITE(reg + 2, (int)(val) >> 16); }while(0)
+//#define HWOR(reg, val)	HWRITE(reg, HREAD(reg) | (val))
+
+#define HWOR(reg, val)	HWRITE(reg, ((HREAD(reg) )| (val)))
+#define HWCOR(reg, val)	HWRITE(reg, HREAD(reg) & ~(val))
+
+#define HWORW(reg, val)	HWRITEW(reg, ((HREADW(reg) )| (val)))
+#define HWCORW(reg, val)	HWRITEW(reg, HREADW(reg) & ~(val))
+
+//#define SETBIT(reg, val)	HWRITE(reg, HREAD(reg) | (val))
+//#define CLRBIT(reg, val)	HWRITE(reg, HREAD(reg) & ~(val))
+
+#define BW(addr) (int)*(addr) << 24 | (int)*(addr + 1) << 16 | (int)*(addr + 2) << 8 | *(addr + 3)
+
+
+static inline void hw_delay()
+{
+	__asm__ __volatile__("nop");
+	__asm__ __volatile__("nop");
+	__asm__ __volatile__("nop");
+	__asm__ __volatile__("nop");
+	__asm__ __volatile__("nop");
+}
+
+
+/***********************************CONFIG**********************************************/
+#define BASE_ADDR                                   	   0x10000000
+#define CONFIG_UART_TXD                                    0x08
+#define CONFIG_UART_RXD                                    0x09
+#define CONFIG_UART_RTS                                    0x0a
+#define CONFIG_UART_CTS                                    0x0b
+#define CONFIG_UARTB_TXD                                   0x0C
+#define CONFIG_UARTB_RXD                                   0x0D
+#define CONFIG_UARTB_RTS                                   0x0E
+#define CONFIG_UARTB_CTS                                   0x0F
+
+/***********************************MEM CONFIG*******************************************/
+/***************************UART A CONFIG BUFF***************************/
+#define UART_A_RX_BUFF_START   0x1800
+#define UART_A_TX_BUFF_START   0x1900
+#define UART_A_RX_BUFF_END     0x18ff
+#define UART_A_TX_BUFF_END     0x19ff
+
+/***************************UART B CONFIG BUFF***************************/
+#define UART_B_RX_BUFF_START   0x1a00
+#define UART_B_TX_BUFF_START   0x1b00
+#define UART_B_RX_BUFF_END     0x1aff
+#define UART_B_TX_BUFF_END     0x1bff
+
+/***************************RING CONFIG BUFF***************************/
+#define RING_RX_BUFF_START     0x4B00
+#define RING_TX_BUFF_START     0x4D00
+#define RING_RX_BUFF_END       0x4Cff
+#define RING_TX_BUFF_END       0x4Eff
+
+/***********************************REG*************************************************/
+#define REG_CLOCK_SELECT_RW_11BIT                  0x10008042
+#define REG_CONFIG_RW_H5BIT                        0x10008043
+#define REG_CLOCK_OFF_1_RW_8BIT                    0x10008050
+#define REG_CLOCK_OFF_2_RW_8BIT                    0x10008051
+#define REG_GPIO_CONFIG(X)                   	  (0x10008080+(X))
+/* ----------------UART---------------- */
+#define REG_UART_A_BAUD_RATE_RW_15BIT              0x10008052
+#define REG_UART_A_RX_START_ADDR_RW_16BIT          0x10008054
+#define REG_UART_A_RX_END_ADDR_RW_16BIT            0x10008056
+#define REG_UART_A_RX_RPTR_RW_16BIT                0x10008058
+#define REG_UART_A_TX_START_ADDR_RW_16BIT          0x1000805A
+#define REG_UART_A_TX_END_ADDR_RW_16BIT            0x1000805C
+#define REG_UART_A_TX_WPTR_RW_16BIT                0x1000805E
+#define REG_UART_A_CONTROL_RW_8BIT                 0x10008060
+
+#define REG_UART_B_BAUD_RATE_RW_15BIT              0x10008072
+#define REG_UART_B_RX_START_ADDR_RW_16BIT          0x10008074
+#define REG_UART_B_RX_END_ADDR_RW_16BIT            0x10008076
+#define REG_UART_B_RX_RPTR_RW_16BIT                0x10008078
+#define REG_UART_B_TX_START_ADDR_RW_16BIT          0x1000807A
+#define REG_UART_B_TX_END_ADDR_RW_16BIT            0x1000807C
+#define REG_UART_B_TX_WPTR_RW_16BIT                0x1000807E
+#define REG_UART_B_CONTROL_RW_8BIT                 0x10008071
+
+#define REG_UART_A_STATE_R_4BIT                    0x1000810C
+#define REG_UART_A_DET_BAUD_R_8BIT                 0x1000810D
+#define REG_UART_A_TX_ITEMS_R_16BIT                0x1000810E
+#define REG_UART_A_TX_RPTR_R_16BIT                 0x10008110
+#define REG_UART_A_RX_ITEMS_R_16BIT                0x10008112
+#define REG_UART_A_RX_RPTR_R_16BIT                 0x10008114
+
+#define REG_UART_B_STATE_R_4BIT                    0x10008152
+#define REG_UART_B_DET_BAUD_R_8BIT                 0x10008153
+#define REG_UART_B_TX_ITEMS_R_16BIT                0x10008154
+#define REG_UART_B_TX_RPTR_R_16BIT                 0x10008156
+#define REG_UART_B_RX_ITEMS_R_16BIT                0x10008158
+#define REG_UART_B_RX_RPTR_R_16BIT                 0x1000815A
+
+
+#define REG_M0_LOCK_FLAG_RW_16BIT                  0x10004A00
+#define REG_BT_LOCK_FLAG_R_16BIT                   0x10004A02
+#define REG_LOCK_VICTIM(X)                         (0x10004A04+(X))
+#define REG_RING_RX_START_ADDR_RW_16BIT            0x10004A14
+#define REG_RING_RX_END_ADDR_RW_16BIT              0x10004A16
+#define REG_RING_RX_RPTR_RW_16BIT                  0x10004A18
+#define REG_RING_TX_START_ADDR_RW_16BIT            0x10004A1a
+#define REG_RING_TX_END_ADDR_RW_16BIT              0x10004A1c
+#define REG_RING_TX_WPTR_RW_16BIT                  0x10004A1e
+
+//#define REG_RING_TX_S_ITEMS_R_16BIT               0x10004A20
+#define REG_RING_TX_S_RPTR_R_16BIT                	0x10004A20
+//#define REG_RING_RX_S_ITEMS_R_16BIT               0x10004A24
+#define REG_RING_RX_S_RPTR_R_16BIT                	0x10004A22
+
+
+/***********************************core_clkoff*************************************************/
+#define REG_CLOCK_OFF_AUTH_ROM                	(0x0001)
+#define REG_CLOCK_OFF_EFUSE                		(0x0002)
+#define REG_CLOCK_OFF_DEBUG_UART            (0x0004)
+#define REG_CLOCK_OFF_ITRACE                	(0x0008)
+#define REG_CLOCK_OFF_QSPI                		(0x0010)
+#define REG_CLOCK_OFF_AUDIO_DAC                	(0x0020)
+#define REG_CLOCK_OFF_VOICE_FILTER           (0x0040)
+#define REG_CLOCK_OFF_I2C                		(0x0080)
+#define REG_CLOCK_OFF_CM0                		(0x0100)
+#define REG_CLOCK_OFF_MRAM                		(0x0200)
+#define REG_CLOCK_OFF_USB                		(0x0400)
+#define REG_CLOCK_OFF_SBC                		(0x0800)
+#define REG_CLOCK_OFF_SPI                		(0x1000)
+#define REG_CLOCK_OFF_SDIO                		(0x2000)
+#define REG_CLOCK_OFF_I2S                		(0x4000)
+#define REG_CLOCK_OFF_UART                		(0x8000)
+
+/***********************************cvsd_ctrl*************************************************/
+#define REG_CVSD_GROUP_ENABLE                	(0x01)
+#define REG_CVSD_FILTER_DELAY_CHAIN_CLEAN_ENABLE                	(0x02)
+#define REG_CVSD_64TO48K_ENABLE                	(0x04)
+#define REG_CVSD_CLIP                	(0x08)
+#define REG_CVSD_DECODE_8K_MODE_ENABLE                	(0x10)
+#define REG_CVSD_DECODE_48K_MODE_ENABLE                	(0x20)
+#define REG_CVSD_SELECT_MRAM                	(0x40)
+#define REG_CVSD_DMA_ENABLE                	(0x80)
+
+
+/***********************************lpm_write*************************************************/
+#define LPMREG_SEL_CTRL                          0x01
+#define LPMREG_SEL_CHARGE_CTRL                          0x40
+
+
+/***********************************lpm_write2*************************************************/
+#define LPMREG_SEL_CHARGER_LOW_HIGH_WAKEUP_REG                          0x02
+#define LPMREG_SEL_ADC_LOW                          0x10
+#define LPMREG_SEL_ADC_HIGH                          0x20
+
+
+#ifndef __RTOS__
+#define SystemCoreClock 24000000
+#endif
+#define M0_MEMORY_BASE  0x10010000
+
+#define _ALIGN_SIZE 4
+
+
+#define GPIO_CONFIG(x)			*(volatile uint8_t*)((0x10000000|CORE_GPIO_CONF) + x)
+#ifdef __cplusplus
+}
+#endif
+
+#define BIT_0  0x0001
+#define BIT_1  0x0002
+#define BIT_2  0x0004
+#define BIT_3  0x0008
+#define BIT_4  0x0010
+#define BIT_5  0x0020
+#define BIT_6  0x0040
+#define BIT_7  0x0080
+#define BIT_8  0x0100
+#define BIT_9  0x0200
+#define BIT_10  0x0400
+#define BIT_11  0x0800
+#define BIT_12  0x1000
+#define BIT_13  0x2000
+#define BIT_14  0x4000
+#define BIT_15  0x8000
+#define BIT_16  0x00010000
+#define BIT_17  0x00020000
+#define BIT_18  0x00040000
+#define BIT_19  0x00080000
+#define BIT_20  0x00100000
+#define BIT_21  0x00200000
+#define BIT_22  0x00400000
+#define BIT_23  0x00800000
+#define BIT_24  0x01000000
+#define BIT_25  0x02000000
+#define BIT_26  0x04000000
+#define BIT_27  0x08000000
+#define BIT_28  0x10000000
+#define BIT_29  0x20000000
+#define BIT_30  0x40000000
+#define BIT_31  0x80000000
+
+
+
+//byte HREAD(int reg);
+//void HWRITE(int reg, int val);
+
+#endif //_YC11XX_H
+

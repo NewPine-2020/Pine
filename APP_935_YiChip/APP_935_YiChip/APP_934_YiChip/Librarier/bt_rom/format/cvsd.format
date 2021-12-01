@@ -1,0 +1,72 @@
+xmemalloc(
+
+//2 mem_cvsd_in_addr_start
+2 mem_cvsd_in_addr_end
+2 mem_cvsd_in_addr_ptr
+
+2 mem_cvsd_out_addr_start
+2 mem_cvsd_out_addr_end
+2 mem_cvsd_out_addr_ptr
+2 mem_pcm_in_addr_end
+
+// Cvsd param, the below addrs must set the mram flag or not
+1 mem_param_pcm_in_buffer_addr_mram_flag
+2 mem_param_pcm_in_buffer_addr
+1 mem_param_cvsd_out_buffer_addr_mram_flag
+2 mem_param_cvsd_out_buffer_addr
+1 mem_param_cvsd_in_buffer_addr_mram_flag
+2 mem_param_cvsd_in_buffer_addr
+1 mem_param_pcm_8k_out_buffer_addr_mram_flag
+2 mem_param_pcm_8k_out_buffer_addr
+1 mem_param_pcm_48k_out_buffer_addr_mram_flag
+2 mem_param_pcm_48k_out_buffer_addr
+
+1 mem_cvsd_start_send
+
+)
+
+// cvsd_ctrl
+(
+0 CVSD_GROUP_ENABLE
+1 CVSD_FILTER_DELAY_CHAIN_CLEAN_ENABLE
+2 CVSD_64TO48K_ENABLE
+3 CVSD_CLIP
+4 CVSD_DECODE_8K_MODE_ENABLE
+5 CVSD_DECODE_48K_MODE_ENABLE
+6 CVSD_SELECT_MRAM
+7 CVSD_DMA_ENABLE
+)
+
+
+// cvsd_ctrl1
+(
+0 ENCODE_8KPCM_IN_MRAM_SEL
+1 DECODE_8KPCM_OUT_MRAM_SEL
+2 DECODE_CVSD_IN_MRAM_SEL
+3 ENCODE_CVSD_OUT_MRAM_SEL
+)
+
+(
+16 MRAM_HIGH_BIT
+)
+
+
+(
+ 0x12000 PCM_IN_BUFFER_ADDR
+ 0x12800 CVSD_OUT_BUFFER_ADDR
+ 
+ 0x13000 CVSD_IN_BUFFER_ADDR
+ 0x13800 PCM_8K_OUT_BUFFER_ADDR
+ 
+ 0x18000 PCM_48K_OUT_BUFFER_ADDR
+
+ //0x258 CVSD_IN_MAX_LEN
+  0x2d0 CVSD_IN_MAX_LEN
+
+)
+
+(
+60 CVSD_IN_FIFO_ELEMENT_LEN
+60 CVSD_OUT_FIFO_ELEMENT_LEN
+)
+

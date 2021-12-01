@@ -1,0 +1,38 @@
+
+#ifndef _BW_CONFIG_H_
+#define _BW_CONFIG_H_
+
+#define MODULE_BT986
+
+#define ENABLE_FACTORY_AUTH			(1)
+
+//////////////////////////////////////
+//#include "../Configurations/feasycom_default.cfg"
+
+
+#define MAJOR_SERVICE_CLASS_AUDIO		(0x200000)	
+#define MAJOR_SERVICE_CLASS_RENDER		(0x040000)
+#define MAJOR_SERVICE_CLASS_NETWORK		(0x020000)
+
+#define MAJOR_DEVICE_CLASS_AV			(0x000400)
+#define MAJOR_DEVICE_CLASS_PC			(0x000100)
+#define MAJOR_DEVICE_CLASS_IMAGING		(0x000600)
+#define MAJOR_DEVICE_CLASS_UNCATEG		(0x001F00)
+
+#define MINOR_DEVICE_AV_HEADSET			(0x000004)
+#define MINOR_DEVICE_AV_HANDSFREE		(0x000008)
+#define MINOR_DEVICE_PC_DESKTOP			(0x000004)
+#define MINOR_DEVICE_PC_COMPUTER		(0x000008)
+#define MINOR_DEVICE_IMAGING_COMPUTER	(0x000080)
+
+#define	HID_MAJOR_DEVICE_CLASS  		(0x0500)
+#define	HID_MINOR_MOUSE        			(0x000080)
+#define	HID_MINOR_KEYBOARD      		(0x000040)
+
+#define COD_WINDOWS_PC		(MAJOR_DEVICE_CLASS_PC | MINOR_DEVICE_PC_COMPUTER | MINOR_DEVICE_PC_DESKTOP) //Integrated Bluetooth
+#define COD_WINDOWS_PC_2	(MAJOR_DEVICE_CLASS_PC | MINOR_DEVICE_PC_DESKTOP) //USB Dongle Bluetooth
+#define isWindowsPC(cod)    ((COD_WINDOWS_PC_2 & (cod)) == COD_WINDOWS_PC_2)
+
+#endif
+
+

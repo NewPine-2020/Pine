@@ -1,0 +1,210 @@
+memalloc(
+	60 mem_sco_indata
+	60 mem_sco_outdata
+	1 mem_phone_num_count
+	1 mem_phone_num_len
+	15 mem_phone_number
+	30 mem_at_command_data
+	1 mem_sco_flag
+)
+
+(
+0	sco_rcv_flag
+1	sco_first_pck_flag
+2	sco_transaction_begin_flag
+3	sco_rcv_full_packet_flag
+)
+
+xmemalloc(
+/* sco & esco */
+0 mem_xmem_sco_start
+1 mem_sco_asso_handle
+2 mem_sco_handle
+2 mem_sco_dsniff
+2 mem_sco_tsniff
+1 mem_sco_wsniff
+1 mem_sco_tx_packet_type
+1 mem_sco_rx_packet_type
+2 mem_sco_rx_packet_len
+2 mem_sco_tx_packet_len
+1 mem_air_mode
+1 mem_neogotiation_state
+1 mem_acl_amaddr
+1 mem_esco_amaddr
+1 mem_esco_arq
+1 mem_acl_arq
+1 mem_last_type_esco
+1 mem_last_type_acl
+1 mem_sco_poll
+1 mem_esco_attempt
+1 mem_esco_abnormal_attempt
+0 mem_xmem_sco_end
+
+//hfp state and indicator
+0 mem_xmem_hf_state_start
+1 mem_hf_state
+1 mem_hf_call_state
+1 mem_hf_command
+2 mem_agoption
+7 mem_AG_indicator_map
+7 mem_AG_indicator
+1 mem_telephone_dialing_state
+1 mem_telephone_dialing_timer
+0 mem_xmem_hf_state_end
+
+//hfp volume ctr
+1 mem_hf_vlm_speaker
+1 mem_music_vlm_speaker
+1 mem_hf_vlm_mic
+
+2 mem_at_payload_ptr
+2 mem_at_command_ptr
+2 mem_at_rfcomm_data_ptr
+
+
+//init this value in user.dat
+3 mem_UI_HF_brsf_feature
+1 mem_codec_type
+1 mem_codec_msbc_support
+//hfp callback
+2 mem_cb_hfp_result_code
+1 mem_hfp_battery_state
+1 mem_esco_test
+
+1 mem_sco_transaction_enable
+1 mem_local_sco_in_process_flag
+)
+
+(
+0x00 LOCAL_SCO_WORK_DONE
+0x01 LOCAL_SCO_WORK_IN_PROCESS
+)
+
+(
+30 HFP_SPEAKER_MAX_VLM
+15 HFP_MIC_MAX_VLM
+20 HFP_DEFAULT_SPEAKER
+10 HFP_DEFAULT_MIC_VLM
+
+0x20 HFP_SPEAKER_MAX_VLM_MEDIA
+0x1E HFP_SPEAKER_MAX_VLM_SCO
+)
+
+(
+0 HFP_CIEVIND_SERVICE
+1 HFP_CIEVIND_CALL
+2 HFP_CIEVIND_CALLSETTUP
+3 HFP_CIEVIND_CALLHELD
+4 HFP_CIEVIND_SIGNAL
+5 HFP_CIEVIND_ROAM
+6 HFP_CIEVIND_BATTCHA
+)
+
+
+(
+0x00 	HFP_NONO
+0x01	HFP_INCOMMING
+0x02	HFP_OUTGOING
+0x03	HFP_CALLACTIVE
+0x04	HFP_CALLIMG
+0x05	HFP_CALLOGG
+0x06	HFP_CALMULTY
+)
+
+(
+0 CIEV_CALLST_NO
+1 CIEV_CALLST_IMG
+2 CIEV_CALLST_OUG
+3 CIEV_CALLST_RE_ALTD
+)
+
+(
+0 CIEV_CALL_NO
+1 CIEV_CALL_ACT
+)
+
+(
+0 CIEV_HELD_NO
+1 CIEV_HELD_IN_HOLD
+2 CIEV_HELD_ALL
+)
+
+(
+0 HFP_NO_KEY
+1 HFP_TAP_KEY
+2 HFP_DOUBLE_KEY
+3 HFP_TRIPLE_KEY
+4 HFP_KEY_PRESS
+5 HFP_KEY_PRESS_RELEASE
+6 HFP_KEY_LONG_PRESS
+)
+
+(
+2 CODEC_AIR_MODE
+2 SCO_ATTEMPT_COUNT
+)
+
+(
+2 AIR_MODE_CVSD
+3 AIR_MODE_TRANSPARENT_DATA
+)
+
+(
+0x01 CODEC_TYPE_CVSD
+0x02 CODEC_TYPE_mSBC
+)
+
+
+/* mem_hf_state */
+(
+0x00 HF_STATE_WAITING_RFCOMM_CONN
+0x01 HF_STATE_HF_SEND_FEATURE
+0x02 HF_STATE_WAITING_AG_FEATURE_OK
+0x03 HF_STATE_HF_SEND_CODECS
+0x04 HF_STATE_WAITING_CODECS_OK
+0x05 HF_STATE_HF_SEND_INDICATORS
+0x06 HF_STATE_WAITING_AG_INDICATORS_OK
+0x07 HF_STATE_HF_SEND_CURR_STATUS
+0x08 HF_STATE_WAITING_AG_STATUS_OK
+0x09 HF_STATE_HF_SEND_UPDATE_STATUS
+0x0a HF_STATE_WAITING_AG_UPDATE_STATUS_OK
+0x0b HF_STATE_CONNECTED
+0x0c HF_STATE_HF_SEND_RECEIVE_INFO
+0x0d HF_STATE_WAITING_AG_INFO
+0x0e HF_STATE_HF_SEND_AT_CLIP
+0x0f HF_STATE_WAITING_AT_CLIP
+0x10 HF_STATE_HF_SEND_AT_CCWA
+0x11 HF_STATE_WAITING_AT_CCWA
+)
+
+(
+1 HF_STATE_WAITING_CSCS
+2 HF_STATE_WAITING_CSCS_OK
+3 HF_STATE_WAITING_NERC
+4 HF_STATE_WAITING_NERC_OK
+5 HF_STATE_WAITING_BIA
+6 HF_STATE_WAITING_BIA_OK
+7 HF_STATE_WAITING_XAPL
+8 HF_STATE_WAITING_XAPL_OK
+9 HF_STATE_WAITING_XEVENT
+10 HF_STATE_WAITING_XEVENT_OK
+11 HF_STATE_WAITING_END
+12 HF_STATE_WAITING_ANDROID
+13 HF_STATE_WAITING_ANDROID_OK
+14 HF_STATE_WAITING_IPHONE
+15 HF_STATE_WAITING_IPHONE_OK
+)
+
+
+(
+0x01 HFP_EVT_ESCO_START
+0x02 HFP_EVT_ESCO_STOP
+)
+
+(
+ 0 HFP_DIALING_STATE_NO
+ 1 HFP_DIALING_STATE_START
+ 2 HFP_DIALING_STATE_STOP 
+)
+
+

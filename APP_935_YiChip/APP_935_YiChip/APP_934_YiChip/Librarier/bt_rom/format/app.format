@@ -1,0 +1,282 @@
+
+memalloc(
+
+/* load code */
+1 mem_ucode_status
+2 mem_ucode_flag
+1 mem_qspi_tbuf				/* spid buf: 03 addr[23:16] addr[15:8] addr[7:0] */
+0 mem_iicd_tbuf				/* iicd buf: iic_adr addr[15:8] addr[7:0] iic_adr */
+1 mem_addr_hi
+0 mem_eep_addr_hi
+1 mem_addr_mi
+1 mem_addr_lo
+1 mem_iicd_addr
+4 mem_spid_rbuf
+2 mem_ucode_buf
+2 mem_ucode_len
+2 mem_sched_addr
+3 mem_ucode_ptr
+16 mem_ucode_keybuf
+18 mem_check_plap_temp
+3 mem_start_addr_temp
+
+2 mem_spid_tbuf
+1 mem_qspi_defualt
+1 mem_switch_fail_master_count
+1 mem_app_evt_timer_count
+
+3 mem_flash_address
+2 mem_flash_data_address
+2 mem_flash_trans_length
+
+4 mem_soft_dma_src_addr
+4 mem_soft_dma_dst_addr
+)
+
+xmemalloc(
+1 mem_app_state
+1 mem_app_handshake_flag
+2 mem_sniff_param_interval
+2 mem_sniff_param_attempt
+2 mem_sniff_param_timeout
+
+/*App Callback Functons*/
+2 mem_cb_check_wakelock
+2 mem_cb_before_hibernate
+2 mem_cb_before_lpm
+2 mem_cb_le_process
+2 mem_cb_bt_process
+2 mem_cb_idle_process
+2 mem_cb_bb_event_process
+2 mem_cb_event_timer
+2 mem_cb_keyscan
+1 mem_device_nums
+
+1 mem_uart_txpin
+1 mem_uart_rxpin
+1 mem_uart_rtspin
+1 mem_uart_ctspin
+1 mem_uartb_txpin
+1 mem_uartb_rxpin
+1 mem_uartb_rtspin
+1 mem_uartb_ctspin
+
+1 mem_spid_sclkpin
+1 mem_spid_sdiopin
+
+1 mem_iic_sda_pin
+1 mem_iic_scl_pin
+
+3 mem_ef_base
+2 mem_eeprom_block_size
+2 mem_mram_qspi_tx_addr
+
+//lpm mode
+1 mem_poweron_state
+1 mem_app_connection_options
+2 mem_app_disconn_reason
+2 mem_app_disconn_reason_flag
+3 mem_storage_start_addr
+
+6 mem_local_bdaddr
+
+1 mem_qspi_gpio_ncs
+1 mem_qspi_gpio_sck
+1 mem_qspi_gpio_io0
+1 mem_qspi_gpio_io1
+1 mem_qspi_gpio_io2
+1 mem_qspi_gpio_io3
+
+2 mem_nv_data_ptr
+1 mem_nv_data_number
+1 mem_saradc_check_clk
+1 mem_saradc_flag
+1 mem_bat_read_timer
+1 mem_rf_debug_enable
+1 mem_rf_debug_rf_rx_debug_gpio
+1 mem_rf_debug_rf_tx_debug_gpio
+1 mem_rf_debug_rf_sync_detect_debug_gpio
+1 mem_rf_debug_rf_crc_error_debug_gpio
+
+
+// Soft dma start address, must be mram
+1 mem_param_soft_dma_enable
+// first 8 word store the table address
+// then it have 8*28bytes with the table info
+3 mem_param_soft_dma_table_start_addr
+
+
+3 mem_param_m0_respin_sco_buffer_start_addr
+
+// For app debug
+1 mem_param_app_debug_info_timeout
+1 mem_app_debug_info_timer
+
+// For public code
+2 mem_public_code_svn_version_code
+4 mem_public_code_time_info
+3 mem_public_code_size
+
+// For some fixed param
+0 mem_fixed_param_area_start
+5 mem_fixed_param_area_reserve
+
+// To let all ui control by m0
+1 mem_param_use_cm0_control_flag
+)
+
+(
+0x08 SOFT_DMA_TABLE_TOTAL_COUNT
+0x20 SOFT_DMA_TABLE_START_OFFSET  
+// 4byte * 7
+0x1c SOFT_DMA_TABLE_UNIT_SIZE
+0x00 SOFT_DMA_TABLE_CONFIG_OFFSET
+0x04 SOFT_DMA_TABLE_SRC_OFFSET
+0x08 SOFT_DMA_TABLE_DST_OFFSET
+
+0x81fc SOFT_DMA_DEFAULT_CONFIG_HIGH_BIT
+)
+(
+0x1000 RAM_HEADER_OFFSET_SRAM
+0x1001 RAM_HEADER_OFFSET_MRAM  
+)
+
+(
+(
+24 NV_DATA_LEN
+-1 DECREASED_ONE
+)
+
+)
+
+(
+0x00 EFUSE_UCODE_FLAG  
+0x22 EFUSE_UCODE_BUCK_CAL
+0x23 EFUSE_UCODE_CHGR_CAL
+0x24 EFUSE_UCODE_LDC_CAL
+0x26 EFUSE_UCODE_RDC_CAL
+0x28 EFUSE_UCODE_IIC_SET
+0x2a EFUSE_UCODE_QSPI_SET
+0x30 EFUSE_UCODE_AESKEY 
+0x30 EFUSE_UCODE_LDC_CAL_F6 
+0x32 EFUSE_UCODE_RDC_CAL_F6 
+0x34 EFUSE_UCODE_ADC_GPIO_0_5
+0x36 EFUSE_UCODE_ADC_HVIN_3_0
+0x38 EFUSE_UCODE_ADC_GPIO_1_0
+0x3a EFUSE_UCODE_ADC_HVIN_5_0
+)
+
+/*mem_app_handshake_flag*/
+(
+0 APP_HANDSHAKE_NULL
+1 APP_HANDSHAKE_DONE
+
+)
+/*mem_device_option*/
+(
+0x01 dvc_op_hci
+0x03 dvc_op_kb
+0x04 dvc_op_dongle
+0x05 dvc_op_spp
+0x06 dvc_op_mouse
+
+0x09 dvc_op_shutter
+0x0a dvc_op_module
+0x0b dvc_op_ble_mouse
+0x0c dvc_op_ble_kb
+0x0d dvc_op_ble_prcp
+0x0e dvc_op_audio
+0x0f dvc_op_headset
+0x10 drc_op_rc
+0x11 drc_op_wearable
+0xff dvc_op_test
+)
+
+(
+7 UFLAG_AES
+6 UFLAG_SKIP_EEP
+5 UFLAG_SKIP_FLASH
+4 UFLAG_SKIP_HCI
+)
+
+/* ir command */
+(
+1 ircmd_record
+2 ircmd_play
+3 ircmd_write_pulse
+4 ircmd_write_seq
+5 ircmd_write_next
+
+8 ircmd_test_play
+9 ircmd_test_rec
+
+10 ircmd_report_pulse
+11 ircmd_report_seq
+12 ircmd_report_raw
+
+20 ircmd_screen_on
+21 ircmd_screen_off
+)
+
+(
+7 gpio_active_bit
+)
+
+(
+0x80 gpio_active
+)
+
+(
+0 APP_STATE_NULL
+1 APP_STATE_POWERON_WAIT
+2 APP_STATE_POWERON
+3 APP_STATE_POWEROFF_WAIT
+)
+
+//mem_app_disconn_reason
+//mem_app_disconn_reason_flag
+//bit map
+(
+2 APP_DISC_RSN_SIZE
+)
+(
+0 APP_DISC_BY_BUTTON
+1 APP_DISC_AFTER_PAIRING
+2 APP_DISC_AFTER_RECONN
+3 APP_DISC_AFTER_SNIFF
+4 APP_DISC_AFTER_SETUP_DONE
+5 APP_DISC_AFTER_HANDSHAKE
+6 APP_DISC_BT
+7 APP_DISC_BLE
+8 APP_DISC_L2CAP_REFUSED
+9 APP_DISC_SWITCH_FAIL
+10 APP_DISC_AFTER_HP_CONNECT
+11 APP_DISC_AFTER_PAGE
+)
+
+
+(
+0x00 M0_SCO_RX_RPTR_OFFSET
+0x01 M0_SCO_RX_WPTR_OFFSET
+0x02 M0_SCO_RX_DATA_FIFO_START_OFFSET
+0x3d M0_SCO_RX_DATA_UNIT_SIZE
+
+0x03 M0_SCO_RX_BUFFER_SIZE
+
+// M0_SCO_RX_DATA_UNIT_SIZE * M0_SCO_RX_BUFFER_SIZE + 2 = 185
+0xB9 M0_SCO_RX_BUFFER_TOTAL_SIZE
+
+0xB9 M0_SCO_TX_BUFFER_START_OFFSET
+0x00 M0_SCO_TX_RPTR_OFFSET
+0x01 M0_SCO_TX_WPTR_OFFSET
+0x02 M0_SCO_TX_DATA_FIFO_START_OFFSET
+0x3c M0_SCO_TX_DATA_UNIT_SIZE
+
+0x03 M0_SCO_TX_BUFFER_SIZE
+
+// M0_SCO_RX_DATA_UNIT_SIZE * M0_SCO_RX_BUFFER_SIZE + 2 = 182
+0xB6 M0_SCO_TX_BUFFER_TOTAL_SIZE
+
+0x0170 M0_SCO_RX_CLKE_TIMER_OFFSET
+)
+

@@ -1,0 +1,237 @@
+memalloc(
+4 mem_tws_sync_clk
+1 mem_tws_connecting_phase
+
+1 mem_temp_tx_power
+)
+
+
+xmemalloc(
+0 mem_tws_bdaddr
+3 mem_tws_lap
+1 mem_tws_uap
+2 mem_tws_nap
+// Fix Setting area
+1 mem_hsp_role
+1 mem_auto_hsp_role
+1 mem_tws_allow_pairing_rssi_limit
+
+
+1 mem_tws_role
+1 mem_tws_state
+// Tws double ack
+1 mem_tws_last_rcv_phone_packet_crc_fail
+1 mem_tws_rcv_ack
+1 mem_tws_local_rcv_packet
+1 mem_tws_last_send_ack
+
+// Important tws timer and it's param    start
+1 mem_tws_timeout_timer
+1 mem_param_tws_timeout_master
+1 mem_param_tws_timeout_slave
+
+1 mem_tws_observe_wait_connect_timeout_timer
+1 mem_param_tws_observe_wait_connect_timeout_no_connect
+1 mem_param_tws_observe_wait_connect_timeout_error_disconnect
+
+1 mem_tws_slave_loss_link_listen_master_timeout_timer
+1 mem_param_tws_slave_loss_link_listen_master_timeout
+
+1 mem_tws_poll_slave_timer
+1 mem_param_tws_poll_slave
+
+1 mem_tws_master_wait_slave_timeout_timer
+1 mem_param_tws_master_wait_slave_timeout
+
+1 mem_tws_m2s_ack_send_timeout_count
+1 mem_param_tws_m2s_ack_send_timeout
+
+1 mem_tws_poll_null_ack_interval
+1 mem_tws_poll_null_ack_interval_count
+// Important tws timer and it's param    end
+
+2 mem_loss_match
+
+// debug area
+1 mem_count_rcv_adv
+1 mem_tws_adv_match
+1 mem_tws_ack
+2 mem_tws_count_poll
+
+// role switch var
+1 mem_tws_role_switch_in_process
+1 mem_tws_slave_wait_master_first_polling_flag
+
+
+1 mem_tws_profile_connected
+1 mem_tws_profile_disconnected_after_connected
+1 mem_tws_adv_count
+1 mem_tws_adv_try_num
+
+// tws double ack
+1 mem_tws_snd_op
+1 mem_tws_snd_op_nextseq
+1 mem_tws_snd_cur_arq
+1 mem_tws_rcv_op
+1 mem_tws_rcv_op_nextseq
+1 mem_tws_rcv_old_seq
+
+5 mem_tws_cmd_fifo
+1 mem_tws_no_connect_cmd_trans_limit
+1 mem_tws_no_connect_cmd
+
+// tws raw id send var
+1 mem_tws_is_slave_send
+1 mem_tws_is_need_send_header
+
+
+2 mem_tws_remote_version
+1 mem_param_tws_tx_power
+
+2 mem_le_tws_scan_interval_min
+2 mem_le_tws_scan_interval_max
+2 mem_le_tws_scan_interval
+2 mem_le_tws_scan_window
+2 mem_le_tws_adv_interval
+
+2 mem_param_le_tws_adv_interval_normal
+2 mem_param_le_tws_adv_interval_master_listen
+
+
+// tws first packet is important, need dynamic set
+0 mem_tws_first_packet_dynamic_buffer
+2 mem_tws_first_packet_dynamic_buffer_status
+6 mem_tws_first_packet_dynamic_buffer_local_bdaddr
+6 mem_tws_first_packet_dynamic_buffer_paired_bdaddr
+16 mem_tws_first_packet_dynamic_buffer_reserved
+
+1 mem_tws_allow_pairing
+6 mem_tws_last_paired_lap
+
+2 mem_tws_rf_start_anchor
+2 mem_tws_rf_rcv_window_size
+
+2 mem_tws_rf_packet_rx_window_size
+2 mem_tws_rf_slave_send_full_packet_sleep_time
+2 mem_tws_rf_master_check_raw_id_time
+
+1 mem_temp_rf_freq_index
+1 mem_temp_rf_switch_flag
+
+// Tws transmit packet buffer
+0 mem_tws_buffer_master_switch
+1 mem_tws_buffer_master_switch_reason
+
+
+// Tws process sync packet
+0 mem_process_sync_buffer
+2 mem_process_a2dp_seq_num
+4 mem_process_clk
+2 mem_process_clkrt
+2 mem_process_used_buffer_size
+1 mem_process_audio_vol
+0 mem_process_sync_receive_buffer// Tws process sync packet
+2 mem_process_receive_a2dp_seq_num
+4 mem_process_receive_clk
+2 mem_process_receive_clkrt
+2 mem_process_receive_used_buffer_size
+1 mem_process_receive_audio_vol
+
+
+1 mem_enable_hfp_start_sync// Tws hfp start sync control
+0 mem_hfp_start_sync_buffer// Tws hfp start sync packet
+4 mem_hfp_start_sync_clk
+
+// Tws send channel array
+4 mem_param_tws_send_channel_array
+1 mem_tws_last_send_channel_index
+)
+// mem_tws_buffer_master_switch_reason
+(
+0 TWS_MASTER_SWITCH_REASON_NONE
+1 TWS_MASTER_SWITCH_REASON_POWER_OFF
+)
+// mem_tws_first_packet_dynamic_buffer_status
+(
+0 TWS_PACKET_STATUS_BIT_PAIRING
+1 TWS_PACKET_STATUS_BIT_HSP_ROLE
+)
+//mem_hsp_role
+(
+0x00 HSP_ROLE_L
+0x01 HSP_ROLE_R
+)
+
+//mem_tws_state
+(
+0x00 TWS_STATE_NONE
+0x01 TWS_STATE_PAIRING
+0x10 TWS_STATE_WAIT_MASTER
+0x11 TWS_STATE_SLAVE_LISTEN
+0x12 TWS_STATE_SLAVE_CONNECTED
+0x13 TWS_STATE_SLAVE_SWITCH_LISTEN
+0x20 TWS_STATE_WAIT_SLAVE
+0x21 TWS_STATE_MASTER_LISTEN
+0x22 TWS_STATE_MASTER_CONNECTED
+)
+
+(
+0 TWS_ROLE_NONE
+1 TWS_ROLE_MASTER
+2 TWS_ROLE_SLAVE
+)
+
+(
+0 TWS_CONNECTING_PHASE0
+1 TWS_CONNECTING_PHASE1
+2 TWS_CONNECTING_PHASE2
+3 TWS_CONNECTING_PHASE3
+4 TWS_CONNECTING_PHASE4
+5 TWS_CONNECTING_PHASE5
+6 TWS_CONNECTING_PHASE6
+7 TWS_CONNECTING_PHASE7
+8 TWS_CONNECTING_PHASE8
+9 TWS_CONNECTING_PHASE9
+10 TWS_CONNECTING_PHASE10
+)
+(
+15 TWS_MAX_LOSS_ACK
+)
+
+(
+0 AVRCP_SUSPEND_STATUS
+1 AVRCP_START_STATUS
+2 AVRCP_PAUSE_STATUS
+)
+
+(
+36 TWS_CHANNEL_INDEX
+8 TWS_CHANNEL_INDEX_0
+36 TWS_CHANNEL_INDEX_1
+)
+(
+0x00 TWS_SET_NONE
+0x33 TWS_SET_SLAVE
+0x55 TWS_SET_MASTER
+)
+
+(
+0x38 ADV_INTERVAL
+)
+
+(
+0xFFEE TWS_BLE_ADV_FLAG_POWER_ON
+0xFFDD TWS_BLE_ADV_FLAG_NO_CONNECTED
+0xFF0D TWS_BLE_ADV_FLAG_CONNECTED
+
+0x8FBB TWS_BLE_ADV_FLAG_TRANS
+0x9FD7 TWS_BLE_ADV_FLAG_SPEC_SETTING
+)
+
+(
+0x30 TWS_SPEC_ADV_FLAG_NAME
+0x35 TWS_SPEC_ADV_FLAG_UPDATE_FLASH
+0x37 TWS_SPEC_ADV_FLAG_TEST_MUSIC
+)
+
+

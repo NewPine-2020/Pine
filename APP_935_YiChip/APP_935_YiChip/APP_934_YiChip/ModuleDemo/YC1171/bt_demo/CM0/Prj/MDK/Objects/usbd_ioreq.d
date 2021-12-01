@@ -1,0 +1,13 @@
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.c
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_def.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_conf.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\usbd_ioreq.o: ..\..\application\btreg.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\usbd_ioreq.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h

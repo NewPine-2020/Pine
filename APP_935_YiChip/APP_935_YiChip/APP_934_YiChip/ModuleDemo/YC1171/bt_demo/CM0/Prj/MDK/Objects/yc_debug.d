@@ -1,0 +1,16 @@
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.c
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc_debug.o: ..\..\application\btreg.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h
+.\objects\yc_debug.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\yc_debug.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\yc_debug.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h
+.\objects\yc_debug.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc_debug.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h
+.\objects\yc_debug.o: ..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h

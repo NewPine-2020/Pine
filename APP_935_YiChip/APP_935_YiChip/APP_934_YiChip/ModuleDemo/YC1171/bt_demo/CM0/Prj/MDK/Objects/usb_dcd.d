@@ -1,0 +1,10 @@
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\Usb_dcd.c
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_dcd.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_regs.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\usb_dcd.o: ..\..\application\btreg.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_conf.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_defines.h
+.\objects\usb_dcd.o: ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_bsp.h

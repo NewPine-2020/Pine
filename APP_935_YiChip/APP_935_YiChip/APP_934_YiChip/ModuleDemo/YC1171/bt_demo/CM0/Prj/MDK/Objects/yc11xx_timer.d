@@ -1,0 +1,9 @@
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.c
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc11xx_timer.o: ..\..\application\btreg.h
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc11xx_timer.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\yc11xx_timer.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h
+.\objects\yc11xx_timer.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h

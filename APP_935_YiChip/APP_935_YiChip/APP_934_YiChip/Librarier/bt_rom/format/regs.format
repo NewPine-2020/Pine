@@ -1,0 +1,514 @@
+(
+  0x8000 core_chipid
+  0x8001 core_revid
+  0x8003 core_kick
+  0x8005 core_lpm_wr
+  0x8006 core_misc_ctrl
+  0x800a core_dma_start
+  0x800b core_sbc_clr
+  0x8010 core_reset
+  0x8011 core_sysctrl
+  0x8015 core_uart_txd
+  0x8019 core_lpm_wr2
+  0x8022 core_ucode_hi
+  0x8023 core_ucode_ctrl
+  0x8024 core_ucode_low
+  0x8025 core_ucode_data
+
+  0x8026 core_scs_wdata
+  0x802a core_scs_addr
+  0x802c core_flash_offset
+  0x802f core_flash_read_cmd
+  0x8030 core_i2s_ctrl
+  0x8031 core_i2s_clkdiv
+  0x8032 core_i2s_rx_saddr
+  0x8034 core_i2s_tx_saddr
+  0x8036 core_i2s_len
+  0x8038 core_adcd_dcoff
+  0x803a core_adcd_delay
+  0x803b core_adcd_ctrl
+  0x803c core_adcd_saddr
+  0x803e core_adcd_eaddr
+  0x8040 core_rthalfslot
+  0x8042 core_clksel
+  0x8043 core_config
+  0x8043 core_uart_clksel
+  0x8044 core_efuse_addr
+  0x8046 core_efuse_ctrl
+  0x8047 core_efuse_rxlen
+  0x8048 core_left_down_dest
+  0x804a core_right_down_dest
+  0x804c core_lpm_reg
+  0x804f core_lpm_isogate
+  0x8050 core_clkoff
+  0x8052 core_uart_baud
+  0x8054 core_uart_rx_saddr
+  0x8056 core_uart_rx_eaddr
+  0x8058 core_uart_rx_rptr
+  0x805a core_uart_tx_saddr
+  0x805c core_uart_tx_eaddr
+  0x805e core_uart_tx_wptr
+  0x8060 core_uart_ctrl
+  0x8061 core_gpio_key0
+  0x8062 core_gpio_key1
+  0x8063 core_sbc_ctrl
+  0x8064 core_sbc_ctrl2
+  0x8065 core_tone_ctrl
+  0x8066 core_tishi_saddr
+  0x8068 core_tishi_len
+  0x806a core_tishi_wptr
+  0x806c core_tishi_ctrl
+  0x806d core_left_up_dest
+  0x806e core_right_up_dest
+  0x806f core_left_step
+  0x8070 core_right_step
+  0x8071 core_uartb_ctrl
+  0x8072 core_uartb_baud
+  0x8074 core_uartb_rx_saddr
+  0x8076 core_uartb_rx_eaddr
+  0x8078 core_uartb_rx_rptr
+  0x807a core_uartb_tx_saddr
+  0x807c core_uartb_tx_eaddr
+  0x807e core_uartb_tx_wptr
+  0x8080 core_gpio_conf
+  0x80a0 core_qspi_ctrl				
+  0x80a1 core_qspi_delay
+  0x80a2 core_qspi_txlen			
+  0x80a4 core_qspi_txaddr			
+  0x80a6 core_qspi_rxaddr			
+  0x80a8 core_qspi_rxlen			
+  0x80aa core_iicd_ctrl				
+  0x80ab core_iicd_scl_low
+  0x80ac core_iicd_scl_high
+  0x80ad core_iicd_start_setup
+  0x80ae core_iicd_start_hold
+  0x80af core_iicd_stop_setup
+  0x80b0 core_iicd_data_setup
+  0x80b1 core_iicd_data_hold
+  0x80b2 core_iicd_txlen			
+  0x80b4 core_iicd_txaddr			
+  0x80b6 core_iicd_rxaddr			
+  0x80b8 core_iicd_rxlen			
+  0x80ba core_spid_ctrl				
+  0x80bb core_spid_delay
+  0x80bc core_spid_txlen			
+  0x80be core_spid_txaddr			
+  0x80c0 core_spid_rxaddr			
+  0x80c2 core_spid_rxlen			
+  0x80c4 core_mic_hpf_alpha				
+  0x80c5 core_mic_hpf_ctrl
+  0x80c6 core_sys_pause_ctrl0
+  0x80c7 core_sys_pause_ctrl1   
+  0x80ca core_cvsd_ctrl1
+  0x80cc core_bist_ctrl
+  0x80cc core_ccnt_bit				
+
+  0x80cd core_pwm0_pcnt
+  0x80cf core_pwm0_ncnt
+  0x80d1 core_pwm0_ctrl				
+  0x80d2 core_pwm1_pcnt
+  0x80d4 core_pwm1_ncnt
+  0x80d6 core_pwm1_ctrl				
+
+  0x80d7 core_pwm2_ctrl				
+  0x80dc core_pwm3_ctrl				
+  0x80e1 core_pwm4_ctrl				
+  0x80e6 core_pwm5_ctrl				
+  0x80eb core_pwm6_ctrl				
+  0x80f0 core_pwm7_ctrl				
+
+  0x80f5 core_cvsd_ctrl				
+  0x80f6 core_cvsdin_saddr		
+  0x80f8 core_cvsdout_saddr		
+  0x80fa core_cvsd_buf_len				
+  0x80fc core_pcmin_saddr			
+  0x80fe core_pcmout_8k_saddr		
+  0x8100 core_dac_saddr
+  0x8102 core_dac_len
+  0x8104 core_dac_wptr
+  0x8106 core_dac_ctrl
+  0x8107 core_dac_sel
+  0x8108 core_dac_lvol
+  0x8109 core_dac_rvol
+  0x810a core_sbc_saddr
+  0x810c core_sbc_daddr
+  0x810e core_sbc_slen
+  0x8110 core_sbc_dlen
+  0x8112 core_sbc_swp
+  0x8114 core_sbc_cache_cfg0
+  0x8115 core_sbc_cache_cfg1
+  0x8116 core_sbc_cache_cfg2
+  0x8117 core_ff_dither0
+  0x8119 core_coef_wdata
+  0x811c core_adc_filter_ctrl
+  0x811d core_coef_ctrl
+  0x811e core_dac_sel2
+  0x8120 core_dac_dc_cali_r
+  0x8122 core_dac_dc_cali_l
+  0x8124 core_pcmout_48k_saddr		
+  0x8126 core_cvsd_grp_len
+  0x8128 core_ff_dither1
+  0x8129 core_ff_dither2
+  0x812a core_gpio_conf1
+  0x8138 core_ramp_ctrl
+ 
+  0x8300 core_clkn
+  0x8304 core_extmclk
+  0x8308 core_misc_status
+  0x8309 core_exe_rd
+  0x830a core_avg_pwr
+  0x830c core_uart_status
+  0x830c core_uart_rbaud
+  0x830e core_uart_tx_items
+  0x8310 core_uart_tx_rptr
+  0x8312 core_uart_rx_items
+  0x8314 core_uart_rx_wptr
+  0x8316 core_adcd_addr
+  0x8318 core_xtal_cnt
+  0x8319 core_sbc_status
+  0x831a core_gpio_in5
+  0x831b core_debug_baud
+  0x831c core_gpio_in
+  0x831d core_gpio_in1
+  0x831e core_gpio_in2
+  0x8320 core_i2s_wrptr
+  0x8322 core_i2s_rdptr
+  0x8324 core_spid_remain
+  0x8326 core_otpd_remain
+  0x8327 core_efuse_rdata
+  0x8328 core_qspi_remain
+  0x832a core_iicd_remain
+  0x832c core_adc_in
+  0x832e core_current_otp_addr
+  0x8330 core_dma_status
+  0x8331 core_perf_status
+  0x8332 core_dac_status
+  0x8333 core_cordic_out
+  0x8334 core_tishi_rptr
+  0x8336 core_lpm_ctrl
+  0x8339 core_lpm_ldotrim
+  0x833a core_lpm_xtalcnt
+  0x833b core_lpm_buckcnt
+  0x833c core_lpm_ldocnt
+  0x833d core_lpm_latch
+  0x833e core_lpm_buckctrl
+  0x833e core_lpm_buck_cfg
+  0x8342 core_gpio_wakeup_low
+  0x8347 core_gpio_wakeup_high
+
+  0x834b core_ccnt_counter
+  0x834e core_bist_done
+  0x8350 core_bist_fail
+  0x8352 core_sumdata
+  0x8354 core_uartb_status
+  0x8355 core_uartb_rbaud
+  0x8356 core_uartb_tx_items
+  0x8358 core_uartb_tx_rptr
+  0x835a core_uartb_rx_items
+  0x835c core_uartb_rx_wptr
+  0x835e core_scs_rdata
+  0x8362	core_pcmin_ptr
+  0x8364	core_8k_pcmout_ptr
+  0x8366	core_cvsdin_ptr
+  0x8368	core_cvsdout_ptr
+  0x836a	core_dac_rptr
+  0x836c core_sbc_srp
+  0x836e core_sbc_dwp
+  0x8370 core_exe_addr
+  0x8373 core_pwm_int
+  0x8376 core_48k_pcmout_ptr
+  0x8379 core_chgr_event
+
+  0x8203 core_ice_ctrl
+  0x8204 core_ice_status
+  0x8205 core_ice_break0
+  0x8207 core_ice_break1
+  
+  
+  
+  0x8400   mem_b_box          /* entire bank */
+  0x8500   mem_e_box          /* entire bank */
+  0x8600   mem_l_box          /* entire bank */
+
+  0x8700 memk
+
+  0x8900 rfen_rx
+  0x8901 rfen_tx
+  0x8902 rfen_mdm
+  0x8903 rfen_sn
+  0x8904 rfen_msc
+  0x8905 rfen_ck
+  0x8906 rfen_adc
+  0x8912 rf_agc_ctrl
+  0x8914 rfen_ulp
+
+  0x894b rf_rx_vctrl_reg1
+  0x894c rf_rx_vctrl_reg2
+  0x894d rf_rx_ib_lna
+  0x894e rf_rx_lna_ctrim
+
+  0x8950 rf_bpf_ctrim
+  0x8951 rf_bpf_ib
+  0x8952 rf_adc_rccal
+  0x8952 rf_rccal_ctrl
+  0x8953 rf_rccal_sel
+  0x8955 rf_tx_pa
+  0x8956 rf_tx_mix
+  0x895f rf_pll_rstn
+  0x8964 rf_sdm_en
+  0x8960 rf_pll_intg
+  0x8961 rf_pll_frac
+  0x8963 rf_pll_frachi
+  0x896c rf_afc_cap
+  0x896e rg_misc
+  0x8967 rf_clkpll_bias
+  0x896f rf_clkpll_en
+  0x8968 rf_clkpll_int
+  0x8969 rf_clkpll_frac
+  0x896d rf_balun_ctrim
+  0x8971 rf_adc_mode
+  0x8972 rf_adc_gc
+  0x8973 rf_adc_ch
+  0x8973 rfen_chgpump
+  0x897e rfen_aadc
+
+
+  0x8990 rf_rccal_result
+  0x8991 rf_afc_d2a
+  0x8992 rf_rssi
+
+  
+  0x8a00 core_aadc_0
+  0x8a01 core_aadc_1
+  0x8a02 core_aadc_2
+  0x8a03 core_aadc_3
+  0x8a04 core_aadc_4
+  0x8a05 core_aadc_5
+  0x8a06 core_aadc_6
+  0x8a07 core_aadc_7
+  0x8a08 core_aadc_8
+  0x8a09 core_aadc_9
+  0x8a0a core_aadc_a
+
+0x8c00 core_usb_config		
+0x8c01 core_usb_int_mask	
+0x8c02 core_usb_addr
+0x8c03 core_usb_rx_saddr
+0x8c05 core_usb_rx_eaddr
+0x8c07 core_usb_rxptr
+0x8c09 core_usb_tx_saddr0
+0x8c0b core_usb_tx_saddr1
+0x8c0d core_usb_tx_saddr2
+0x8c0f core_usb_tx_saddr3
+0x8c11 core_usb_hmode
+0x8c18 core_usb_trig	
+0x8c19 core_usb_stall		
+0x8c1a core_usb_clear		//7bit reset
+0x8c20 core_usb_rx_wptr
+0x8c22 core_usb_stall_status
+0x8c23 core_usb_status
+0x8c24 core_usb_txbusy
+
+0x8c25 core_usb_sof_cntl
+0x8c26 core_usb_sof_cnth
+
+
+0x1f020 core_dma_ctrl
+0x1f024 core_dma_table_addr_h
+0x1f028 core_dma_table_addr_l
+0x1f02c core_dma_task_val
+0x1f030 core_dma_task_status
+0x1f034 core_dma_task_int_status
+0x1f038 core_dma_task_int_clear
+
+4 rx_freq_offset
+4 tx_freq_offset
+
+/* bit difinitions */
+  4 whiteoff_bit
+  6 clksel_rc
+  5 clksel_dpll
+  4 clksel_xtal
+  5 adc_rccal
+  0 bpf_rccal
+  1 demod_clkoff
+
+(
+  2 reload_code
+  7 cold_wake
+  3 gpio_latch
+  6 enable_retmem
+  0xbf isogate_mask
+)
+
+// misc ctrl
+(
+  0x04 set_tea_key
+  0x08 lock_efuse
+  0x10 x_sethi
+  0x20 y_sethi
+  0x40 z_sethi
+  0x80 ccnt_start
+)
+
+// dma start
+(
+  0x01 otpd_start
+  0x02 spid_start
+  0x04 iicd_start
+  0x08 qspi_start
+)
+
+// dma status bit
+(
+  0 otpd_crcok
+  1 otpd_done
+  2 qspi_crcok
+  3 qspi_done
+  4 iicd_crcok
+  5 iicd_done
+  6 spid_done
+  7 qspi_rw
+)
+
+// perf_status
+(
+3 iicd_ack
+)
+
+
+(
+0x8b uart_ctrl_default //BCSP
+0x81 uart_ctrl_h4 //H4
+0x81 uart_ctrl_normal
+0x81 uart_ctrl_57600
+2 uart_baud_len
+0x01 uartclk_dpll
+0x1a0 uart_baud_115200
+0xbb uart_baud_256000
+0x340 uart_baud_57600
+0x0034 uart_baud_921600
+0x0020 uart_baud_1_5M
+0x2dc6c00 uart_clk
+)
+
+//core_clkoff
+(
+	0 CLOCK_OFF_AUTH_ROM
+	1 CLOCK_OFF_EFUSE
+	2 CLOCK_OFF_DEBUG_UART
+	3 CLOCK_OFF_ITRACE
+	4 CLOCK_OFF_QSPI
+	5 CLOCK_OFF_AUDIO_DAC
+	6 CLOCK_OFF_VOICE_FILTER
+	7 CLOCK_OFF_I2C
+	8 CLOCK_OFF_CM0
+	9 CLOCK_OFF_MRAM
+	10 CLOCK_OFF_USB
+	11 CLOCK_OFF_SBC
+	12 CLOCK_OFF_SPI
+	13 CLOCK_OFF_SDIO
+	14 CLOCK_OFF_I2S
+	15 CLOCK_OFF_UART
+)
+
+//DAC_CTRL
+(
+0 DAC_ENABLE
+1 DAC_MRAM_SEL
+2 DAC_CONTINUOUS_MODE
+3 DAC_MUTU
+4 DAC_INIT_FILTER
+5 DAC_SDM
+6 DAC_INVERT_WAVE
+7 DAC_BYPASS_DAC
+10 DAC_ANA_CLK_EN
+)
+
+//RAMP_CTRL
+(
+0 RAMP_CTRL_LEFF_DOWN_EN
+1 RAMP_CTRL_LEFT_UP_EN
+2 RAMP_CTRL_RIGHT_DOWN_EN
+3 RAMP_CTRL_RIGHT_UP_EN
+4 RAMP_CTRL_DOWN_FINISH_CLR
+5 RAMP_CTRL_UP_FINISH_CLR
+)
+// sbc_ctrl2 bit  core_sbc_cache_cfg2
+(
+  0 sbc_cache_addr_16
+  1 sbc_cache_load
+  2 sbc_cache_update
+  3 sbc_cache_en
+  4 sbc_ctrl_channel_0_disable
+  5 sbc_ctrl_channel_1_disable
+  6 sbc_ctrl_channel_01_mux
+  7 sbc_ctrl_cvsd_filter
+)
+// core_dac_sel2
+(
+  2 core_dac_sel2_clk_en_l
+  3 core_dac_sel2_test_gpio_to_audio_1
+  6 core_dac_sel2_clk_en_r
+  7 core_dac_sel2_test_gpio_to_audio_2
+  10 core_dac_sel2_ana_clk_en
+)
+           
+// gpio config types
+(
+  0 gpcfg_input
+  2 gpcfg_qspi_ncs
+  3 gpcfg_qspi_sck
+  4 gpcfg_qspi_io0
+  5 gpcfg_qspi_io1
+  6 gpcfg_qspi_io2
+  7 gpcfg_qspi_io3
+  8 gpcfg_uart_txd
+  9 gpcfg_uart_rxd
+  10 gpcfg_uart_rts
+  11 gpcfg_uart_cts
+  12 gpcfg_uartb_txd
+  13 gpcfg_uartb_rxd
+  14 gpcfg_uartb_rts
+  15 gpcfg_uartb_cts
+  16 gpcfg_pwm_out0
+  17 gpcfg_pwm_out1
+  18 gpcfg_pwm_out2
+  19 gpcfg_pwm_out3
+  20 gpcfg_pwm_out4
+  21 gpcfg_pwm_out5
+  22 gpcfg_pwm_out6
+  23 gpcfg_pwm_out7
+  24 gpcfg_i2s_dout
+  25 gpcfg_i2s_lrckout
+  26 gpcfg_i2s_clkout
+  28 gpcfg_i2s_din
+  29 gpcfg_i2s_lrckin
+  30 gpcfg_i2s_clkin
+  31 gpcfg_spid_miso
+  32 gpcfg_spid_ncs
+  33 gpcfg_spid_sck
+  34 gpcfg_spid_mosi
+  35 gpcfg_spid_sdio
+  36 gpcfg_spid_ncsi
+  37 gpcfg_spid_scki
+  38 gpcfg_qdec_x0
+  39 gpcfg_qdec_x1
+  40 gpcfg_qdec_y0
+  41 gpcfg_qdec_y1
+  42 gpcfg_qdec_z0
+  43 gpcfg_qdec_z1
+  44 gpcfg_iic_scl
+  45 gpcfg_iic_sda
+  46 gpcfg_dac_out
+  47 gpcfg_dac_outi
+  60 gpcfg_jtag_swclk
+  61 gpcfg_jtag_swdat
+  62 gpcfg_output_low
+  63 gpcfg_output_high
+
+  0x40 gpcfg_pullup
+  0x80 gpcfg_pulldown
+  0xc0 gpcfg_no_ie
+)
+

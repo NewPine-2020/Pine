@@ -1,0 +1,132 @@
+xmemalloc(
+	1 mem_ipc_mcu_phase
+	1 mem_ipc_mcu_state
+	1 mem_ipc_enable
+	1 mem_ipc_le_data_len
+	2 mem_ipc_le_data_att_handle
+	1 mem_ipc_tx_data_len
+	2 mem_ipc_tx_data_ptr
+	2 mem_ipc_loss_packet
+	3 mem_temp_for_addr
+	10 mem_ipc_test_buff	
+	
+	0 mem_param_ipc_mem_block_start_addr
+	3 mem_param_ipc_to_bt_buf_start_addr
+	3 mem_param_ipc_to_bt_buf_end_addr
+	3 mem_param_ipc_to_bt_wptr_addr
+	3 mem_param_ipc_to_bt_rptr_addr
+	3 mem_param_ipc_to_m0_wptr_addr
+	3 mem_param_ipc_to_m0_rptr_addr
+	3 mem_param_ipc_to_m0_buf_start_addr
+	0 mem_param_ipc_mem_block_end_addr
+	3 mem_param_ipc_to_m0_buf_end_addr
+
+
+	1 mem_param_debug_log_func_enable
+	4 mem_debug_log_temp_point
+	0 mem_param_debug_log_mem_block_start_addr
+	3 mem_param_debug_log_initial_flag_addr
+	3 mem_param_debug_log_lock_flag_cm0_addr
+	3 mem_param_debug_log_lock_flag_respin_addr
+	3 mem_param_debug_log_lock_victim_addr
+	3 mem_param_debug_log_read_index_addr
+	3 mem_param_debug_log_write_index_addr
+	3 mem_param_debug_log_buffer_start_addr
+	0 mem_param_debug_log_mem_block_end_addr
+	3 mem_param_debug_log_buffer_end_addr
+
+	// Use for cm0 to check respin wakeup from power on or lpm, in startup_m0.s have define __INIT_REG__, gcc.ld have real defined
+	1 mem_wake_flag
+	2 mem_m0_lpm_flag
+)
+
+(
+0 MCU_STATE_IDLE
+1 MCU_STATE_HIBERNATE
+2 MCU_STATE_LPM
+3 MCU_STATE_STOP
+
+0 MCU_PHASE_IDLE	
+1 MCU_PHASE1_NACK	
+2 MCU_PHASE1_ACK	
+3 MCU_PHASE2_NACK	
+4 MCU_PHASE2_ACK	
+)
+
+(
+0x5f DEBUG_LOG_INITIAL_SUCCESS_FLAG   // flag
+0x35 DEBUG_LOG_LOCK_VICTIM_CM0   //
+0x53 DEBUG_LOG_LOCK_VICTIM_RESPIN   //
+)
+
+//IPC Data subtype
+(
+0x00 IPC_DATA_SUBTYPE_FREE
+0x01 IPC_DATA_SUBTYPE_BLE
+0x02 IPC_DATA_SUBTYPE_SPP
+0x03 IPC_DATA_SUBTYPE_HCI
+0x04 IPC_DATA_SUBTYPE_ACL_BLE
+0x05 IPC_DATA_SUBTYPE_ACL_CLASSIC
+)
+
+//IPC type
+(
+0x01 IPC_TYPE_CMD
+0x02 IPC_TYPE_EVT
+0x03 IPC_TYPE_HID
+0x04 IPC_TYPE_SPP
+0x05 IPC_TYPE_BLE
+0x06 IPC_TYPE_24G
+0x07 IPC_TYPE_MESH	
+0x08 IPC_TYPE_ADV
+0x09 IPC_TYPE_SCAN
+0x0a IPC_TYPE_BT_TO_CM0_DATA
+0x0b IPC_TYPE_CM0_TO_BT_DATA
+0x0a IPC_TYPE_A2DP // no use
+0x0b IPC_TYPE_HFP // no use
+0x0c IPC_TYPE_TWS
+0x0d IPC_TYPE_HCI
+)
+
+
+(
+0x2000 MSBC_PCM_IN_BUFFER_ADDR
+0x2800 MSBC_OUT_BUFFER_ADDR
+ 
+0x3000 MSBC_IN_BUFFER_ADDR
+0x3800 MSBC_PCM_OUT_BUFFER_ADDR
+
+0x39 MSBC_PACKET_LEN
+0xF0 MSBC_PCM_PACKET_LEN
+
+0x1c8 MSBC_PACKET_MAX_LEN 
+0x780 MSBC_PCM_MAX_PACKET_LEN  //8
+ 
+0x2c00 MSBC_ENCODE_BUF_ADDRESS
+0x3400 MSBC_DECODE_BUF_ADDRESS
+0x400 MSBC_BUF_LENTH
+
+0x2000 MSBC_NEW_DAC_48K_START_ADDR
+//0xB800 MSBC_NEW_DAC_8K_START_ADDR
+
+0xb640 MSBC_NEW_ADC_8K_START_ADDR
+
+0xC540 MSBC_NEW_CACHE_START_ADDR
+0xC940 MSBC_NEW_DECODE_CACHE_START_ADDR
+
+0xF00 MSBC_NEW_PCM_MAX_BUFFER_LEN  //for fixed 8 buffers
+0x2000 MSBC_NEW_DAC_48K_MAX_BUFFER_LEN  //
+)
+
+(
+0x00 PNP_PROFILE
+0x01 AVCTP_PROFILE
+0x02 AVRCP_TARGET_PROFILE
+0x03 AVRCP_CONTROL_PROFILE
+0x04 HFP_PROFILE
+0x05 HSP_PROFILE
+0x06 HID_PROFILE
+0x07 AAP_PROFILE
+0x08 SPP_PROFILE
+0x09 NUM_PROFILE
+)

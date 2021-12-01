@@ -1,0 +1,436 @@
+
+mem_patch00:     
+04   #mem_patch00
+40   #mem_patch01
+01   #mem_patch02
+50   #mem_patch03
+11   #mem_patch04
+00   #mem_patch05
+04   #mem_patch06
+46   #mem_patch07
+12   #mem_patch08
+00   #mem_patch09
+10   #mem_patch0A
+31   #mem_patch0B
+00   #mem_patch0C
+1c   #mem_patch0D
+00   #mem_patch0E
+01   #mem_patch0F
+62   #mem_patch10
+00   #mem_patch11
+00   #mem_patch12
+40   #mem_patch13
+11   #mem_patch14
+01   #mem_patch15
+00   #mem_patch16
+06   #mem_patch17
+00   #mem_patch18
+00   #mem_patch19
+00   #mem_patch1A
+00   #mem_patch1B
+01   #mem_patch1C
+00   #mem_patch1D  
+00   #mem_patch1E
+00   #mem_patch1F
+80   #mem_patch20
+10   #mem_patch21
+1c   #mem_patch22
+00   #mem_patch23
+e8   #mem_patch24
+07   #mem_patch25
+00   #mem_patch26
+c8   #mem_patch27
+06   #mem_patch28
+89   #mem_patch29
+06   #mem_patch2A
+29   #mem_patch2B
+11   #mem_patch2C
+40   #mem_patch2D
+33    #mem_patch2E
+00   #mem_patch2F
+00   #mem_patch30
+00   #mem_patch31
+04   #mem_patch32
+00   #mem_patch33
+60   #mem_patch34
+00   #mem_patch35
+04   #mem_patch36
+00   #mem_patch37
+00   #mem_patch38
+00   #mem_patch39
+10   #mem_patch3A
+00   #mem_patch3B
+00   #mem_patch3C
+04   #mem_patch3D
+00   #mem_patch3E
+00   #mem_patch3F
+
+
+##############NVRAM CONFIG##############
+mem_nv_data_ptr:mem_nv_data
+mem_nv_data_number:05
+#####################################
+
+##############BLUETOOTH CONFIG##############
+###commom###
+mem_device_option:0f
+mem_lmp_version:09 2d 0a 06 00
+###ble###
+mem_le_lap:d5 cc aa aa cc 52
+
+mem_le_adv_data_len:12
+mem_le_adv_data:
+02 01 0e 
+04 09 4f 54 41
+09 ff 0e 05 21 11
+
+mem_le_scan_data_len:05
+mem_le_scan_data:
+'\09OTA
+
+
+mem_le_adv_enable:00
+mem_le_scan_type:01
+mem_le_adv_type:00
+mem_le_adv_direct_addr_type:00
+mem_le_scan_own_addr_type:00
+mem_le_scan_filter_policy:00
+mem_le_scan_interval:28
+mem_le_scan_window:0c 00
+mem_le_transmit_window:50
+mem_le_adv_interval_max:60 01 
+mem_le_adv_own_addr_type:00
+
+mem_le_pairing_mode:00
+mem_le_secure_connect_enable:00
+mem_le_pres:02 03 00 01 10 02 03 #justwork
+
+mem_le_pairing_handle:00 00
+
+mem_le_interal_min:
+10 00 #interval max
+10 00 #interval min
+00 00 #latency
+00 01 #supervision timeout
+
+###3.0###
+mem_sp_iocap_local:03 00 00
+mem_role_switch_flag:00
+mem_scan_mode:00
+mem_class: 04 04 24
+mem_local_name_length:
+'EVKOTA
+
+#FF FF FF is Fixed for OTA.
+mem_lap:45 FF 31 FF FF FF
+
+mem_discovery_timeout:00 07 
+mem_ssp_enable:01
+mem_ui_profile_supported:48
+mem_app_connection_options:17
+mem_eir_enable:01
+mem_all_uuid_16bits:
+05
+03#Type: Complete list of 16-bit UUIDs
+1e11 0e11 0811 0d11 0b11
+
+mem_all_uuid_128bits:00
+
+mem_ota_version:0a 00
+mem_ota_write_handle:06
+mem_ota_notify_handle:03
+mem_ota_buck_size:00 10
+mem_ota_packet_max_len:be 00
+
+#attribute list: handle 2bytes, uuid 2bytes, length 1bytes, attribute Nbytes
+mem_le_att_list:
+
+#Primary service yichip transmit ------
+01 00 02 00 28 02 ff ff
+#Characteristic tx--notify
+02 00 02 03 28 01 10
+03 00 02 11 ff 14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+#Client Characteristic Configuration
+04 00 02 02 29 02 01 00
+
+#Characteristic rx--write
+05 00 02 03 28 01 04
+06 00 02 22 ff  14 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+#End of Attribute list
+00 00
+
+
+
+mem_lpm_mode:00
+mem_lpm_overhead:08
+mem_lpm_interval:00 02
+mem_lpm_mult:03
+mem_lpm_mult_timeout:03
+mem_ptt:01
+mem_features:
+ff
+ff
+fb	
+fa	#fe--EDR  F8--BR
+db	#AFHclose 83  #AFHenable_slave cap and classification LMP_SLAVE_AFH_CLASSIFICATION enable 9b, disable 8b
+fd    #9d
+7b
+83
+
+mem_le_features:
+21				//length extension
+00
+00
+00
+00
+00
+00
+00
+
+
+mem_xip_option:5d 40 bb
+
+mem_ui_le_uuid_table:mem_le_att_list
+
+mem_seqi:7f
+
+mem_le_connection_updata_param:
+06 00
+06 00
+00 00
+f4 01
+
+
+mem_codec_msbc_support:00
+mem_codec_type:01
+mem_eq_flag:01
+
+mem_UI_HF_brsf_feature:313538 #30 33 30 
+mem_le_more_data:01
+mem_ipc_enable:01
+
+mem_tws_state:00
+mem_tws_bdaddr:96 55 12 11 33 62
+#mem_tws_bdaddr:96 45 12 00 19 62
+
+
+mem_hsp_role:00
+mem_auto_hsp_role:01
+mem_tws_allow_pairing:01
+mem_tws_allow_pairing_rssi_limit:45
+
+mem_tws_rf_start_anchor:b0 04   # 0x1e0 40us,   0x78 10us,   0x4b0 100us,   0x618 130us
+mem_tws_rf_rcv_window_size:78 00
+
+mem_tws_rf_packet_rx_window_size:f0 0a # 2800
+mem_tws_rf_slave_send_full_packet_sleep_time:58 02 # 50us
+# mem_tws_rf_rcv_window_size + 72us + hardware_delay(18us)
+# send delay is mem_tws_rf_slave_send_full_packet_sleep_time, so we can think the judge below
+# mem_tws_rf_packet_rx_window_size - (mem_tws_rf_rcv_window_size + 72us + hardware_delay(18us) + mem_tws_rf_slave_send_full_packet_sleep_time/2)
+mem_tws_rf_master_check_raw_id_time:db 04
+
+mem_rf_debug_enable: 00
+mem_rf_debug_rf_rx_debug_gpio: 0c
+mem_rf_debug_rf_tx_debug_gpio: 0e
+mem_rf_debug_rf_sync_detect_debug_gpio: 13
+mem_rf_debug_rf_crc_error_debug_gpio: 19
+
+
+mem_param_sco_use_cm0:01
+
+
+# ipc define
+#mem_param_ipc_mem_block_start_addr
+mem_param_ipc_to_bt_buf_start_addr:00 d8 01
+mem_param_ipc_to_bt_buf_end_addr:00 db 01
+mem_param_ipc_to_bt_wptr_addr:00 db 01
+mem_param_ipc_to_bt_rptr_addr:04 db 01
+mem_param_ipc_to_m0_wptr_addr:08 db 01
+mem_param_ipc_to_m0_rptr_addr:0c db 01
+mem_param_ipc_to_m0_buf_start_addr:50 db 01
+mem_param_ipc_to_m0_buf_end_addr:00 dd 01
+#mem_param_ipc_mem_block_end_addr
+
+
+# debug log define
+#mem_param_debug_log_mem_block_start_addr
+mem_param_debug_log_func_enable:00
+
+mem_param_debug_log_initial_flag_addr:10 db 01
+mem_param_debug_log_lock_flag_cm0_addr:11 db 01
+mem_param_debug_log_lock_flag_respin_addr:12 db 01
+mem_param_debug_log_lock_victim_addr:13 db 01
+mem_param_debug_log_read_index_addr:14 db 01
+mem_param_debug_log_write_index_addr:16 db 01
+mem_param_debug_log_buffer_start_addr:18 db 01
+mem_param_debug_log_buffer_end_addr:50 db 01
+#mem_param_debug_log_mem_block_end_addr
+
+# soft dma define
+# size is SOFT_DMA_TABLE_TOTAL_COUNT*4 + SOFT_DMA_TABLE_TOTAL_COUNT*SOFT_DMA_TABLE_UNIT_SIZE = 0x100
+mem_param_soft_dma_enable:01
+mem_param_soft_dma_table_start_addr:10 d5 01
+
+
+# sco m0 rx buffer define
+# size is M0_SCO_RX_BUFFER_SIZE + M0_SCO_TX_BUFFER_SIZE
+mem_param_m0_respin_sco_buffer_start_addr:10 d6 01
+
+
+mem_param_use_cm0_control_flag:01
+# tishi buffer size is 0x2000
+mem_param_tishi_start_addr:00 a0
+
+#mem_app_debug_info_timer use to set first debug timeout
+#mem_param_app_debug_info_timeout use to set period
+mem_app_debug_info_timer:05
+mem_param_app_debug_info_timeout:32
+
+mem_param_tws_tx_power:02
+
+mem_param_tws_send_channel_array:08 24 08 24
+#mem_param_tws_send_channel_array:20 20 20 20
+#mem_param_tws_send_channel_array:08 09 10 11
+
+mem_tx_power:02
+
+mem_sfreq_enable:01
+#mem_param_rf_setup must big then mem_param_pll_setup, be-careful, mem_param_rf_setup real value = 0xEA6 - value
+#we suggest must reserve 0x3A6, means mem_param_rf_setup = (0xEA6 - mem_param_pll_setup - 0x3A6)
+#mem_param_rf_setup:B8 07
+#mem_param_pll_setup:48 03
+mem_param_rf_setup:00 06
+mem_param_pll_setup:00 05
+
+mem_audio_output_setting: 01
+
+
+mem_mram_qspi_tx_addr:00 df
+
+mem_vp_addr:
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+000000 000000
+
+mem_fec_required:00		
+mem_eir:
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 		00 00 00 00 00 00 00 00 00 00 00 00
+mem_simple_pairing_mode:00	
+mem_conn_status:00
+mem_le_conn_status:00
+mem_io_cap_flag:00
+mem_inquiry_mode:00
+
+
+mem_param_alloc_normal_buffer_start_address:00 18
+mem_param_alloc_normal_buffer_max_length:83 00
+mem_param_alloc_big_buffer_start_address:00 20
+mem_param_alloc_big_buffer_max_length:b0 02
+mem_l2cap_rx_max_lenth:b0 02
+
+
+mem_alloc_normal_total_size:0a
+mem_alloc_big_total_size:0a
+mem_snd_br_total_size:0a
+mem_snd_ble_total_size:0a
+mem_snd_hci_total_size:0a
+
+mem_hci_version_svnid:5115
+
+mem_keyscan_switch:00
+
+mem_public_code_svn_version_code:00 00 00 00 00 00 00 00 00
+
+mem_le_tws_scan_interval:28 00
+mem_le_tws_scan_window:0c 00
+mem_param_le_tws_adv_interval_normal:00 01 
+mem_param_le_tws_adv_interval_master_listen:58 00 
+
+
+#mesh init
+mem_mesh_event_head_type:04	#HCI_H4_TYPE_EVENT
+
+mem_mesh_command_complete_num_hci_command_packet:01
+
+mem_mesh_read_local_version_info:
+09		#hci_version BT_HCI_VERSION_5_0
+00 00	#hci_revsion
+09		#lmp_version RADIO_BLE_VERSION_NUMBER:BT_HCI_VERSION_5_0
+0e 05	#manufacture_name Yichip Microelectronics (Hangzhou) Co.,Ltd.
+FF FF	#LPM_subversion
+
+mem_mesh_read_local_support_command:02 05 ff
+
+mem_device_public_address:11 22 33 44 55 66
+
+mem_local_rx_max_octets:fb 00 48 08 fb 00 48 08  
+
+
+mem_lpm_write_temp_adc_low: bb 3a 48 00
+mem_lpm_write_temp_adc_high:14 00 00 00
+#re-charge battery set default to 4.1V, change in charge power off
+#charge target battery set default to 4.3V, change in charge power off
+#re-charge and charge must diff to 0.2V
+#10% Charging termination current control 
+#Use Force on charger CC & CV loop when charger is in standby mode
+mem_lpm_write_temp_charge_control:b0 2b 03 06
+
+mem_lpm_config:8f 10 ca
+mem_lpm_buckcnt:0a 0b ef 07
+mem_lpm_hibernate_switch:00
+mem_gpio_wakeup_low:00 00 00 00 00 00 00 00
+mem_fcomp_mul:02
+mem_fcomp_div:24
+mem_iscan_window:20 00
+mem_iscan_interval:00 04
+mem_pscan_window:16 00
+mem_pscan_interval:00 04
+mem_inq_window:20 00
+mem_page_window:30 00
+mem_page_to:00 30
+mem_rx_window_init:80 03
+mem_rx_window_sniff:00 06
+
+#if you find lpo_time not near 0x2a, you must think the pre timer maybe error.
+#DVDD 0.1uF, VFB 1uF    Time:   DVDD up time: 4us, VFB up time: 255us
+#DVDD 0.1uF, VFB 10uF    Time:   DVDD up time: 4us, VFB up time: 305us 
+#clock unit is internal 32K, 1 step is near 32us
+#so we set:
+#1: digldo pre-on counter(DVDD):  0x02
+#2: exen pre-on counter(VFB):  0x14
+#3: xtal pre-on counter(XTAL) set to zero becouse it will set in lpm_cal_xtal_startup
+mem_lpm_xtalcnt:00 20 18 bf 07
+
+mem_ef_base:00 ff 87
+mem_eeprom_block_size:80
+
+mem_rf_init:
+ff
+
+mem_rf_init_ptr:mem_rf_init
+
+

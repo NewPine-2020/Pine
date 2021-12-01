@@ -1,0 +1,22 @@
+--create .\Objects\blueware.lib
+.\objects\att_dispatch.o
+.\objects\btstack_memory.o
+.\objects\gatt_client.o
+.\objects\gatt_server.o
+.\objects\hci.o
+.\objects\hci_cmds.o
+.\objects\l2cap.o
+.\objects\l2cap_signaling.o
+.\objects\linked_list.o
+.\objects\memory_pool.o
+.\objects\message.o
+.\objects\run_loop.o
+.\objects\run_loop_embedded.o
+.\objects\transport_h4.o
+.\objects\bt_control_rtl8761a.o
+.\objects\att_db_util.o
+.\objects\rfcomm.o
+.\objects\sdp.o
+.\objects\sdp_client.o
+.\objects\sdp_util.o
+.\objects\hid.o

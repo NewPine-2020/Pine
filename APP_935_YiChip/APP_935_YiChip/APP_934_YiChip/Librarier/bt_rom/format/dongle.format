@@ -1,0 +1,13 @@
+
+memalloc(
+1 mem_dongle_count
+6 mem_le_addr_slave1
+6 mem_le_addr_slave2
+1 mem_le_peer_state
+6 mem_app_peer_addr
+
+1 mem_dongle_peers
+1 mem_dongle_pairing_cnt
+2 mem_dongle_signature
+)
+160 context_3

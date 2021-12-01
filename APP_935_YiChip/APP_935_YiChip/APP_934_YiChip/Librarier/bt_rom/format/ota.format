@@ -1,0 +1,96 @@
+
+memalloc(
+1 mem_ota_cmd
+1 mem_ota_return_result
+1 mem_ota_update_flash_mode
+2 mem_ota_write_index
+2 mem_ota_write_length
+3 mem_ota_write_data_addr
+3 mem_ota_write_flash_addr
+// For OTA Fix area Start
+1 mem_ota_enable_xip_flag
+3 mem_xip_flash_offset_mram
+3 mem_storage_start_addr_mram
+1 mem_ota_notify_handle_mram
+1 mem_ota_write_handle_mram
+2 mem_ota_buck_size_mram
+2 mem_ota_packet_max_len_mram
+1 mem_ota_wdt_en_flag
+1 mem_ota_wdt_m0_en
+// For OTA Fix area End
+)
+
+xmemalloc(
+1 mem_ota_notify_handle
+1 mem_ota_write_handle
+2 mem_ota_version
+2 mem_ota_buck_size
+2 mem_ota_packet_max_len
+1 mem_ota_work_mode
+)
+
+(
+0XAB OTA_EVENT
+0XBA OTA_COMMAND
+)
+
+(
+0x0 OTA_WORK_MODE_NORMAL
+0x1 OTA_WORK_MODE_OTA
+)
+
+(
+0x10	OTA_PORTOCOL_VERSION_REQUEST
+0x11	OTA_BUCK_SIZE_REQUEST 
+0x12	OTA_WORK_MODE_REQUEST 
+0x13	OTA_SWITCH_WORK_MODE_REQUEST 
+0x14	OTA_FLASH_CHECKSUM_REQUEST 
+0x15	OTA_START_REQUEST 
+0x16	OTA_DATA_WRITE_CMD 
+0x17	OTA_DATA_WRITE_REQUEST 
+0x18	OTA_END_REQUEST 
+)
+
+
+(
+0x0	OTA_UPDATE_FLASH_NORMAL
+0x1	OTA_UPDATE_FLASH_OTA
+0x2	OTA_UPDATE_FLASH_PCM
+)
+
+(
+0x0	OTA_RESULT_SUCCESS
+0x1	OTA_RESULT_WORKMODE_NOT_SUPPORT
+0x2	OTA_RESULT_WORKMODE_ERROR
+0x3	OTA_RESULT_FLASHMODE_NOT_SUPPORT
+0x4	OTA_RESULT_INDEX_ERROR
+0x5	OTA_RESULT_LENGTH_ERROR
+0x6	OTA_RESULT_BUCK_SIZE_ERROR
+0x7	OTA_RESULT_WRITE_FLASH_ERROR
+0xFF OTA_RESULT_ERROR
+)
+
+(
+0x1000  OTA_CODE_START_ADDR
+0x6000 NORMAL_CODE_START_ADDR
+)
+
+(
+0x2000 OTA_DATA_ADDR
+)
+
+(
+0x1000 OTA_FLASH_START_ADDR
+0x5000  OTA_FLASH_ALL_LENGTH
+)
+
+(
+0x29000 OTA_FLASH_NORMAL_LENGTH
+)
+
+(
+0x30000 VP_FLASH_START_ADDR
+0X4F000	VP_FLASH_ALL_LENGTH
+)
+
+

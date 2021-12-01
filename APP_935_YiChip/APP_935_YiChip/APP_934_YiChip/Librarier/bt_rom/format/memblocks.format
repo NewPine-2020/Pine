@@ -1,0 +1,80 @@
+//
+//
+//Large memory blocks defined in this file.
+//Blocks Shall be defined with absolute address.
+//Blocks' length Shall be specified in comment following Blocks' names.
+//Different blocks MAY be overlap.
+//Blocks defined in this file Shall NOT be overlap with variable in memmap.format.
+
+// USB C51 exchange area
+(
+0xff0 mem_mcmd
+0xff1 mem_mouse_data
+)
+
+0x266 L2CAP_ONE_RXBUFF_LENTH_NEW
+
+0x300 L2CAP_ONE_RXBUFF_LENTH
+
+
+// total length should not big to 10.
+0x01 L2CAP_NORMAL_BUFF_CNT
+0x100 L2CAP_NORMAL_BUFF_LENTH
+0x2000 L2CAP_NORMAL_BUFF_START_ADDR
+
+0x09 L2CAP_BIG_BUFF_CNT
+0x2b0 L2CAP_BIG_BUFF_LENTH
+0x200 L2CAP_BIG_BUFF_LENTH_BLE // ble should not big to mem_le_tx_buffer0
+0x2b0 L2CAP_BIG_BUFF_LENTH_CLASSIC
+0x2200 L2CAP_BIG_BUFF_START_ADDR
+
+//l2cap RX buffers
+(
+0x1400 mem_l2cap_rxbuff1		//0x300
+0x1700 mem_l2cap_rxbuff2		//0x300
+0x1a00 mem_l2cap_rxbuff3		//0x300
+0x1d00 mem_l2cap_rxbuff4		//0x300
+
+//end address:0x17ff
+)
+//l2cap TX buffers
+(
+0x1000 mem_tx_buff0		//128
+0x1080 mem_tx_buff1		//128
+0x1100 mem_tx_buff2		//128
+0x1180 mem_tx_buff3		//128
+0x1200 mem_tx_buff4		//128
+0x1280 mem_tx_buff5		//128
+0x1300 mem_tx_buff6		//128
+0x1380 mem_tx_buff7		//128
+//end address: 0x1bff
+)
+
+(
+0x1c00 mem_le_tx_buffer0
+0x1c80 mem_le_tx_buffer1
+0x1d00 mem_le_tx_buffer2
+0x1d80 mem_le_tx_buffer3
+//end addr:0x1dff
+)
+
+(
+0x1000 mem_le_txheader_temp
+0x1001 mem_le_txlen_temp
+0x1002 mem_le_txpayload_temp
+0x1004 mem_le_txcid_temp
+0x1006 mem_le_l2cap_temp
+0x1007 mem_le_l2cap_response_temp
+0x1008 mem_le_txbdy_temp
+)
+
+//hic buffer
+(
+0x1e00 mem_h5rx_buf//0x100
+0x1eff mem_h5rx_buf_end
+0x1f00 mem_h5tx_buf
+0x1fff mem_h5tx_buf_end
+)
+
+
+

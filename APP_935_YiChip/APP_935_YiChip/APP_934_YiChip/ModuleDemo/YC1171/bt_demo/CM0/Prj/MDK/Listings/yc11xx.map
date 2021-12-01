@@ -1,0 +1,791 @@
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+
+==============================================================================
+
+Section Cross References
+
+    main.o(.text) refers to yc_timer.o(.text) for SYS_TimerInit
+    main.o(.text) refers to usb_main.o(.text) for usb_main
+    startup.o(RESET) refers to startup.o(.text) for Reset_Handler
+    startup.o(RESET) refers to usb_main.o(.text) for USB_IRQHandler
+    startup.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup.o(.text) refers to main.o(.text) for main
+    yc11xx_uart.o(.text) refers to main.o(.text) for _assert_handler
+    yc11xx_uart.o(.text) refers to yc_drv_common.o(.text) for HW_REG_16BIT
+    yc11xx_uart.o(.text) refers to yc11xx_uart.o(.constdata) for .constdata
+    yc11xx_uart.o(.text) refers to yc11xx_uart.o(.bss) for .bss
+    yc11xx_bt.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    yc11xx_bt.o(.text) refers to yc_drv_common.o(.text) for HR_REG_24BIT
+    yc11xx_bt.o(.text) refers to yc_debug.o(.text) for print_log
+    yc11xx_bt.o(.text) refers to yc11xx_bt.o(.data) for .data
+    yc11xx_bt.o(.text) refers to yc11xx_bt.o(.bss) for .bss
+    yc11xx_bt.o(.text) refers to yc11xx_bt.o(.constdata) for .constdata
+    yc_debug.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yc_debug.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    yc_debug.o(.text) refers to idiv.o(.text) for __aeabi_idivmod
+    yc_debug.o(.text) refers to yc_timer.o(.text) for SystemCheckInFastSpeed
+    yc_debug.o(.text) refers to main.o(.text) for _assert_handler
+    yc_debug.o(.text) refers to yc_debug.o(.data) for .data
+    yc_debug.o(.text) refers to yc_debug.o(.bss) for .bss
+    yc_debug.o(.text) refers to yc_debug.o(.constdata) for .constdata
+    yc_debug.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    yc_debug.o(.constdata) refers to yc_debug.o(.conststring) for .conststring
+    yc11xx_gpio.o(.text) refers to yc_drv_common.o(.text) for error_handle
+    yc11xx_gpio.o(.text) refers to yc_timer.o(.text) for SYS_delay_ms
+    yc_queue.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    yc11xx_systick.o(.text) refers to yc11xx_systick.o(.data) for .data
+    yc11xx_timer.o(.text) refers to main.o(.text) for _assert_handler
+    yc11xx_timer.o(.text) refers to yc_drv_common.o(.text) for HW_REG_16BIT
+    yc11xx_timer.o(.text) refers to yc11xx_timer.o(.constdata) for .constdata
+    yc_timer.o(.text) refers to yc_timer.o(.data) for .data
+    yc_timer.o(.text) refers to yc_timer.o(.bss) for .bss
+    yc11xx_wdt.o(.text) refers to yc11xx_wdt.o(.data) for .data
+    usb_main.o(.text) refers to usbd_hid_keyboard_core.o(.text) for USBD_HID_SendReport
+    usb_main.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    usb_main.o(.text) refers to usbd_core.o(.text) for USBD_Init
+    usb_main.o(.text) refers to usb_dcd_init.o(.text) for USBD_OTG_ISR_Handler
+    usb_main.o(.text) refers to usb_main.o(.data) for .data
+    usb_main.o(.text) refers to usb_main.o(.bss) for .bss
+    usb_main.o(.text) refers to usb_main.o(.ARM.__AT_0x10003EFC) for .ARM.__AT_0x10003EFC
+    usb_main.o(.text) refers to usb_main.o(.ARM.__AT_0x10003E98) for .ARM.__AT_0x10003E98
+    usb_main.o(.text) refers to usb_main.o(.ARM.__AT_0x10003DD0) for .ARM.__AT_0x10003DD0
+    usb_main.o(.text) refers to usb_main.o(.ARM.__AT_0x10003D6C) for .ARM.__AT_0x10003D6C
+    usb_main.o(.text) refers to usb_main.o(.ARM.__AT_0x10003D08) for .ARM.__AT_0x10003D08
+    usb_main.o(.text) refers to usbd_usr.o(.data) for USRD_cb
+    usb_main.o(.text) refers to usbd_hid_keyboard_core.o(.data) for USBD_HID_cb
+    usb_main.o(.text) refers to usbd_desc.o(.data) for USR_desc
+    usb_main.o(.data) refers to usb_main.o(.text) for hal_usb_hid_tx_done
+    usb_main.o(.data) refers to usb_main.o(.text) for usb_cdc_tx_done
+    usbd_desc.o(.text) refers to usbd_req.o(.text) for USBD_GetString
+    usbd_desc.o(.text) refers to usbd_desc.o(.data) for .data
+    usbd_desc.o(.text) refers to usbd_req.o(.bss) for USBD_StrDesc
+    usbd_desc.o(.data) refers to usbd_desc.o(.text) for USBD_USR_DeviceDescriptor
+    usbd_usr.o(.data) refers to usbd_usr.o(.text) for USBD_USR_Init
+    usb_core.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    usb_core.o(.text) refers to usb_dcd_init.o(.text) for usb_getbyte
+    usb_core.o(.text) refers to usb_main.o(.ARM.__AT_0x10003E98) for usb_txbuf0
+    usb_core.o(.text) refers to usb_main.o(.ARM.__AT_0x10003DD0) for usb_txbuf1
+    usb_core.o(.text) refers to usb_main.o(.ARM.__AT_0x10003D6C) for usb_txbuf2
+    usb_core.o(.text) refers to usb_main.o(.ARM.__AT_0x10003D08) for usb_txbuf3
+    usb_core.o(.text) refers to usb_dcd_init.o(.data) for usb_rxptr
+    usb_core.o(.text) refers to usbd_core.o(.data) for USBD_DCD_INT_fops
+    usb_core.o(.text) refers to usbd_usr.o(.text) for my_delay_ms
+    usb_dcd.o(.text) refers to usb_core.o(.text) for USB_OTG_SelectCore
+    usb_dcd_init.o(.text) refers to usb_core.o(.text) for USB_OTG_WritePacket
+    usb_dcd_init.o(.text) refers to usb_main.o(.text) for usb_init
+    usb_dcd_init.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    usb_dcd_init.o(.text) refers to usbd_core.o(.text) for USBD_Init
+    usb_dcd_init.o(.text) refers to yc_debug.o(.text) for pringt_string_log
+    usb_dcd_init.o(.text) refers to usbd_ioreq.o(.text) for USBD_CtlSendData
+    usb_dcd_init.o(.text) refers to usb_dcd_init.o(.data) for .data
+    usb_dcd_init.o(.text) refers to usb_main.o(.ARM.__AT_0x10003EFC) for usb_rxbuf
+    usb_dcd_init.o(.text) refers to usbd_core.o(.data) for USBD_DCD_INT_fops
+    usb_dcd_init.o(.text) refers to usb_main.o(.bss) for USB_OTG_dev
+    usb_dcd_init.o(.text) refers to usbd_usr.o(.data) for USRD_cb
+    usb_dcd_init.o(.text) refers to usbd_hid_keyboard_core.o(.data) for USBD_HID_cb
+    usb_dcd_init.o(.text) refers to usbd_desc.o(.data) for USR_desc
+    usbd_core.o(.text) refers to usbd_req.o(.text) for USBD_ParseSetupRequest
+    usbd_core.o(.text) refers to usb_dcd.o(.text) for DCD_EP_Stall
+    usbd_core.o(.text) refers to usbd_ioreq.o(.text) for USBD_CtlContinueRx
+    usbd_core.o(.data) refers to usbd_core.o(.text) for USBD_DataOutStage
+    usbd_core.o(.data) refers to usbd_core.o(.data) for USBD_DCD_INT_cb
+    usbd_ioreq.o(.text) refers to usb_dcd.o(.text) for DCD_EP_Tx
+    usbd_req.o(.text) refers to usb_dcd.o(.text) for DCD_EP_Stall
+    usbd_req.o(.text) refers to usbd_ioreq.o(.text) for USBD_CtlSendStatus
+    usbd_req.o(.text) refers to usb_core.o(.text) for USB_OTG_ActiveRemoteWakeup
+    usbd_req.o(.text) refers to usbd_core.o(.text) for USBD_SetCfg
+    usbd_req.o(.text) refers to usbd_req.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    usbd_req.o(.text) refers to usbd_req.o(.data) for .data
+    usbd_req.o(.text) refers to usb_dcd_init.o(.data) for Address_Value
+    usbd_req.o(.text) refers to usb_dcd_init.o(.data) for SetAddress_Flag
+    usbd_cdc_core.o(.text) refers to usb_dcd_init.o(.text) for usb_getword
+    usbd_cdc_core.o(.text) refers to usb_core.o(.text) for USB_OTG_ReadPacket
+    usbd_cdc_core.o(.text) refers to usbd_ioreq.o(.text) for USBD_CtlSendData
+    usbd_cdc_core.o(.text) refers to usbd_req.o(.text) for USBD_CtlError
+    usbd_cdc_core.o(.text) refers to usb_dcd.o(.text) for DCD_EP_PrepareRx
+    usbd_cdc_core.o(.text) refers to usbd_cdc_core.o(.data) for .data
+    usbd_cdc_core.o(.text) refers to usbd_cdc_core.o(.bss) for .bss
+    usbd_cdc_core.o(.data) refers to usbd_cdc_core.o(.text) for usbd_cdc_Init
+    usbd_hid_keyboard_core.o(.text) refers to usb_dcd.o(.text) for DCD_EP_Open
+    usbd_hid_keyboard_core.o(.text) refers to usbd_req.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    usbd_hid_keyboard_core.o(.text) refers to usbd_ioreq.o(.text) for USBD_CtlSendData
+    usbd_hid_keyboard_core.o(.text) refers to usb_dcd_init.o(.text) for usb_getword
+    usbd_hid_keyboard_core.o(.text) refers to usb_core.o(.text) for USB_OTG_ReadPacket
+    usbd_hid_keyboard_core.o(.text) refers to usbd_req.o(.text) for USBD_CtlError
+    usbd_hid_keyboard_core.o(.text) refers to usbd_hid_keyboard_core.o(.data) for .data
+    usbd_hid_keyboard_core.o(.text) refers to usbd_hid_keyboard_core.o(.constdata) for .constdata
+    usbd_hid_keyboard_core.o(.text) refers to usbd_hid_keyboard_core.o(.bss) for .bss
+    usbd_hid_keyboard_core.o(.data) refers to usbd_hid_keyboard_core.o(.text) for USBD_HID_Init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    idiv.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(STACK), (46656 bytes).
+    Removing startup.o(HEAP), (4096 bytes).
+    Removing yc11xx_uart.o(.text), (1564 bytes).
+    Removing yc11xx_uart.o(.bss), (2080 bytes).
+    Removing yc11xx_uart.o(.constdata), (172 bytes).
+    Removing yc11xx_bt.o(.text), (928 bytes).
+    Removing yc11xx_bt.o(.bss), (334 bytes).
+    Removing yc11xx_bt.o(.constdata), (3 bytes).
+    Removing yc11xx_bt.o(.data), (8 bytes).
+    Removing yc11xx_bt.o(.data), (2 bytes).
+    Removing yc_drv_common.o(.text), (368 bytes).
+    Removing yc11xx_gpio.o(.text), (528 bytes).
+    Removing yc_queue.o(.text), (282 bytes).
+    Removing yc11xx_systick.o(.text), (76 bytes).
+    Removing yc11xx_systick.o(.data), (4 bytes).
+    Removing yc11xx_timer.o(.text), (420 bytes).
+    Removing yc11xx_timer.o(.constdata), (17 bytes).
+    Removing yc11xx_wdt.o(.text), (228 bytes).
+    Removing yc11xx_wdt.o(.data), (4 bytes).
+    Removing nvic.o(.text), (68 bytes).
+    Removing usb_main.o(.bss), (65 bytes).
+    Removing usb_main.o(.data), (8 bytes).
+    Removing usbd_desc.o(.data), (10 bytes).
+    Removing usb_dcd_init.o(.data), (1 bytes).
+    Removing usbd_cdc_core.o(.text), (316 bytes).
+    Removing usbd_cdc_core.o(.bss), (64 bytes).
+    Removing usbd_cdc_core.o(.bss), (64 bytes).
+    Removing usbd_cdc_core.o(.data), (91 bytes).
+    Removing usbd_cdc_core.o(.data), (4 bytes).
+    Removing usbd_cdc_core.o(.data), (1 bytes).
+    Removing usbd_cdc_core.o(.data), (4 bytes).
+    Removing usbd_cdc_core.o(.data), (44 bytes).
+    Removing usbd_cdc_core.o(.data), (8 bytes).
+    Removing usbd_cdc_core.o(.data), (1 bytes).
+    Removing usbd_cdc_core.o(.data), (1 bytes).
+    Removing usbd_hid_keyboard_core.o(.data), (1 bytes).
+
+36 unused section(s) (total 58521 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup.o(RESET)
+    ../clib/../cmprslib/zerorunl.c           0x00000000   Number         0  __dczerorl.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\device\nvic.c 0x00000000   Number         0  nvic.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\device\yc11xx.c 0x00000000   Number         0  yc11xx.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\bt\yc11xx_bt.c 0x00000000   Number         0  yc11xx_bt.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.c 0x00000000   Number         0  yc_debug.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.c 0x00000000   Number         0  yc11xx_gpio.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.c 0x00000000   Number         0  yc_drv_common.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\queue\yc_queue.c 0x00000000   Number         0  yc_queue.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.c 0x00000000   Number         0  yc11xx_systick.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.c 0x00000000   Number         0  yc11xx_timer.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.c 0x00000000   Number         0  yc_timer.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.c 0x00000000   Number         0  yc11xx_uart.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\CDC\usbd_cdc_core.c 0x00000000   Number         0  usbd_cdc_core.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\class\HID\usbd_hid_keyboard_core.c 0x00000000   Number         0  usbd_hid_keyboard_core.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_core.c 0x00000000   Number         0  usbd_core.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_ioreq.c 0x00000000   Number         0  usbd_ioreq.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\SCPU_USB_Device_Library\core\usbd_req.c 0x00000000   Number         0  usbd_req.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\Usb_dcd.c 0x00000000   Number         0  usb_dcd.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\Usb_dcd_init.c 0x00000000   Number         0  usb_dcd_init.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\libraries\harward_Der\usb_core.c 0x00000000   Number         0  usb_core.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usb_main.c 0x00000000   Number         0  usb_main.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_desc.c 0x00000000   Number         0  usbd_desc.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\usb\scpu_usb_CDC_Device_Demo\usbd_usr.c 0x00000000   Number         0  usbd_usr.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.c 0x00000000   Number         0  yc11xx_wdt.o ABSOLUTE
+    ..\..\..\..\..\..\Librarier\startup\startup.s 0x00000000   Number         0  startup.o ABSOLUTE
+    ..\..\application\main.c                 0x00000000   Number         0  main.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x000000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000000c8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000000c8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000000d0   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000000d0   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000000d4   Section        0  main.o(.text)
+    .text                                    0x000000f0   Section       40  startup.o(.text)
+    RUN_TO_MAIN                              0x000000ff   Thumb Code     4  startup.o(.text)
+    LOADRAMFLAG                              0x00000104   Data           4  startup.o(.text)
+    .text                                    0x00000118   Section        0  yc_debug.o(.text)
+    .text                                    0x00000864   Section        0  yc_timer.o(.text)
+    hw_delay                                 0x00000b5f   Thumb Code    12  yc_timer.o(.text)
+    .text                                    0x00000b84   Section        0  usb_main.o(.text)
+    hid_release_keyboard                     0x00000b87   Thumb Code    24  usb_main.o(.text)
+    hal_usb_hid_rx_cb                        0x00000ba3   Thumb Code     2  usb_main.o(.text)
+    hal_usb_hid_tx_done                      0x00000ba5   Thumb Code    26  usb_main.o(.text)
+    usb_cdc_tx_done                          0x00000bbf   Thumb Code     2  usb_main.o(.text)
+    hal_usb_cdc_rx_cb                        0x00000bc1   Thumb Code     2  usb_main.o(.text)
+    enable_intr                              0x00000ca5   Thumb Code    16  usb_main.o(.text)
+    .text                                    0x00000cec   Section        0  usbd_desc.o(.text)
+    .text                                    0x00000dc4   Section        0  usbd_usr.o(.text)
+    .text                                    0x00000df0   Section        0  usb_core.o(.text)
+    .text                                    0x00001240   Section        0  usb_dcd.o(.text)
+    .text                                    0x000013b4   Section        0  usb_dcd_init.o(.text)
+    DCD_HandleInEP_ISR                       0x000013fd   Thumb Code   202  usb_dcd_init.o(.text)
+    .text                                    0x00001628   Section        0  usbd_core.o(.text)
+    USBD_SetupStage                          0x00001629   Thumb Code    74  usbd_core.o(.text)
+    USBD_DataOutStage                        0x00001673   Thumb Code   128  usbd_core.o(.text)
+    USBD_DataInStage                         0x000016f3   Thumb Code    34  usbd_core.o(.text)
+    USBD_Reset                               0x00001739   Thumb Code    52  usbd_core.o(.text)
+    USBD_Resume                              0x0000176d   Thumb Code    26  usbd_core.o(.text)
+    USBD_Suspend                             0x00001787   Thumb Code    30  usbd_core.o(.text)
+    USBD_SOF                                 0x000017a5   Thumb Code    22  usbd_core.o(.text)
+    USBD_IsoINIncomplete                     0x000017e5   Thumb Code    18  usbd_core.o(.text)
+    USBD_IsoOUTIncomplete                    0x000017f7   Thumb Code    18  usbd_core.o(.text)
+    USBD_DevConnected                        0x00001809   Thumb Code    26  usbd_core.o(.text)
+    USBD_DevDisconnected                     0x00001823   Thumb Code    34  usbd_core.o(.text)
+    .text                                    0x00001844   Section        0  usbd_ioreq.o(.text)
+    .text                                    0x000018e8   Section        0  usbd_req.o(.text)
+    USBD_ClrFeature                          0x000018f3   Thumb Code    56  usbd_req.o(.text)
+    USBD_SetFeature                          0x0000192b   Thumb Code    40  usbd_req.o(.text)
+    USBD_GetStatus                           0x00001953   Thumb Code    48  usbd_req.o(.text)
+    USBD_GetConfig                           0x00001983   Thumb Code    56  usbd_req.o(.text)
+    USBD_SetConfig                           0x000019bb   Thumb Code   146  usbd_req.o(.text)
+    USBD_SetAddress                          0x00001a4d   Thumb Code    80  usbd_req.o(.text)
+    USBD_GetDescriptor                       0x00001a9d   Thumb Code   240  usbd_req.o(.text)
+    USBD_GetLen                              0x00001dcf   Thumb Code    20  usbd_req.o(.text)
+    .text                                    0x00001e20   Section        0  usbd_hid_keyboard_core.o(.text)
+    .text                                    0x00001fd0   Section        0  uidiv.o(.text)
+    .text                                    0x00001ffc   Section        0  idiv.o(.text)
+    .text                                    0x00002024   Section        0  memcpya.o(.text)
+    .text                                    0x00002048   Section        0  memseta.o(.text)
+    .text                                    0x0000206c   Section       36  init.o(.text)
+    .text                                    0x00002090   Section        0  __dczerorl.o(.text)
+    i.__ARM_common_switch8                   0x000020ca   Section        0  usbd_req.o(i.__ARM_common_switch8)
+    i.__scatterload_copy                     0x000020e4   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000020f2   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000020f4   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x00002104   Section       18  yc_debug.o(.constdata)
+    g_pcHex1                                 0x00002104   Data           4  yc_debug.o(.constdata)
+    g_pcHex2                                 0x00002108   Data           4  yc_debug.o(.constdata)
+    __FUNCTION__                             0x0000210c   Data          10  yc_debug.o(.constdata)
+    .constdata                               0x00002116   Section       86  usbd_hid_keyboard_core.o(.constdata)
+    .conststring                             0x0000216c   Section       37  yc_debug.o(.conststring)
+    .ARM.__AT_0x10003D08                     0x10003d08   Section       65  usb_main.o(.ARM.__AT_0x10003D08)
+    .ARM.__AT_0x10003D6C                     0x10003d6c   Section       65  usb_main.o(.ARM.__AT_0x10003D6C)
+    .ARM.__AT_0x10003DD0                     0x10003dd0   Section       65  usb_main.o(.ARM.__AT_0x10003DD0)
+    .ARM.__AT_0x10003E98                     0x10003e98   Section       65  usb_main.o(.ARM.__AT_0x10003E98)
+    .ARM.__AT_0x10003EFC                     0x10003efc   Section       70  usb_main.o(.ARM.__AT_0x10003EFC)
+    .data                                    0x10010000   Section       40  yc_debug.o(.data)
+    .data                                    0x10010028   Section       16  yc_timer.o(.data)
+    .data                                    0x10010038   Section       20  usb_main.o(.data)
+    theUSB                                   0x10010038   Data           2  usb_main.o(.data)
+    keycode_pointer                          0x10010044   Data           8  usb_main.o(.data)
+    .data                                    0x1001004c   Section       28  usbd_desc.o(.data)
+    .data                                    0x10010068   Section       22  usbd_desc.o(.data)
+    .data                                    0x10010080   Section       28  usbd_usr.o(.data)
+    .data                                    0x1001009c   Section        8  usb_dcd_init.o(.data)
+    .data                                    0x100100a4   Section        1  usb_dcd_init.o(.data)
+    .data                                    0x100100a8   Section       44  usbd_core.o(.data)
+    .data                                    0x100100d4   Section        4  usbd_core.o(.data)
+    .data                                    0x100100d8   Section       16  usbd_req.o(.data)
+    cfgidx                                   0x100100d8   Data           1  usbd_req.o(.data)
+    .data                                    0x100100e8   Section       44  usbd_hid_keyboard_core.o(.data)
+    .data                                    0x10010114   Section       58  usbd_hid_keyboard_core.o(.data)
+    USBD_HID_AltSet                          0x10010118   Data           4  usbd_hid_keyboard_core.o(.data)
+    USBD_HID_Protocol                        0x1001011c   Data           4  usbd_hid_keyboard_core.o(.data)
+    USBD_HID_IdleState                       0x10010120   Data           4  usbd_hid_keyboard_core.o(.data)
+    theCustomHID                             0x10010124   Data           8  usbd_hid_keyboard_core.o(.data)
+    .bss                                     0x10010150   Section       50  yc_debug.o(.bss)
+    .bss                                     0x10010184   Section       24  yc_timer.o(.bss)
+    .bss                                     0x1001019c   Section     1188  usb_main.o(.bss)
+    .bss                                     0x10010640   Section      255  usbd_req.o(.bss)
+    .bss                                     0x1001073f   Section       64  usbd_hid_keyboard_core.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000000c9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000000c9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000000d1   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000000d1   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    main                                     0x000000d5   Thumb Code    12  main.o(.text)
+    _assert_handler                          0x000000e1   Thumb Code     2  main.o(.text)
+    Reset_Handler                            0x000000f1   Thumb Code    14  startup.o(.text)
+    ADC_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    BT_IRQHandler                            0x00000109   Thumb Code     0  startup.o(.text)
+    DMA_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    FFT_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    GPIO_IRQHandler                          0x00000109   Thumb Code     0  startup.o(.text)
+    HardFault_Handler                        0x00000109   Thumb Code     0  startup.o(.text)
+    IIC_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    IIS_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    NMI_Handler                              0x00000109   Thumb Code     0  startup.o(.text)
+    OTP_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    PendSV_Handler                           0x00000109   Thumb Code     0  startup.o(.text)
+    QSPI_IRQHandler                          0x00000109   Thumb Code     0  startup.o(.text)
+    SBC_ERR0_IRQHandler                      0x00000109   Thumb Code     0  startup.o(.text)
+    SBC_ERR1_IRQHandler                      0x00000109   Thumb Code     0  startup.o(.text)
+    SD_IRQHandler                            0x00000109   Thumb Code     0  startup.o(.text)
+    SPI_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    SVC_Handler                              0x00000109   Thumb Code     0  startup.o(.text)
+    SysTick_Handler                          0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER0_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER1_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER2_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER3_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER4_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER5_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER6_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    TIMER7_IRQHandler                        0x00000109   Thumb Code     0  startup.o(.text)
+    UARTB_IRQHandler                         0x00000109   Thumb Code     0  startup.o(.text)
+    UART_IRQHandler                          0x00000109   Thumb Code     0  startup.o(.text)
+    WDT2_IRQHandler                          0x00000109   Thumb Code     0  startup.o(.text)
+    WDT_IRQHandler                           0x00000109   Thumb Code     0  startup.o(.text)
+    uart_txChar                              0x00000119   Thumb Code    40  yc_debug.o(.text)
+    uart_txBuffer                            0x00000141   Thumb Code    24  yc_debug.o(.text)
+    init_print_log                           0x00000159   Thumb Code   218  yc_debug.o(.text)
+    init_debugUart                           0x00000233   Thumb Code   102  yc_debug.o(.text)
+    yichip_debug_uart_protocol               0x00000299   Thumb Code    30  yc_debug.o(.text)
+    print_log_free_lock                      0x000002b7   Thumb Code    10  yc_debug.o(.text)
+    print_log_get_lock                       0x000002c1   Thumb Code    30  yc_debug.o(.text)
+    print_log_to_uart                        0x000002df   Thumb Code   146  yc_debug.o(.text)
+    debugUart_pollTx                         0x00000371   Thumb Code     2  yc_debug.o(.text)
+    write_long_value                         0x00000373   Thumb Code    16  yc_debug.o(.text)
+    print_round_buffer                       0x00000383   Thumb Code    70  yc_debug.o(.text)
+    print_log_buffer_is_empty                0x000003c9   Thumb Code    36  yc_debug.o(.text)
+    print_log                                0x000003ed   Thumb Code   178  yc_debug.o(.text)
+    print_string_to_uart                     0x0000049f   Thumb Code    60  yc_debug.o(.text)
+    print_string                             0x000004db   Thumb Code   114  yc_debug.o(.text)
+    pringt_string_log                        0x0000054d   Thumb Code   618  yc_debug.o(.text)
+    print_protocol_to_uart                   0x000007b7   Thumb Code    84  yc_debug.o(.text)
+    print_hci_h4_to_uart                     0x0000080b   Thumb Code    72  yc_debug.o(.text)
+    print_string_empty_fuction               0x00000853   Thumb Code     2  yc_debug.o(.text)
+    SYS_TimerExpireDefaultHandle             0x00000865   Thumb Code     2  yc_timer.o(.text)
+    SYS_ChangeDPLL                           0x00000867   Thumb Code    12  yc_timer.o(.text)
+    SYS_ChangeToFastDPLL                     0x00000873   Thumb Code   104  yc_timer.o(.text)
+    SYS_ChangeToNormalDPLL                   0x000008db   Thumb Code   100  yc_timer.o(.text)
+    SYS_TimerGet1usTicks                     0x0000093f   Thumb Code    42  yc_timer.o(.text)
+    SystemCheckInFastSpeed                   0x00000969   Thumb Code     6  yc_timer.o(.text)
+    SYS_ClkTicks                             0x0000096f   Thumb Code    76  yc_timer.o(.text)
+    SYS_TimerStartTickTimer                  0x000009bb   Thumb Code    16  yc_timer.o(.text)
+    SYS_TimerInit                            0x000009cb   Thumb Code    28  yc_timer.o(.text)
+    SYS_TimerisExist                         0x000009e7   Thumb Code    42  yc_timer.o(.text)
+    SYS_SetTimer                             0x00000a11   Thumb Code    84  yc_timer.o(.text)
+    SYS_ResetTimer                           0x00000a65   Thumb Code    50  yc_timer.o(.text)
+    SYS_TimerTest                            0x00000a97   Thumb Code    12  yc_timer.o(.text)
+    SYS_ReleaseTimer                         0x00000aa3   Thumb Code    76  yc_timer.o(.text)
+    SYS_ReleaseAllTimer                      0x00000aef   Thumb Code    28  yc_timer.o(.text)
+    SYStick_handle                           0x00000b0b   Thumb Code    14  yc_timer.o(.text)
+    Bt_100ms_timer                           0x00000b19   Thumb Code    14  yc_timer.o(.text)
+    SYS_delay_us                             0x00000b27   Thumb Code    48  yc_timer.o(.text)
+    SYS_delay_ms                             0x00000b57   Thumb Code     8  yc_timer.o(.text)
+    usb_send_report                          0x00000b85   Thumb Code     2  usb_main.o(.text)
+    hal_usb_send                             0x00000b9f   Thumb Code     4  usb_main.o(.text)
+    usb_init                                 0x00000bc3   Thumb Code    86  usb_main.o(.text)
+    usb_main                                 0x00000c19   Thumb Code    66  usb_main.o(.text)
+    USB_IRQHandler                           0x00000c5b   Thumb Code    10  usb_main.o(.text)
+    usb_reset                                0x00000c65   Thumb Code    64  usb_main.o(.text)
+    USBD_USR_DeviceDescriptor                0x00000ced   Thumb Code     8  usbd_desc.o(.text)
+    USBD_USR_LangIDStrDescriptor             0x00000cf5   Thumb Code    10  usbd_desc.o(.text)
+    USBD_USR_ProductStrDescriptor            0x00000cff   Thumb Code    32  usbd_desc.o(.text)
+    USBD_USR_ManufacturerStrDescriptor       0x00000d1f   Thumb Code    16  usbd_desc.o(.text)
+    USBD_USR_SerialStrDescriptor             0x00000d2f   Thumb Code    32  usbd_desc.o(.text)
+    USBD_USR_ConfigStrDescriptor             0x00000d4f   Thumb Code    32  usbd_desc.o(.text)
+    USBD_USR_InterfaceStrDescriptor          0x00000d6f   Thumb Code    32  usbd_desc.o(.text)
+    USBD_USR_Init                            0x00000dc5   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceReset                     0x00000dc7   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceConfigured                0x00000dc9   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceConnected                 0x00000dcb   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceDisconnected              0x00000dcd   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceSuspended                 0x00000dcf   Thumb Code     2  usbd_usr.o(.text)
+    USBD_USR_DeviceResumed                   0x00000dd1   Thumb Code     2  usbd_usr.o(.text)
+    my_delay_ms                              0x00000dd3   Thumb Code    30  usbd_usr.o(.text)
+    USB_OTG_WritePacket                      0x00000df1   Thumb Code   186  usb_core.o(.text)
+    USB_OTG_ReadPacket                       0x00000eab   Thumb Code    72  usb_core.o(.text)
+    USBD_Get_Packet                          0x00000ef3   Thumb Code    26  usb_core.o(.text)
+    USB_RX_CONTINUE                          0x00000f0d   Thumb Code   126  usb_core.o(.text)
+    USB_OTG_SelectCore                       0x00000f8b   Thumb Code    76  usb_core.o(.text)
+    USB_OTG_CoreInit                         0x00000fd7   Thumb Code     4  usb_core.o(.text)
+    USB_OTG_SetCurrentMode                   0x00000fdb   Thumb Code    32  usb_core.o(.text)
+    USB_OTG_EPActivate                       0x00000ffb   Thumb Code    48  usb_core.o(.text)
+    USB_OTG_EPDeactivate                     0x0000102b   Thumb Code    48  usb_core.o(.text)
+    USB_OTG_GetMode                          0x0000105b   Thumb Code     4  usb_core.o(.text)
+    USB_OTG_IsDeviceMode                     0x0000105f   Thumb Code    18  usb_core.o(.text)
+    USB_OTG_EPStartXfer                      0x00001071   Thumb Code   214  usb_core.o(.text)
+    USB_OTG_EPReply_Zerolen                  0x00001147   Thumb Code    22  usb_core.o(.text)
+    USB_OTG_EP0StartXfer                     0x0000115d   Thumb Code   102  usb_core.o(.text)
+    USB_OTG_TRIG                             0x000011c3   Thumb Code     4  usb_core.o(.text)
+    USB_OTG_EPSetStall                       0x000011c7   Thumb Code    70  usb_core.o(.text)
+    USB_OTG_ActiveRemoteWakeup               0x0000120d   Thumb Code    52  usb_core.o(.text)
+    DCD_Init                                 0x00001241   Thumb Code   114  usb_dcd.o(.text)
+    DCD_EP_Open                              0x000012b3   Thumb Code    56  usb_dcd.o(.text)
+    DCD_EP_Close                             0x000012eb   Thumb Code    44  usb_dcd.o(.text)
+    DCD_EP_PrepareRx                         0x00001317   Thumb Code    58  usb_dcd.o(.text)
+    DCD_EP_Tx                                0x00001351   Thumb Code    46  usb_dcd.o(.text)
+    DCD_EP_Stall                             0x0000137f   Thumb Code    54  usb_dcd.o(.text)
+    _delay_                                  0x000013b5   Thumb Code     4  usb_dcd_init.o(.text)
+    usb_getbyte                              0x000013b9   Thumb Code    24  usb_dcd_init.o(.text)
+    usb_getword                              0x000013d1   Thumb Code    18  usb_dcd_init.o(.text)
+    DCD_HandleOutEP_ISR                      0x000013e3   Thumb Code    26  usb_dcd_init.o(.text)
+    DCD_HandleUsbReset_ISR                   0x000014c7   Thumb Code    76  usb_dcd_init.o(.text)
+    USBD_OTG_ISR_Handler                     0x00001513   Thumb Code   218  usb_dcd_init.o(.text)
+    USBD_DeInit                              0x00001715   Thumb Code     4  usbd_core.o(.text)
+    USBD_Init                                0x00001719   Thumb Code    32  usbd_core.o(.text)
+    USBD_SetCfg                              0x000017bb   Thumb Code    24  usbd_core.o(.text)
+    USBD_ClrCfg                              0x000017d3   Thumb Code    18  usbd_core.o(.text)
+    USBD_CtlSendData                         0x00001845   Thumb Code    28  usbd_ioreq.o(.text)
+    USBD_CtlContinueSendData                 0x00001861   Thumb Code    18  usbd_ioreq.o(.text)
+    USBD_CtlPrepareRx                        0x00001873   Thumb Code    34  usbd_ioreq.o(.text)
+    USBD_CtlContinueRx                       0x00001895   Thumb Code    18  usbd_ioreq.o(.text)
+    USBD_CtlSendStatus                       0x000018a7   Thumb Code    24  usbd_ioreq.o(.text)
+    USBD_CtlReceiveStatus                    0x000018bf   Thumb Code    24  usbd_ioreq.o(.text)
+    USBD_GetRxCount                          0x000018d7   Thumb Code    18  usbd_ioreq.o(.text)
+    USBD_CtlError                            0x000018e9   Thumb Code    10  usbd_req.o(.text)
+    USBD_StdDevReq                           0x00001b8d   Thumb Code    90  usbd_req.o(.text)
+    USBD_StdItfReq                           0x00001be7   Thumb Code    78  usbd_req.o(.text)
+    USBD_StdEPReq                            0x00001c35   Thumb Code   342  usbd_req.o(.text)
+    USBD_ParseSetupRequest                   0x00001d8b   Thumb Code    68  usbd_req.o(.text)
+    USBD_GetString                           0x00001de3   Thumb Code    58  usbd_req.o(.text)
+    USBD_HID_Init                            0x00001e21   Thumb Code    16  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_DeInit                          0x00001e31   Thumb Code    24  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_Setup                           0x00001e49   Thumb Code   260  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_SendReport                      0x00001f4d   Thumb Code    24  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_GetCfgDesc                      0x00001f65   Thumb Code    10  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_DataIn                          0x00001f6f   Thumb Code    18  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_DataOut                         0x00001f81   Thumb Code    16  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_EP0_RxReady                     0x00001f91   Thumb Code    16  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_PrepareRx                       0x00001fa1   Thumb Code    14  usbd_hid_keyboard_core.o(.text)
+    USBD_HID_RegisterCB                      0x00001faf   Thumb Code    14  usbd_hid_keyboard_core.o(.text)
+    __aeabi_uidiv                            0x00001fd1   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x00001fd1   Thumb Code    44  uidiv.o(.text)
+    __aeabi_idiv                             0x00001ffd   Thumb Code     0  idiv.o(.text)
+    __aeabi_idivmod                          0x00001ffd   Thumb Code    40  idiv.o(.text)
+    __aeabi_memcpy                           0x00002025   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x00002025   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x00002025   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x00002049   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00002049   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00002049   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x00002057   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x00002057   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x00002057   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x0000205b   Thumb Code    18  memseta.o(.text)
+    __scatterload                            0x0000206d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x0000206d   Thumb Code     0  init.o(.text)
+    __decompress                             0x00002091   Thumb Code     0  __dczerorl.o(.text)
+    __decompress0                            0x00002091   Thumb Code    58  __dczerorl.o(.text)
+    __ARM_common_switch8                     0x000020cb   Thumb Code    26  usbd_req.o(i.__ARM_common_switch8)
+    __scatterload_copy                       0x000020e5   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000020f3   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000020f5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    CustomHID_ReportDescriptor               0x00002116   Data          86  usbd_hid_keyboard_core.o(.constdata)
+    Region$$Table$$Base                      0x00002194   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x000021b4   Number         0  anon$$obj.o(Region$$Table)
+    usb_txbuf3                               0x10003d08   Data          65  usb_main.o(.ARM.__AT_0x10003D08)
+    usb_txbuf2                               0x10003d6c   Data          65  usb_main.o(.ARM.__AT_0x10003D6C)
+    usb_txbuf1                               0x10003dd0   Data          65  usb_main.o(.ARM.__AT_0x10003DD0)
+    usb_txbuf0                               0x10003e98   Data          65  usb_main.o(.ARM.__AT_0x10003E98)
+    usb_rxbuf                                0x10003efc   Data          70  usb_main.o(.ARM.__AT_0x10003EFC)
+    uartrxbuf                                0x10010000   Data           2  yc_debug.o(.data)
+    gHaltLogFlag                             0x10010002   Data           2  yc_debug.o(.data)
+    gHaltLogValue                            0x10010004   Data           2  yc_debug.o(.data)
+    txptr                                    0x10010008   Data           4  yc_debug.o(.data)
+    log_bug_ptr                              0x1001000c   Data           4  yc_debug.o(.data)
+    log_initial_flag_ptr                     0x10010010   Data           4  yc_debug.o(.data)
+    log_lock_flag_cm0_ptr                    0x10010014   Data           4  yc_debug.o(.data)
+    log_lock_flag_respin_ptr                 0x10010018   Data           4  yc_debug.o(.data)
+    log_lock_victim_ptr                      0x1001001c   Data           4  yc_debug.o(.data)
+    log_read_index_ptr                       0x10010020   Data           4  yc_debug.o(.data)
+    log_write_index_ptr                      0x10010024   Data           4  yc_debug.o(.data)
+    gSystemInFastDpll                        0x10010028   Data           1  yc_timer.o(.data)
+    sys_Timer_Check_Flag                     0x10010029   Data           1  yc_timer.o(.data)
+    sys_tick_count                           0x1001002c   Data           4  yc_timer.o(.data)
+    pheader                                  0x10010030   Data           4  yc_timer.o(.data)
+    gSystemTimerAdjustClknbt                 0x10010034   Data           4  yc_timer.o(.data)
+    hid_fn                                   0x1001003c   Data           8  usb_main.o(.data)
+    USR_desc                                 0x1001004c   Data          28  usbd_desc.o(.data)
+    USBD_LangIDDesc                          0x10010068   Data           4  usbd_desc.o(.data)
+    USBD_DeviceDesc                          0x1001006c   Data          18  usbd_desc.o(.data)
+    USRD_cb                                  0x10010080   Data          28  usbd_usr.o(.data)
+    SetAddress_Flag                          0x1001009c   Data           1  usb_dcd_init.o(.data)
+    USB_CDC_INDATA_FLAG                      0x1001009d   Data           1  usb_dcd_init.o(.data)
+    rx_DataLength                            0x1001009e   Data           2  usb_dcd_init.o(.data)
+    usb_rxptr                                0x100100a0   Data           4  usb_dcd_init.o(.data)
+    Address_Value                            0x100100a4   Data           1  usb_dcd_init.o(.data)
+    USBD_DCD_INT_cb                          0x100100a8   Data          44  usbd_core.o(.data)
+    USBD_DCD_INT_fops                        0x100100d4   Data           4  usbd_core.o(.data)
+    USBD_ep_status                           0x100100dc   Data           4  usbd_req.o(.data)
+    USBD_default_cfg                         0x100100e0   Data           4  usbd_req.o(.data)
+    USBD_cfg_status                          0x100100e4   Data           4  usbd_req.o(.data)
+    USBD_HID_cb                              0x100100e8   Data          44  usbd_hid_keyboard_core.o(.data)
+    flag                                     0x10010114   Data           1  usbd_hid_keyboard_core.o(.data)
+    USBD_HID_CfgDesc                         0x1001012c   Data          34  usbd_hid_keyboard_core.o(.data)
+    uarttxbuf                                0x10010150   Data          50  yc_debug.o(.bss)
+    header_Timer                             0x10010184   Data          24  yc_timer.o(.bss)
+    USB_OTG_dev                              0x1001019c   Data        1188  usb_main.o(.bss)
+    USBD_StrDesc                             0x10010640   Data         255  usbd_req.o(.bss)
+    Report_buf                               0x1001073f   Data          64  usbd_hid_keyboard_core.o(.bss)
+    __initial_sp                             0x1001b640   Number         0  startup.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00002304, Max: 0x0001e000, ABSOLUTE, COMPRESSED[0x0000225c])
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x000021b4, Max: 0x0001e000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          126    RESET               startup.o
+    0x000000c0   0x00000000   Code   RO          597  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          610    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          613    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          615    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000000   Code   RO          617    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x00000008   Code   RO          618    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x00000000   Code   RO          620    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x000000d0   0x00000000   Code   RO          622    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x000000d0   0x00000004   Code   RO          611    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x0000000e   Code   RO            1    .text               main.o
+    0x000000e2   0x0000000e   PAD
+    0x000000f0   0x00000028   Code   RO          127    .text               startup.o
+    0x00000118   0x0000074c   Code   RO          206    .text               yc_debug.o
+    0x00000864   0x00000320   Code   RO          308    .text               yc_timer.o
+    0x00000b84   0x00000168   Code   RO          357    .text               usb_main.o
+    0x00000cec   0x000000d8   Code   RO          380    .text               usbd_desc.o
+    0x00000dc4   0x0000002c   Code   RO          407    .text               usbd_usr.o
+    0x00000df0   0x00000450   Code   RO          441    .text               usb_core.o
+    0x00001240   0x00000174   Code   RO          464    .text               usb_dcd.o
+    0x000013b4   0x00000274   Code   RO          476    .text               usb_dcd_init.o
+    0x00001628   0x0000021c   Code   RO          494    .text               usbd_core.o
+    0x00001844   0x000000a4   Code   RO          513    .text               usbd_ioreq.o
+    0x000018e8   0x00000538   Code   RO          525    .text               usbd_req.o
+    0x00001e20   0x000001b0   Code   RO          575    .text               usbd_hid_keyboard_core.o
+    0x00001fd0   0x0000002c   Code   RO          600    .text               mc_p.l(uidiv.o)
+    0x00001ffc   0x00000028   Code   RO          602    .text               mc_p.l(idiv.o)
+    0x00002024   0x00000024   Code   RO          604    .text               mc_p.l(memcpya.o)
+    0x00002048   0x00000024   Code   RO          606    .text               mc_p.l(memseta.o)
+    0x0000206c   0x00000024   Code   RO          624    .text               mc_p.l(init.o)
+    0x00002090   0x0000003a   Code   RO          634    .text               mc_p.l(__dczerorl.o)
+    0x000020ca   0x0000001a   Code   RO          538    i.__ARM_common_switch8  usbd_req.o
+    0x000020e4   0x0000000e   Code   RO          628    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x000020f2   0x00000002   Code   RO          629    i.__scatterload_null  mc_p.l(handlers.o)
+    0x000020f4   0x0000000e   Code   RO          630    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00002102   0x00000002   PAD
+    0x00002104   0x00000012   Data   RO          208    .constdata          yc_debug.o
+    0x00002116   0x00000056   Data   RO          577    .constdata          usbd_hid_keyboard_core.o
+    0x0000216c   0x00000025   Data   RO          209    .conststring        yc_debug.o
+    0x00002191   0x00000003   PAD
+    0x00002194   0x00000020   Data   RO          626    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x10010000, Size: 0x00000780, Max: 0x00007fff, ABSOLUTE, COMPRESSED[0x000000a8])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10010000   0x00000028   Data   RW          210    .data               yc_debug.o
+    0x10010028   0x00000010   Data   RW          310    .data               yc_timer.o
+    0x10010038   0x00000014   Data   RW          365    .data               usb_main.o
+    0x1001004c   0x0000001c   Data   RW          381    .data               usbd_desc.o
+    0x10010068   0x00000016   Data   RW          382    .data               usbd_desc.o
+    0x1001007e   0x00000002   PAD
+    0x10010080   0x0000001c   Data   RW          408    .data               usbd_usr.o
+    0x1001009c   0x00000008   Data   RW          478    .data               usb_dcd_init.o
+    0x100100a4   0x00000001   Data   RW          479    .data               usb_dcd_init.o
+    0x100100a5   0x00000003   PAD
+    0x100100a8   0x0000002c   Data   RW          495    .data               usbd_core.o
+    0x100100d4   0x00000004   Data   RW          496    .data               usbd_core.o
+    0x100100d8   0x00000010   Data   RW          527    .data               usbd_req.o
+    0x100100e8   0x0000002c   Data   RW          578    .data               usbd_hid_keyboard_core.o
+    0x10010114   0x0000003a   Data   RW          580    .data               usbd_hid_keyboard_core.o
+    0x1001014e   0x00000002   PAD
+    0x10010150   0x00000032   Zero   RW          207    .bss                yc_debug.o
+    0x10010182   0x00000002   PAD
+    0x10010184   0x00000018   Zero   RW          309    .bss                yc_timer.o
+    0x1001019c   0x000004a4   Zero   RW          364    .bss                usb_main.o
+    0x10010640   0x000000ff   Zero   RW          526    .bss                usbd_req.o
+    0x1001073f   0x00000040   Zero   RW          576    .bss                usbd_hid_keyboard_core.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x10003D08 (Base: 0x10003d08, Size: 0x00000000, Max: 0x00000044, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x10003D08 (Base: 0x10003d08, Size: 0x00000044, Max: 0x00000044, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10003d08   0x00000041   Zero   RW          358    .ARM.__AT_0x10003D08  usb_main.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x10003D6C (Base: 0x10003d6c, Size: 0x00000000, Max: 0x00000044, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x10003D6C (Base: 0x10003d6c, Size: 0x00000044, Max: 0x00000044, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10003d6c   0x00000041   Zero   RW          359    .ARM.__AT_0x10003D6C  usb_main.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x10003DD0 (Base: 0x10003dd0, Size: 0x00000000, Max: 0x00000044, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x10003DD0 (Base: 0x10003dd0, Size: 0x00000044, Max: 0x00000044, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10003dd0   0x00000041   Zero   RW          360    .ARM.__AT_0x10003DD0  usb_main.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x10003E98 (Base: 0x10003e98, Size: 0x00000000, Max: 0x00000044, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x10003E98 (Base: 0x10003e98, Size: 0x00000044, Max: 0x00000044, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10003e98   0x00000041   Zero   RW          361    .ARM.__AT_0x10003E98  usb_main.o
+
+
+
+  Load Region LR$$.ARM.__AT_0x10003EFC (Base: 0x10003efc, Size: 0x00000000, Max: 0x00000048, ABSOLUTE)
+
+    Execution Region ER$$.ARM.__AT_0x10003EFC (Base: 0x10003efc, Size: 0x00000048, Max: 0x00000048, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10003efc   0x00000046   Zero   RW          362    .ARM.__AT_0x10003EFC  usb_main.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+        14          0          0          0          0      39465   main.o
+         0          0          0          0          0      20596   nvic.o
+        40         20        192          0          0        568   startup.o
+      1104         40          0          0          0       7437   usb_core.o
+       372          0          0          0          0       3256   usb_dcd.o
+       628         60          0          9          0       4234   usb_dcd_init.o
+       360         56          0         20       1518       4277   usb_main.o
+       540          0          0         48          0       6084   usbd_core.o
+       216         54          0         50          0       4252   usbd_desc.o
+       432         34         86        102         64       6453   usbd_hid_keyboard_core.o
+       164          0          0          0          0       2958   usbd_ioreq.o
+      1362         46          0         16        255       6553   usbd_req.o
+        44          0          0         28          0      11002   usbd_usr.o
+         0          0          0          0          0       3996   yc11xx_uart.o
+      1868         98         55         40         50       8720   yc_debug.o
+         0          0          0          0          0      20596   yc_drv_common.o
+       800         26          0         16         24       6543   yc_timer.o
+
+    ----------------------------------------------------------------------
+      7958        434        368        336       1928     156990   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        14          0          3          7         17          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        58          0          0          0          0          0   __dczerorl.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        40          0          0          0          0         72   idiv.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0         60   memcpya.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+
+    ----------------------------------------------------------------------
+       302         16          0          0          0        372   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       300         16          0          0          0        372   mc_p.l
+
+    ----------------------------------------------------------------------
+       302         16          0          0          0        372   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      8260        450        368        336       1928     156222   Grand Totals
+      8260        450        368        168       1928     156222   ELF Image Totals (compressed)
+      8260        450        368        168          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 8628 (   8.43kB)
+    Total RW  Size (RW Data + ZI Data)              2264 (   2.21kB)
+    Total ROM Size (Code + RO Data + RW Data)       8796 (   8.59kB)
+
+==============================================================================
+

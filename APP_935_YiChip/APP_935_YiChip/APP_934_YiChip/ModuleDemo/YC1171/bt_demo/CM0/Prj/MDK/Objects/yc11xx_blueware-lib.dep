@@ -1,0 +1,1352 @@
+Dependencies for Project 'yc11xx', Target 'blueware-lib': (DO NOT MODIFY !)
+F (..\..\application\btApi.c)(0x6178D127)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\btapi.o --omf_browse .\objects\btapi.crf --depend .\objects\btapi.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\btApi.h)(0x5CADA078)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\blueware.h)(0x60769AD8)
+I (..\..\blueware\include\bw_utils.h)(0x606FFB57)
+I (..\..\blueware\include\bw_config.h)(0x60668870)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6080D093)
+F (..\..\application\common.c)(0x6178D137)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
+I (..\..\application\common.h)(0x614BF671)
+I (..\..\application\private.h)(0x614BFA6D)
+I (..\..\blueware\include\bw_config.h)(0x6141BF6A)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x61430935)
+I (..\..\blueware\include\bw_utils.h)(0x6144201F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x614C3C5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x614C777E)
+I (..\..\blueware\include\bw_gatt_client.h)(0x614C50DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x614C7371)
+I (..\..\blueware\lib_include\linked_list.h)(0x5BEF0138)
+I (..\..\blueware\include\bw_event.h)(0x614C79C4)
+I (..\..\blueware\include\bw_debug.h)(0x614AEE4A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal_uart.h)(0x60509E0E)
+I (..\..\hal\hal_nvm.h)(0x6073FD99)
+I (..\..\hal\hal.h)(0x6142A1ED)
+I (..\..\application\btApi.h)(0x5CADA078)
+I (..\..\update\xmodem.h)(0x603898A9)
+I (..\..\profile\le_peripheral.h)(0x614C41F2)
+I (..\..\profile\le_peripheral_throughput.h)(0x614BE5D8)
+I (..\..\profile\le_central.h)(0x614C533E)
+F (..\..\application\device_db.c)(0x6178C02B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\device_db.o --omf_browse .\objects\device_db.crf --depend .\objects\device_db.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x614BFA6D)
+I (..\..\blueware\include\bw_config.h)(0x6141BF6A)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x61430935)
+I (..\..\blueware\include\bw_utils.h)(0x6144201F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x614C3C5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\common.h)(0x614BF671)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x614C777E)
+I (..\..\blueware\include\bw_gatt_client.h)(0x614C50DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x614C7371)
+I (..\..\blueware\lib_include\linked_list.h)(0x5BEF0138)
+I (..\..\blueware\include\bw_event.h)(0x614C79C4)
+I (..\..\blueware\include\bw_debug.h)(0x614AEE4A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal_nvm.h)(0x6073FD99)
+F (..\..\application\fifo.c)(0x6178BBA0)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\fifo.o --omf_browse .\objects\fifo.crf --depend .\objects\fifo.d)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\blueware\include\bw_utils.h)(0x6144201F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x614C3C5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6141BF6A)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x61430935)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x614BFA6D)
+I (..\..\application\common.h)(0x614BF671)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x614C777E)
+I (..\..\blueware\include\bw_gatt_client.h)(0x614C50DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x614C7371)
+I (..\..\blueware\lib_include\linked_list.h)(0x5BEF0138)
+I (..\..\blueware\include\bw_event.h)(0x614C79C4)
+I (..\..\blueware\include\bw_debug.h)(0x614AEE4A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\application\mini-printf.c)(0x614D667F)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\mini-printf.o --omf_browse .\objects\mini-printf.crf --depend .\objects\mini-printf.d)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+F (..\..\application\main.c)(0x6177FAEA)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\application\private.h)(0x614BFA6D)
+I (..\..\blueware\include\bw_config.h)(0x6141BF6A)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x61430935)
+I (..\..\blueware\include\bw_utils.h)(0x6144201F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x614C3C5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\common.h)(0x614BF671)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (..\..\blueware\include\blueware.h)(0x614C777E)
+I (..\..\blueware\include\bw_gatt_client.h)(0x614C50DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x614C7371)
+I (..\..\blueware\lib_include\linked_list.h)(0x5BEF0138)
+I (..\..\blueware\include\bw_event.h)(0x614C79C4)
+I (..\..\blueware\include\bw_debug.h)(0x614AEE4A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\application\app_config.h)(0x614493A9)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (..\..\application\Drv_bt.h)(0x605C5BDE)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\nvic.h)(0x606687D8)
+I (..\..\hal\hal.h)(0x6142A1ED)
+I (..\..\hal\hal_uart.h)(0x60509E0E)
+F (..\..\application\Drv_bt.c)(0x61776AC1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\drv_bt.o --omf_browse .\objects\drv_bt.crf --depend .\objects\drv_bt.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\application\Drv_bt.h)(0x605C5BDE)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\application\app_config.h)(0x61776880)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\yc_hci\yc11xx_h4.h)(0x60668277)
+I (..\..\yc_hci\yc11xx_hci.h)(0x6046F11C)
+I (..\..\yc_hci\yc11xx_hci_err.h)(0x6046F11C)
+I (..\..\yc_hci\yc11xx_addr.h)(0x6046F11C)
+F (..\..\application\utils.c)(0x6176919E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\utils.o --omf_browse .\objects\utils.crf --depend .\objects\utils.d)
+I (..\..\blueware\include\bw_utils.h)(0x617691AE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6177A0B3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x61766E71)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6177A00C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+F (..\..\..\..\..\..\Librarier\startup\startup.s)(0x6046F11C)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0--pd "__UVISION_VERSION SETA 527" --pd "ARMCM0 SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (..\..\..\..\..\..\Librarier\device\yc11xx.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx.o --omf_browse .\objects\yc11xx.crf --depend .\objects\yc11xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+F (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.c)(0x6177BAD2)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_uart.o --omf_browse .\objects\yc11xx_uart.crf --depend .\objects\yc11xx_uart.d)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+F (..\..\..\..\..\..\Librarier\drivers\bt\yc11xx_bt.c)(0x615445D1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_bt.o --omf_browse .\objects\yc11xx_bt.crf --depend .\objects\yc11xx_bt.d)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\application\app_config.h)(0x61776880)
+F (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.c)(0x604B6DC9)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc_debug.o --omf_browse .\objects\yc_debug.crf --depend .\objects\yc_debug.d)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\application\app_config.h)(0x61776880)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc_drv_common.o --omf_browse .\objects\yc_drv_common.crf --depend .\objects\yc_drv_common.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.c)(0x6067122B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_gpio.o --omf_browse .\objects\yc11xx_gpio.crf --depend .\objects\yc11xx_gpio.d)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\queue\yc_queue.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc_queue.o --omf_browse .\objects\yc_queue.crf --depend .\objects\yc_queue.d)
+I (..\..\..\..\..\..\Librarier\drivers\queue\yc_queue.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_systick.o --omf_browse .\objects\yc11xx_systick.crf --depend .\objects\yc11xx_systick.d)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_timer.o --omf_browse .\objects\yc11xx_timer.crf --depend .\objects\yc11xx_timer.d)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.c)(0x61416ED5)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc_timer.o --omf_browse .\objects\yc_timer.crf --depend .\objects\yc_timer.d)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\application\app_config.h)(0x61776880)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\bt\yc11xx_bt_interface.h)(0x6046F11C)
+F (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.c)(0x6046F11C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_wdt.o --omf_browse .\objects\yc11xx_wdt.crf --depend .\objects\yc11xx_wdt.d)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+F (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.c)(0x617A405A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\yc11xx_qspi.o --omf_browse .\objects\yc11xx_qspi.crf --depend .\objects\yc11xx_qspi.d)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\Yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\..\..\..\..\Librarier\device\nvic.c)(0x606687E1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\nvic.o --omf_browse .\objects\nvic.crf --depend .\objects\nvic.d)
+I (..\..\..\..\..\..\Librarier\device\nvic.h)(0x606687D8)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+F (..\..\blueware\blueware.c)(0x6178D122)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\blueware.o --omf_browse .\objects\blueware.crf --depend .\objects\blueware.d)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x617691AE)
+I (..\..\blueware\include\bw_defines.h)(0x6177A0B3)
+I (..\..\blueware\include\bw_config.h)(0x61766E71)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6177A00C)
+I (..\..\blueware\include\bw_sdp.h)(0x5D10CF88)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6177B0E9)
+I (..\..\application\private.h)(0x6177A89B)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\common.h)(0x61769756)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\profile\spp.h)(0x6177A539)
+I (..\..\blueware\include\bw_rfcomm.h)(0x6177A676)
+I (..\..\profile\hid_keyboard.h)(0x61767B50)
+I (..\..\profile\hid_keytable.h)(0x5DA6C6DB)
+I (..\..\blueware\include\bw_hid.h)(0x617699DC)
+I (..\..\profile\le_peripheral.h)(0x61767B90)
+I (..\..\profile\le_peripheral_throughput.h)(0x614D6894)
+I (..\..\profile\le_central.h)(0x614C533E)
+I (..\..\hal\hal_uart.h)(0x60509E0E)
+I (..\..\hal\hal.h)(0x61766626)
+I (..\..\update\xmodem.h)(0x603898A9)
+F (..\..\blueware\lib_blueware\att_dispatch.c)(0x5D11D36B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\att_dispatch.o --omf_browse .\objects\att_dispatch.crf --depend .\objects\att_dispatch.d)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\btstack_memory.c)(0x6178BB99)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\btstack_memory.o --omf_browse .\objects\btstack_memory.crf --depend .\objects\btstack_memory.d)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\memory_pool.h)(0x584CF7FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\message.h)(0x5D10CF95)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\rfcomm.h)(0x6176765E)
+I (..\..\blueware\lib_include\gatt_server.h)(0x614C7B65)
+I (..\..\blueware\lib_include\gatt_client.h)(0x614339E7)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+F (..\..\blueware\lib_blueware\gatt_client.c)(0x6150370D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\gatt_client.o --omf_browse .\objects\gatt_client.crf --depend .\objects\gatt_client.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\gatt_client.h)(0x614339E7)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+I (..\..\blueware\lib_include\gatt_server.h)(0x614C7B65)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+F (..\..\blueware\lib_blueware\gatt_server.c)(0x615468E6)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\gatt_server.o --omf_browse .\objects\gatt_server.crf --depend .\objects\gatt_server.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\gatt_server.h)(0x614C7B65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+F (..\..\blueware\lib_blueware\hci.c)(0x6178BEC8)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hci.o --omf_browse .\objects\hci.crf --depend .\objects\hci.d)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+I (..\..\blueware\lib_include\bt_control_rtl8761a.h)(0x584CF7FE)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\message.h)(0x5D10CF95)
+F (..\..\blueware\lib_blueware\hci_cmds.c)(0x6178BC5F)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hci_cmds.o --omf_browse .\objects\hci_cmds.crf --depend .\objects\hci_cmds.d)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\sdp_util.h)(0x61767C90)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+F (..\..\blueware\lib_blueware\l2cap.c)(0x617681E7)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\l2cap.o --omf_browse .\objects\l2cap.crf --depend .\objects\l2cap.d)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\rfcomm.h)(0x6176765E)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\l2cap_signaling.c)(0x6143FB59)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\l2cap_signaling.o --omf_browse .\objects\l2cap_signaling.crf --depend .\objects\l2cap_signaling.d)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\linked_list.c)(0x5CA1FFAF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\linked_list.o --omf_browse .\objects\linked_list.crf --depend .\objects\linked_list.d)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\memory_pool.c)(0x5CA1FFC3)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\memory_pool.o --omf_browse .\objects\memory_pool.crf --depend .\objects\memory_pool.d)
+I (..\..\blueware\lib_include\memory_pool.h)(0x584CF7FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\message.c)(0x6101448A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\message.o --omf_browse .\objects\message.crf --depend .\objects\message.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\message.h)(0x5D10CF95)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+F (..\..\blueware\lib_blueware\run_loop.c)(0x6152FDBE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\run_loop.o --omf_browse .\objects\run_loop.crf --depend .\objects\run_loop.d)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\run_loop_private.h)(0x5CB73609)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+F (..\..\blueware\lib_blueware\run_loop_embedded.c)(0x6152FDE7)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\run_loop_embedded.o --omf_browse .\objects\run_loop_embedded.crf --depend .\objects\run_loop_embedded.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\run_loop_private.h)(0x5CB73609)
+I (..\..\blueware\lib_include\message.h)(0x5D10CF95)
+F (..\..\blueware\lib_blueware\transport_h4.c)(0x61776D93)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\transport_h4.o --omf_browse .\objects\transport_h4.crf --depend .\objects\transport_h4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\blueware\lib_blueware\bt_control_rtl8761a.c)(0x61441DC7)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\bt_control_rtl8761a.o --omf_browse .\objects\bt_control_rtl8761a.crf --depend .\objects\bt_control_rtl8761a.d)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+F (..\..\blueware\lib_blueware\att_db_util.c)(0x614FDF97)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\att_db_util.o --omf_browse .\objects\att_db_util.crf --depend .\objects\att_db_util.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+I (..\..\blueware\lib_include\gatt_server.h)(0x614C7B65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+F (..\..\blueware\lib_blueware\rfcomm.c)(0x6177A6D9)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\rfcomm.o --omf_browse .\objects\rfcomm.crf --depend .\objects\rfcomm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\rfcomm.h)(0x6176765E)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (..\..\blueware\lib_include\btstack_memory.h)(0x5D10CF78)
+F (..\..\blueware\lib_blueware\sdp.c)(0x6176801D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\sdp.o --omf_browse .\objects\sdp.crf --depend .\objects\sdp.d)
+I (..\..\blueware\lib_include\sdp.h)(0x5D10CF11)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\sdp_util.h)(0x61767C90)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\sdp_client.c)(0x617677C1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\sdp_client.o --omf_browse .\objects\sdp_client.crf --depend .\objects\sdp_client.d)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\sdp.h)(0x5D10CF11)
+I (..\..\blueware\lib_include\sdp_client.h)(0x5D10CFA5)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\blueware\lib_blueware\sdp_util.c)(0x61767BFC)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\sdp_util.o --omf_browse .\objects\sdp_util.crf --depend .\objects\sdp_util.d)
+I (..\..\blueware\lib_include\sdp_util.h)(0x61767C90)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x599ECD2E)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+F (..\..\blueware\lib_blueware\hid.c)(0x61779920)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-lib-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hid.o --omf_browse .\objects\hid.crf --depend .\objects\hid.d)
+I (..\..\blueware\lib_include\hid.h)(0x5D10CC22)
+I (..\..\blueware\include\bw_hid.h)(0x617699DC)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\lib_include\l2cap.h)(0x61767573)
+I (..\..\blueware\lib_include\l2cap_signaling.h)(0x5D10CF92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\lib_include\gap.h)(0x6177A734)
+I (..\..\blueware\lib_include\linked_list.h)(0x6155877C)
+I (..\..\blueware\lib_include\run_loop.h)(0x614DB385)
+I (..\..\blueware\lib_include\att_dispatch.h)(0x6176759A)
+I (..\..\blueware\lib_include\hci.h)(0x6178C215)
+I (..\..\blueware\lib_include\hci_cmds.h)(0x6177A6A7)
+I (..\..\blueware\lib_include\core.h)(0x6177A078)
+I (..\..\blueware\lib_include\debug.h)(0x61776EAD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\blueware\lib_include\hci_transport.h)(0x5DA6D07B)
+I (..\..\blueware\lib_include\bt_control.h)(0x5DA6D0E7)
+I (..\..\blueware\lib_include\bw_control_rtl8761.h)(0x5DA6D07E)
+I (..\..\blueware\lib_include\transport_h4.h)(0x61418E45)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+F (..\..\hal\hal.c)(0x617A402D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hal.o --omf_browse .\objects\hal.crf --depend .\objects\hal.d)
+I (..\..\hal\hal.h)(0x61766626)
+I (..\..\application\private.h)(0x6177A89B)
+I (..\..\blueware\include\bw_config.h)(0x61766E71)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6177A00C)
+I (..\..\blueware\include\bw_utils.h)(0x617691AE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6177A0B3)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\common.h)(0x61769756)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x5D10CF88)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6177B0E9)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal_uart.h)(0x60509E0E)
+I (..\..\hal\hal_nvm.h)(0x6073FD99)
+I (..\..\update\xmodem.h)(0x603898A9)
+F (..\..\hal\hal_nvm.c)(0x617A41BF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hal_nvm.o --omf_browse .\objects\hal_nvm.crf --depend .\objects\hal_nvm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_config.h)(0x61766E71)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6177A00C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\hal\hal_nvm.h)(0x6073FD99)
+I (..\..\application\private.h)(0x6177A89B)
+I (..\..\blueware\include\bw_utils.h)(0x617691AE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6177A0B3)
+I (..\..\application\fifo.h)(0x60507690)
+I (..\..\application\common.h)(0x61769756)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x5D10CF88)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6177B0E9)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+F (..\..\hal\hal_uart.c)(0x6178D17C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal_uart.h)(0x6178D160)
+I (..\..\hal\hal.h)(0x61766626)
+I (..\..\application\Drv_bt.h)(0x605C5BDE)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\debug\yc_debug.h)(0x604B6DC9)
+I (..\..\application\app_config.h)(0x61776880)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc11xx_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\nvic.h)(0x606687D8)
+F (..\..\hal\hal_flash.c)(0x617A3FFA)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hal_flash.o --omf_browse .\objects\hal_flash.crf --depend .\objects\hal_flash.d)
+I (..\..\hal\hal_flash.h)(0x617A404F)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x617A4291)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x617A4040)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\profile\le_central.c)(0x615039E9)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\le_central.o --omf_browse .\objects\le_central.crf --depend .\objects\le_central.d)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\profile\le_central.h)(0x614C533E)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+F (..\..\profile\le_peripheral.c)(0x6178BC3A)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\le_peripheral.o --omf_browse .\objects\le_peripheral.crf --depend .\objects\le_peripheral.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+I (..\..\profile\le_peripheral.h)(0x61767B90)
+I (..\..\profile\le_peripheral_db.h)(0x614FE04D)
+I (..\..\profile\le_peripheral_dis.h)(0x614D6713)
+I (..\..\profile\le_peripheral_throughput.h)(0x614D6894)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+F (..\..\profile\le_peripheral_db.c)(0x61779C8B)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\le_peripheral_db.o --omf_browse .\objects\le_peripheral_db.crf --depend .\objects\le_peripheral_db.d)
+I (..\..\profile\le_peripheral_db.h)(0x614FE04D)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\profile\le_peripheral_dis.h)(0x614D6713)
+I (..\..\profile\le_peripheral_throughput.h)(0x614D6894)
+I (..\..\blueware\include\bw_att_db_util.h)(0x6178C14F)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+F (..\..\profile\le_peripheral_dis.c)(0x6177F072)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\le_peripheral_dis.o --omf_browse .\objects\le_peripheral_dis.crf --depend .\objects\le_peripheral_dis.d)
+I (..\..\profile\le_peripheral_dis.h)(0x614D6713)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\profile\le_peripheral.h)(0x61767B90)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_att_db_util.h)(0x6178C14F)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+F (..\..\profile\le_peripheral_throughput.c)(0x61767B90)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\le_peripheral_throughput.o --omf_browse .\objects\le_peripheral_throughput.crf --depend .\objects\le_peripheral_throughput.d)
+I (..\..\profile\le_peripheral_throughput.h)(0x614D6894)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\profile\le_peripheral.h)(0x61767B90)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_att_db_util.h)(0x6178C14F)
+I (..\..\blueware\include\bw_gatt.h)(0x614DD551)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+F (..\..\profile\hid_keyboard.c)(0x6177DC6D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\hid_keyboard.o --omf_browse .\objects\hid_keyboard.crf --depend .\objects\hid_keyboard.d)
+I (..\..\profile\hid_keyboard.h)(0x6177DC6D)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\profile\hid_keytable.h)(0x5DA6C6DB)
+I (..\..\blueware\include\bw_hid.h)(0x617699DC)
+I (..\..\application\private.h)(0x6177CB65)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+F (..\..\profile\spp.c)(0x6177E454)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\spp.o --omf_browse .\objects\spp.crf --depend .\objects\spp.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+I (..\..\hal\hal_nvm.h)(0x6178C177)
+I (..\..\update\xmodem.h)(0x603898A9)
+I (..\..\profile\spp.h)(0x6177A539)
+I (..\..\blueware\include\bw_rfcomm.h)(0x6177A676)
+F (..\..\update\xmodem.c)(0x617A41BF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\xmodem.o --omf_browse .\objects\xmodem.crf --depend .\objects\xmodem.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\update\programmer.h)(0x6066E3FE)
+I (..\..\update\xmodem.h)(0x603898A9)
+I (..\..\hal\hal_uart.h)(0x6178D160)
+I (..\..\profile\spp.h)(0x6177A539)
+I (..\..\blueware\include\bw_rfcomm.h)(0x6177A676)
+I (..\..\profile\le_peripheral.h)(0x61767B90)
+I (..\..\..\..\..\..\Librarier\drivers\bt\ipc.h)(0x6046F11C)
+I (..\..\hal\hal.h)(0x61766626)
+F (..\..\update\programmer.c)(0x617A41BF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O1 --apcs=interwork -I ..\..\..\..\..\..\Librarier\device -I ..\..\yc_hci -I ..\..\..\..\..\..\Librarier\drivers\uart -I ..\..\..\..\..\..\Librarier\drivers\gpio -I ..\..\..\..\..\..\Librarier\drivers\debug -I ..\..\..\..\..\..\Librarier\drivers\bt -I ..\..\..\..\..\..\Librarier\drivers\timer -I ..\..\..\..\..\..\Librarier\drivers\systick -I ..\..\..\..\..\..\Librarier\drivers\hal -I ..\..\..\..\..\..\Librarier\drivers\wdt -I ..\..\..\..\..\..\Librarier\drivers\qspi -I ..\..\application -I ..\..\blueware\include -I ..\..\blueware\lib_include -I ..\..\hal -I ..\..\profile -I ..\..\update --c99 --gnu-I.\RTE\_blueware-sdk-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0\Device\ARM\ARMCM0\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.6.0-D__UVISION_VERSION="527" -DARMCM0-o .\objects\programmer.o --omf_browse .\objects\programmer.crf --depend .\objects\programmer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\..\blueware\include\bw_debug.h)(0x6152F60F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (..\..\application\private.h)(0x6177CB65)
+I (..\..\blueware\include\bw_config.h)(0x6177EB40)
+I (..\..\yc_hci\../Configurations/feasycom_default.cfg)(0x6178C268)
+I (..\..\blueware\include\bw_utils.h)(0x6178C0E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\blueware\include\bw_defines.h)(0x6178C02B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\application\fifo.h)(0x6177BC35)
+I (..\..\application\common.h)(0x6177CB65)
+I (..\..\application\mini-printf.h)(0x5CB9C580)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (..\..\blueware\include\blueware.h)(0x6177A750)
+I (..\..\blueware\include\bw_sdp.h)(0x6177B597)
+I (..\..\blueware\include\bw_gatt_client.h)(0x615037DF)
+I (..\..\blueware\include\bw_gatt_server.h)(0x6155A07C)
+I (..\..\blueware\include\bw_event.h)(0x6178C0B4)
+I (..\..\..\..\..\..\Librarier\device\yc11xx.h)(0x60B0939F)
+I (..\..\application\btreg.h)(0x613B1E37)
+I (..\..\..\..\..\..\Librarier\drivers\wdt\yc11xx_wdt.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\type.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\device\ycdef.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\gpio\yc11xx_gpio.h)(0x606707C3)
+I (..\..\..\..\..\..\Librarier\drivers\uart\yc11xx_uart.h)(0x60657A14)
+I (..\..\..\..\..\..\Librarier\drivers\qspi\yc11xx_qspi.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h)(0x6046F11C)
+I (..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h)(0x6046F11C)
+I (..\..\update\programmer.h)(0x6066E3FE)
+I (..\..\update\xmodem.h)(0x603898A9)

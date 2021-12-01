@@ -1,0 +1,13 @@
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.c
+.\objects\yc_drv_common.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\drivers\hal\yc_drv_common.h
+.\objects\yc_drv_common.o: D:\Keil\ARM\ARMCC\Bin\..\include\string.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\device\yc11xx.h
+.\objects\yc_drv_common.o: ..\..\application\btreg.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\device\ycdef.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\device\type.h
+.\objects\yc_drv_common.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\drivers\timer\yc_timer.h
+.\objects\yc_drv_common.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\yc_drv_common.o: D:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\yc_drv_common.o: ..\..\..\..\..\..\Librarier\drivers\systick\yc11xx_systick.h

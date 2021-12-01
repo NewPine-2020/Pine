@@ -1,0 +1,530 @@
+
+memalloc(
+338 mem_coef_table_temp
+)
+
+omemalloc(
+
+0 mem_nv_data
+24 mem_nv_data0
+24 mem_nv_data1
+24 mem_nv_data2
+24 mem_nv_data3
+24 mem_nv_data4
+
+1 mem_battery_vol
+3 mem_coef_base_addr
+100 mem_ipc_tx_buf
+2 mem_le_att_list
+//500 mem_a2dp_uuid
+// should only add variable below, up is fixed in rom.
+// Fixed area start, the variable only allow add below
+28 mem_tws_fac_adv_name
+1 mem_param_bt_tx_power
+1 mem_leadv_action//OTA use,don't change location
+
+// Fixed area end, the variable only allow add below
+1 mem_hibernate_flag
+4 mem_lpm_write_temp_adc_low
+4 mem_lpm_write_temp_adc_high
+4 mem_lpm_write_temp_charge_control
+2 mem_lpm_write_temp_charge_wakeup_low_active
+2 mem_lpm_write_temp_charge_wakeup_high_active
+
+0 mem_efuse_dc_offset
+2 mem_efuse_dc_offset_l
+2 mem_efuse_dc_offset_r
+
+0 mem_efuse_dc_offset_f6
+2 mem_efuse_dc_offset_l_f6
+2 mem_efuse_dc_offset_r_f6
+
+0 mem_efuse_adc_offset
+2 mem_0_5_adc_io_data
+2 mem_3v_adc_hvin_data
+2 mem_1v_adc_io_data
+2 mem_5v_adc_hvin_data
+
+
+1 mem_xlmp_conn_state
+1 mem_xlmp_clock_offset_valid
+
+1 mem_rf_power_fix
+
+	3 mem_ipc_rx_ptr
+
+	//ble
+	1 mem_module_le_rx_data_len
+	2 mem_module_le_rx_data_address
+	2 mem_module_le_rx_data_handle
+	//ble write handle
+	2 mem_module_data_write_handle
+	2 mem_module_data_write_handle2
+	//flag
+	1 mem_module_flag
+
+	1 mem_module_hci_notify_len
+	2 mem_module_hci_notify_handle
+	2 mem_module_hci_nofiy_addr
+
+	4 mem_last_transmite_clock
+	
+	1 mem_module_le_att_list
+	0 mem_module_le_att_list_end
+
+	1 mem_le_disconnect_reason
+	8 mem_mesh_le_features
+	5 mem_mesh_le_version
+	1 mem_mesh_le_version_exchange_times
+
+	//Hci command
+	2 mem_mesh_hci_opcode_ocf
+	1 mem_mesh_hci_opcode_ogf
+	1 mem_mesh_hci_cmd_len
+
+	//Set event mask command
+	8 mem_mesh_event_mask
+
+	//Read Loacl Version Information
+	0 mem_mesh_read_local_version_info
+	1 mem_mesh_read_local_version_info_hci_version
+	2 mem_mesh_read_local_version_info_hci_revision
+	1 mem_mesh_read_local_version_info_lmp_version
+	2 mem_mesh_read_local_version_info_manufacturer
+	2 mem_mesh_read_local_version_info_lmp_subversion
+
+	// Local support command
+	64 mem_mesh_read_local_support_command
+
+	//LE event mask command
+	8 mem_mesh_le_event_mask
+
+	//LE set random address
+	6 mem_mesh_le_public_address
+	6 mem_mesh_le_random_address
+
+	//LE set scan parameters command
+
+	//vendor tx carrier
+	1 mem_mesh_vendor_tx_flag
+	1 mem_mesh_vendor_tx_freq
+	1 mem_mesh_vendor_tx_data
+	1 mem_mesh_vendor_tx_power_calibration
+	1 mem_mesh_vendor_rx_flag
+	1 mem_mesh_vendor_rx_freq
+	
+	//event head
+	1 mem_mesh_event_head_type
+	1 mem_mesh_event_head_event_code
+	1 mem_mesh_event_para_total_length
+	1 mem_mesh_event_parameter_rtn
+	1 mem_mesh_event_parameter_status
+
+	//LE Create connection
+	1 mem_mesh_creat_connection_flag
+	
+	//command status event
+//	1 mem_mesh_command_status_status
+
+	//ACL receive flag
+	1 mem_mesh_recevie_acl_packet_number
+	
+	//LE set random address
+	6 mem_device_public_address
+	
+	//command complete
+	1 mem_mesh_command_complete_num_hci_command_packet
+	0 mem_mesh_command_complete_command_opcode
+	2 mem_mesh_hci_opcode
+	1 mem_mesh_command_complete_return_parameter_status
+	
+	//simple mode			0:PIN-CODE PAIRING    1:SPP PAIRING
+	1 mem_simple_pairing_mode	
+
+	// EIR command
+	1 mem_fec_required
+	
+	//inquiry
+	1 mem_inquiry_num_responses
+	1 mem_inquiry_num_check
+	1 mem_conn_status
+	1 mem_inquiry_mode
+	2 mem_inquiry_eir_data
+	1 mem_io_cap_flag
+
+	1 mem_page_scan_repetition_mode
+
+	//receive_connection_request_status:  0 return Unknown Conn     1 get request     2 request was rejected
+	1 mem_conn_req_status
+
+	// think big buffer queue?
+	0 mem_alloc_normal_block
+	2 mem_alloc_normal_header
+	2 mem_alloc_normal_rptr
+	2 mem_alloc_normal_wptr
+	2 mem_alloc_normal_end
+	1 mem_alloc_normal_cur_len
+	30 mem_alloc_normal_block_start
+	
+	0 mem_alloc_big_block
+	2 mem_alloc_big_header
+	2 mem_alloc_big_rptr
+	2 mem_alloc_big_wptr
+	2 mem_alloc_big_end
+	1 mem_alloc_big_cur_len
+	30 mem_alloc_big_block_start
+	
+	30 mem_big_block_ptr_list
+
+	3 mem_rcv_br_queue_ptr
+	3 mem_rcv_ble_queue_ptr
+
+	0 mem_rcv_br_block
+	2 mem_rcv_br_header
+	2 mem_rcv_br_rptr
+	2 mem_rcv_br_wptr
+	2 mem_rcv_br_end
+	1 mem_rcv_br_cur_len
+	30 mem_rcv_br_block_start
+
+	0 mem_rcv_ble_block
+	2 mem_rcv_ble_header
+	2 mem_rcv_ble_rptr
+	2 mem_rcv_ble_wptr
+	2 mem_rcv_ble_end
+	1 mem_rcv_ble_cur_len
+	30 mem_rcv_ble_block_start
+
+	0 mem_snd_br_block
+	2 mem_snd_br_header
+	2 mem_snd_br_rptr
+	2 mem_snd_br_wptr
+	2 mem_snd_br_end
+	1 mem_snd_br_cur_len
+	30 mem_snd_br_block_start
+
+	0 mem_snd_ble_block
+	2 mem_snd_ble_header
+	2 mem_snd_ble_rptr
+	2 mem_snd_ble_wptr
+	2 mem_snd_ble_end
+	1 mem_snd_ble_cur_len
+	30 mem_snd_ble_block_start
+
+	0 mem_snd_hci_block
+	2 mem_snd_hci_header
+	2 mem_snd_hci_rptr
+	2 mem_snd_hci_wptr
+	2 mem_snd_hci_end
+	1 mem_snd_hci_cur_len
+	30 mem_snd_hci_block_start
+
+	4 mem_regd
+
+	2 mem_alloc_buffer_len
+
+	1 mem_ipc_data_rx_buf_subtype
+	3 mem_ipc_data_rx_buf_payload_ptr
+
+	1 mem_ipc_data_tx_buf_subtype
+	3 mem_ipc_data_tx_buf_payload_ptr
+
+
+	8 mem_le_features
+
+
+
+
+
+
+	1 mem_le_supported_host
+	1 mem_simultaneous_le_host
+
+	2 mem_default_link_policy_settings
+	// mem_link_policy_settings only used by connected 
+	2 mem_link_policy_settings
+	1 mem_le_white_list_cnt
+	28 mem_le_white_list
+	7 mem_le_white_list_type_and_bd_addr
+	1 mem_le_white_list_filter_policy
+
+	1 mem_hci_acl_packet_pb_flag
+	2 mem_hci_acl_packet_len_recved
+	2 mem_hci_acl_packet_payload_ptr
+
+	1 mem_le_first_packet_count
+	1 mem_hci_record_disc_conn_handle
+	
+	1 mem_fsc_rtk_host
+
+	8 mem_remote_features
+	8 mem_remote_ext_features0
+	8 mem_remote_ext_features1
+	2 mem_le_scan_window_temp
+
+256 mem_zcode_buff_user
+
+	1 mem_queue_init_flag
+	2 mem_hci_version_svnid
+	6 mem_bd_addr_new
+0 mem_headset_end
+)
+(
+	0x00 NONE_FILTER
+	0x01 WHITE_LIST_SCAN_FILTER
+	0x02 WHITE_LIST_CONNECT_FILTER
+	0x03 WHITE_LIST_CONN_SCAN_FILTER
+)
+(
+0 Role_Switch
+1 Hold_Mode		
+2 Sniff_Mode
+)
+//Error Codes
+(
+	0x04 PAGE_TIMEOUT
+)
+(
+0x00 HCI_ROLE_MASTER
+0x01 HCI_ROLE_SLAVE
+)
+(
+0x04 LE_WHITE_LIST_MAX_SIZE
+)
+(
+0x28 AADC_0_DEFAULT_VALUE
+0x52 AADC_1_DEFAULT_VALUE
+0x02 AADC_2_DEFAULT_VALUE
+0xc3 AADC_3_DEFAULT_VALUE
+0x18 AADC_4_DEFAULT_VALUE
+0x00 AADC_5_DEFAULT_VALUE
+0x00 AADC_6_DEFAULT_VALUE
+0xf0 AADC_7_DEFAULT_VALUE
+0xa0 AADC_8_DEFAULT_VALUE
+0xff AADC_9_DEFAULT_VALUE
+0x3c AADC_A_DEFAULT_VALUE
+)
+//rf_afc_cap RG_CLKPLL
+(
+0x2D rg_clkpll_8_16_48K
+0x3D rg_clkpll_44d1K
+)
+//rg_misc
+(
+0x94 rg_misc_8_16_48K
+0xC4 rg_misc_44d1K
+)
+//ramp_ctrl
+(
+0x00 left_down_en//1: enable, 0: disable
+0x01 left_up_en// 1: enable, 0: disable
+0x02 right_down_en// 1: enable, 0: disable
+0x03 right_up_en// 1: enable, 0: disable
+0x04 ramp_down_finish_clr// 1: clear finish flag
+0x05 ramp_up_finish_clr// 1: clear finish flag
+)
+//core_aadc_3
+(
+0x00 RG_ADAC_OPARES_SEL1
+0x01 RG_ADAC_OPARES_SEL2
+0x02 RG_ADAC_VCMIOPA_SEL 
+0x04 RG_ADAC_VCMIBUF_BYP
+0x05 RG_ADAC_INT_CAPSEL        
+0x06 RG_ADAC_VOLL0
+)
+//core_aadc_8
+(
+0x05 DA_ADAC_LDO_AVDD_EN       
+0x07 DA_ADAC_LDO_HPVDD_EN      
+)
+//core_aadc_9
+(
+0x00 DA_EN_ADAC_BIAS           
+0x01 DA_EN_ADAC_REF            
+0x02 DA_EN_ADAC_INT_L          
+0x03 DA_EN_ADAC_INT_R          
+0x04 DA_EN_ADAC_OPAL           
+0x05 DA_EN_ADAC_OPAR           
+0x06 DA_EN_ADAC_PATHL          
+0x07 DA_EN_ADAC_PATHR          
+)
+//core_aadc_a
+(
+0x00 DA_ADAC_RST_INT_L          
+0x01 DA_ADAC_RST_INT_R         
+0x02 DA_EN_ADAC_OPA_LOOP_L     
+0x03 DA_EN_ADAC_OPA_LOOP_R     
+0x04 DA_EN_ADAC_DEPOP_SW_L     
+0x05 DA_EN_ADAC_DEPOP_SW_R     
+0x06 DA_EN_ADAC_OPA_DUMMY_L    
+0x07 DA_EN_ADAC_OPA_DUMMY_R    
+)
+
+// mem_lpm_write_temp_charge_control
+(
+0x00 CHARGE_PMU_CHGPUMP_EN
+0x01 CHARGE_PMU_CHGPUMP_HV
+0x02 CHARGE_CHGR_INSC_ENB
+0x03 CHARGE_CHGR_UART_EN
+0x14 CHARGE_CHGR_SHUTDOWN_SW
+0x15 CHARGE_CHGR_SHUTDOWN_BIAS
+0x16 CHARGE_CHGR_SHUTDOWN_CORE
+0x17 CHARGE_CHGR_FORCE_CC
+0x18 CHARGE_CHGR_FORCE_CV
+0x19 CHARGE_CHGR_FORCE_CORE_ON
+0x1A CHARGE_LPM_CHARGER_EVENT_EN
+)
+//core_chgr_event
+(
+0x01 CHGR_STATE_ICHG
+0x02 CHGR_STATE_RCH_EN
+0x04 CHGR_DPPM_OV_CC
+0x08 CHGR_STATE_VBAT_LV
+0x10 CHGR_DPPM_OV_CV
+0x20 CHGR_CC_OV_CV
+0x40 CHGR_STATE_IND
+0x80 CHGR_PGOOD_AON
+0x100 CHGR_PGOOD
+0x200 CHGR_IN_PRESENT
+)
+
+//ADC LOW CONTROL
+(
+0x16 rg_mic_diff_en
+0x17 rg_mic_op_cm_en
+0x18 rg_mic_pga_vcmsettle_en
+0x19 rg_aadc_refbuf_en
+0x1A da_aadc_en
+0x1B da_aadc_en_biasgen
+0x1C da_aadc_en_constgm
+0x1D da_aadc_en_reg
+0x1E da_aadda_bg_en
+0x1F da_aadda_bg_en_fc
+)
+//ADC HIGH CONTROL
+(
+0x00 da_mic_pga_en
+0x01 da_mic_bias_en
+0x05 da_mic_lpm_en
+)
+
+//dac ctrl 0x8106
+(
+0 enable_dac
+1 source_buffer_is_mram
+2 continuous_mode// wptr is not used
+3 mute// l&r channel
+4 filter_en// 0: filter in reset state, 1: filter in work state
+5 sdm_en// 0: sdm in reset state, 1: sdm in work state
+6 invert_wave
+7 bypass_dac
+)
+//ota flag
+(
+0xa5 OTA_SOFT_CHANGE_FLAG	
+0xaa OTA_NEED_ENABLE_XIP_FLAG
+)
+//mem_l_din_sel
+(
+0x00 DIN_SEL_L_LEFT_CHANNEL
+0x01 DIN_SEL_L_RIGHT_CHANNEL
+0x02 DIN_SEL_L_LEFT_RIGHT_MIX_CHANNEL
+0x03 DIN_SEL_L_FIX_ZERO
+
+0xFF DIN_SEL_L_CLOSE
+)
+
+//mem_r_din_sel
+(
+0x00 DIN_SEL_R_LEFT_CHANNEL
+0x10 DIN_SEL_R_RIGHT_CHANNEL
+0x20 DIN_SEL_R_LEFT_RIGHT_MIX_CHANNEL
+0x30 DIN_SEL_R_FIX_ZERO
+
+0xFF DIN_SEL_R_CLOSE
+)
+
+(
+192 COEF_DAC_TABLE_LENGTH
+82 COEF_VOICE_TABLE_LENGTH
+336 COEF_ADC_TABLE_LENGTH
+153 COEF_EQ_TABLE_LENGTH
+
+0 COEF_DAC_TABLE_48K_OFFSET  
+192 COEF_DAC_TABLE_44K_OFFSET
+384 COEF_DAC_TABLE_8K_OFFSET
+576 COEF_VOICE_TABLE_OFFSET  
+658 COEF_ADC_TABLE_OFFSET  
+994 COEF_EQ_TABLE_OFFSET
+1147 COEF_TABLE_ALL_LENGTH
+)
+
+(
+0x03 RAMP_LEFT_DOWN_STEP_VALUE                
+0x03 RAMP_RIGHT_DOWN_STEP_VALUE                 
+0x0100 RAMP_LEFT_DOWN_DEST_VALUE              
+0x0100 RAMP_RIGHT_DOWN_DEST_VALUE          
+0x03 RAMP_LEFT_UP_STEP_VALUE                    
+0x03 RAMP_RIGHT_UP_STEP_VALUE                   
+0x09 RAMP_LEFT_UP_DEST_VALUE                   
+0x09 RAMP_RIGHT_UP_DEST_VALUE               
+)
+
+(
+	0x400	MEDIA_SBC_SRC_BUFFER_SIZE
+)
+
+(
+0x00 ADV_STOP
+0x01 ADV_DIS_OPEN_BOX
+0x02 ADV_DIS_CLOSE_BOX
+0x03 ADV_RESERVE_0
+0x04 ADV_RESERVE_1
+0x05 ADV_RESERVE_2
+0x06 ADV_NORMAL_BLE
+0x06 ADV_NUM
+
+0xff ADV_OTA
+)
+
+
+//bluetooth tx power
+(
+0x00 TX_POWER_0DB
+0x01 TX_POWER_3DB
+0x02 TX_POWER_5DB
+0x03 TX_POWER_f3DB
+0x04 TX_POWER_f5DB
+0x05 TX_POWER_8DB
+)
+
+//mem_media_release_state
+(
+0x00 MEDIA_RELASE_STATE_NONE
+0x01 MEDIA_RELASE_STATE_WAIT_UPSTACK
+0x02 MEDIA_RELASE_STATE_READY
+)
+
+/////////////////////////////////////////////////////// Hard sleep mode //////////////////////////////////////////////////////////////////
+(
+0x10000  BT_RESPIN_HIBERNATE_FLAG
+0x10002  BT_RESPIN_HIBERNATE_CHG_LOW
+0x10004  BT_RESPIN_HIBERNATE_CHG_HIGH
+
+0x3579  BT_RESPIN_FLAG_VALID_FLAG
+)
+
+//afh report mode
+(
+0 AFH_REPORTING_MODE_DISABLED
+1 AFH_REPORTING_MODE_ENABLED
+)
+//rssi
+// For RF performance
+(
+0x49 RSSI_ADJUST_PHO_F5DB
+0x55 RSSI_ADJUST_PHO
+0x59 RSSI_ADJUST_PHO_5DB
+0x60 RSSI_ADJUST_PHO_8DB
+)
+
